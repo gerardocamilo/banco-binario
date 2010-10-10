@@ -1,0 +1,8 @@
+public class MyClass{
+
+private String something;
+
+public String getSomething(){
+	return this.something;
+}
+}
