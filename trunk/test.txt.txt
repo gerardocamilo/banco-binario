@@ -1,7 +1,9 @@
+
+
 public class MyClass{
 
 private String something;
-privete int number;
+private int number;
 
 public String getSomething(){
 	return this.something;
