@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SolicitudDatosProductoca.aspx.cs" Inherits="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosProductoca" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SolicitudDatosProductocc.aspx.cs" Inherits="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosProductocc" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -29,8 +29,7 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 <div id=u1 style="position:absolute; left:2px; top:237px; width:830px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u1_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u0 src="../Resources/transparent.gif" 
-            style="position:absolute; left:126px; top:180px; width:834px; height:490px"   >
+<IMG id=u0 src="../Resources/transparent.gif" style="position:absolute; left:110px; top:180px; width:834px; height:490px"   >
 
 <div id=ou2 style="position:absolute; left:109px; top:123px; width:837px; height:54px;; overflow:visible; ">
 
@@ -61,11 +60,7 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 <div id=u7 style="position:absolute; left:2px; top:284px; width:198px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u7_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u6 src="../Resources/transparent.gif" style="position:absolute; left:947px; top:86px; width:202px; height:584px"   >
-
-
-
-<div id=u9 style="position:absolute; left:967px; top:95px; width:181px; height:19px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+&nbsp;<div id=u9 style="position:absolute; left:967px; top:95px; width:181px; height:19px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 </div>
 
 
@@ -405,8 +400,8 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 &nbsp;
 <div style="position:absolute; left:324px; top:270px; width:85px; height:27px; text-align: left" >
 <asp:RadioButtonList id="rbTarjeta" RepeatDirection="Horizontal" style=" font-family:'Arial'; color:#000000; font-size:13px;" runat="server">
-<asp:ListItem Enabled="true" Text="Si"></asp:ListItem>
-<asp:ListItem Text="No"></asp:ListItem>
+<asp:ListItem Enabled="true" Text="Si" Selected="True"></asp:ListItem>
+<asp:ListItem Value Text="No"></asp:ListItem>
 </asp:RadioButtonList>
 </div>
 <div id=u71 

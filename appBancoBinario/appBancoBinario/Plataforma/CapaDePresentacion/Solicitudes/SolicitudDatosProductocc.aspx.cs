@@ -31,10 +31,26 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             Solicitud solicitud = (Solicitud)Session["solicitud"];
             if (solicitud != null)
             {
-                solicitud.NumeroSolicitud = "testnumber";
+                solicitud.NumeroSolicitud = "solCuenta03";
                 Cuenta cuenta = new Cuenta();
                 cuenta.TipoProducto = TipoProducto.CUENTA_CORRIENTE.ToString();
                 solicitud.ProductoAsociado = cuenta;
+
+
+
+                if (rbTarjeta.SelectedValue.Equals("Si"))
+                {
+                    SolicitudTarjeta solicitudTarjeta = new SolicitudTarjeta();
+                    solicitudTarjeta.NumeroSolicitud = "solTarjeta";
+                    solicitudTarjeta.Cliente = solicitud.Cliente;
+                    Tarjeta tarjeta = new Tarjeta();
+                    tarjeta.TipoProducto = TipoProducto.TARJETA_DEBITO.ToString();
+                    solicitudTarjeta.ProductoAsociado = tarjeta;
+                    solicitud.NumeroSolicitudAsociado = solicitudTarjeta.NumeroSolicitud;
+                    Session["solicitudAsociada"] = solicitudTarjeta;
+                }
+
+                Session["solicitud"] = solicitud;
                 Response.Redirect("SolicitudConfirmacion.aspx");
             }
 
