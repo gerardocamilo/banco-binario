@@ -601,6 +601,7 @@
     <Compile Include="Plataforma\CapaDeDatos\PlataformaDAO.cs" />
     <Compile Include="Plataforma\CapaDeDatos\SqlHelper.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Plataforma.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\TipoTarjeta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\EstadoTarjeta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\EstadoCuenta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Cuenta.cs" />
