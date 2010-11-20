@@ -3,3 +3,5 @@ C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\appBancoBi
 C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\appBancoBinario\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\appBancoBinario\obj\Debug\appBancoBinario.dll
 C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\appBancoBinario\obj\Debug\appBancoBinario.pdb
+C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\appBancoBinario\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\appBancoBinario\obj\Debug\appBancoBinario.dll

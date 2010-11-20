@@ -604,6 +604,7 @@
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Cuenta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Prestamo.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Producto.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\EstadoSolicitud.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\Solicitud.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudCuenta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudPrestamo.cs" />
