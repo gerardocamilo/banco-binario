@@ -164,15 +164,15 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroNumeroSolicitud);
 
             SqlParameter sParametroTipoTarjeta = new SqlParameter("@TIPO_TARJETA", SqlDbType.VarChar, 50);
-            sParametroTipoTarjeta.Value = tarjetaAsociada.TipoProducto;
+            sParametroTipoTarjeta.Value = tarjetaAsociada.TipoTrarjeta;
             sComando.Parameters.Add(sParametroTipoTarjeta);
 
             SqlParameter sParametrorRecibirTarjeta = new SqlParameter("@RECIBIR_TARJETA", SqlDbType.VarChar, 50);
-            sParametrorRecibirTarjeta.Value = tarjetaAsociada.TipoProducto;
+            sParametrorRecibirTarjeta.Value = tarjetaAsociada.RecibirTarjeta;
             sComando.Parameters.Add(sParametrorRecibirTarjeta);
 
             SqlParameter sParametrorEnvioTarjeta = new SqlParameter("@ENVIO_TARJETA", SqlDbType.VarChar, 50);
-            sParametrorEnvioTarjeta.Value = tarjetaAsociada.TipoProducto;
+            sParametrorEnvioTarjeta.Value = tarjetaAsociada.EnvioTarjeta;
             sComando.Parameters.Add(sParametrorEnvioTarjeta);
 
             SqlParameter sParametroTipoProducto = new SqlParameter("@TIPO_PRODUCTO", SqlDbType.VarChar, 50);
