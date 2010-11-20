@@ -439,7 +439,8 @@ src="Ver_Solicitud_-_Prestamo_files/u72.png" border="0" alt=""></span>
 
 <div id=u74 style="position:absolute; left:144px; top:371px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u74_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Numero de solicitud</span></div></div>
-<div id=u75 style="position:absolute; left:274px; top:371px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=u75 
+            style="position:absolute; left:274px; top:371px; width:187px; height:16px; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u75_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>
 
 <%=noSolicitud%>
@@ -447,12 +448,13 @@ src="Ver_Solicitud_-_Prestamo_files/u72.png" border="0" alt=""></span>
 </b></span></div></div>
 <div id=u76 style="position:absolute; left:144px; top:400px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u76_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tipo de solicitud</span></div></div>
-<div id=u77 style="position:absolute; left:274px; top:400px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u77_rtf><span style=" color:#000000; font-size:13px;"><b>Solicitud de </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Prestamo</b></span></div></div>
+<div id=u77 
+            style="position:absolute; left:274px; top:400px; width:256px; height:16px; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=u77_rtf><span style=" color:#000000; font-size:13px;"><b>Solicitud de </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><%=producto%></b></span></div></div>
 <div id=u78 style="position:absolute; left:144px; top:430px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u78_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Estado</span></div></div>
 <div id=u79 style="position:absolute; left:274px; top:430px; width:146px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u79_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>Pendiente Aprobación</b></span></div></div>
+<div id=u79_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=estado%></b></span></div></div>
 <div id=ou80 style="position:absolute; left:134px; top:487px; width:461px; height:124px;; overflow:visible; ">
 
 <span style="position:absolute; left:-3px; top:-3px; width:469px; height:132px; ;

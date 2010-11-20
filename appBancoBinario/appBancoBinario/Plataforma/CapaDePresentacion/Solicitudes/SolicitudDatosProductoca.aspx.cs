@@ -34,6 +34,8 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                 Cuenta cuenta = new Cuenta();
                 cuenta.TipoProducto = TipoProducto.CUENTA_AHORRO.ToString();
                 solicitud.ProductoAsociado = cuenta;
+                
+                
 
                 if(rbTarjeta.SelectedValue.Equals("si")){
                     SolicitudTarjeta solicitudTarjeta = new SolicitudTarjeta();
