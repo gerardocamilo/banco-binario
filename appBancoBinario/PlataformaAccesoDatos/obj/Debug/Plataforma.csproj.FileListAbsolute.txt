@@ -13,3 +13,8 @@ C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\Plataforma
 C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\PlataformaAccesoDatos\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.dll
 C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.pdb
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\PlataformaAccesoDatos\bin\PlataformaAccesoDatos.dll
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\PlataformaAccesoDatos\bin\PlataformaAccesoDatos.pdb
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\PlataformaAccesoDatos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.dll
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.pdb

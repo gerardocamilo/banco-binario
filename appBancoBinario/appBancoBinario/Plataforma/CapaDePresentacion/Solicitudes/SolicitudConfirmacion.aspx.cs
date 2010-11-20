@@ -23,15 +23,21 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 
                 if (solicitud.NumeroSolicitudAsociado != null) {
 
-                    Solicitud solicitudAsociada = (Solicitud)Session["solicitud Asociada"];
-                    if(solicitudAsociada!=null){
-                        solicitudAsociada.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
-                        solicitudAsociada.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
-                        plataforma.solicitarProducto(solicitudAsociada);
+                    Solicitud solicitudAsociado = (Solicitud)Session["solicitudAsociada"];
+                    if (solicitudAsociado != null)
+                    {
+                        solicitudAsociado.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
+                        plataforma.solicitarProducto(solicitudAsociado);
                     }
-                    
+
+
                 }
-                solicitud.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
+                else
+                {
+                    solicitud.NumeroSolicitudAsociado = "";
+                }
+
+
                 solicitud.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
                 plataforma.solicitarProducto(solicitud);
 
