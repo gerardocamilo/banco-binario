@@ -209,9 +209,18 @@ src="SolicitudDatosProducto_files/u34.png" border="0" alt=""></span>
 
             <input type="reset" value="Limpiar"/>
 </div>
-&nbsp;<div id=u40container style="position:absolute; left:355px; top:640px; width:76px; height:21px;; overflow:visible;">
+&nbsp;<div id=u40container style="position:absolute; left:355px; top:640px; width:76px; height:21px; overflow:visible;">
 
-            <asp:Button ID="btnSiguiente" runat="server" Text="Siguiente" 
+    <asp:CompareValidator ID="cvMontoPrestamo" runat="server" ErrorMessage="Monto Préstamo" Type="Double" ControlToValidate="txtMontoPrestamo" Display="None" SetFocusOnError="true"></asp:CompareValidator>
+
+    <asp:RequiredFieldValidator ID="rfvMontoPrestamo" runat="server" ErrorMessage="Monto Préstamo." 
+                ControlToValidate="txtMontoPrestamo" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="rfvTasa" runat="server" ErrorMessage="Tasa." 
+                ControlToValidate="txtTasa" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
+    <asp:ValidationSummary ID="vsPrestamo" runat="server" ShowMessageBox="True" 
+                ShowSummary="false" HeaderText="Campos vacios o inválidos:" />
+    <asp:Button ID="btnSiguiente" runat="server" Text="Siguiente" 
+
                 onclick="btnSiguiente_Click" />
 </div>
 &nbsp;<div id=ou42 style="position:absolute; left:110px; top:180px; width:834px; height:25px;; overflow:visible; ">
@@ -379,7 +388,7 @@ src="SolicitudDatosProducto_files/u65.png" border="0" alt=""></span>
 </div>
 <IMG id=u65 src="../Resources/transparent.gif" style="position:absolute; left:122px; top:215px; width:15px; height:17px"   >
 
-<asp:TextBox style="position:absolute; left:265px; top:261px; width:271px; height:25px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   
+<asp:TextBox style="position:absolute; left:265px; top:261px; width:133px; height:25px; text-align: left; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   
             runat="server" ID="txtMontoPrestamo"></asp:TextBox>
 
 <div id=u68 style="position:absolute; left:150px; top:265px; width:98px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
