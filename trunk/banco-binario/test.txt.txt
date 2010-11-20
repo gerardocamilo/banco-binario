@@ -1,0 +1,19 @@
+public class MyClass{
+
+private String something;
+private int number;
+
+public String getSomething(){
+	return this.something;
+}
+
+public int getNumero(){
+	return this.number;
+{
+
+
+}
+
+//comment
+//comment2
+//comment2

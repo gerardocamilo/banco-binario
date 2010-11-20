@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="appBancoBinario.About" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>About.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.SqlHelper" Collapsed="true">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAEAAAAAAAAAAAAAAAAAIAAABCACFACAAAA=</HashCode>
+      <FileName>Clientes\CapaDeNegocio\Clases\Sqlhelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario._Default" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Default.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Global" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAECIBAABAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.SiteMaster" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACABAACAAAAAAQAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Site.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Account.ChangePassword" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePassword.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Account.ChangePasswordSuccess" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\ChangePasswordSuccess.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Account.Login" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAE=</HashCode>
+      <FileName>Account\Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Account.Register" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIAAAAAAAAAAAAAAAAAABAAAAAAAAIAAAA=</HashCode>
+      <FileName>Account\Register.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Clientes.CapaDeNegocio.Clases.ClientesDetails" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEgSgAgCAAAIAAAAAAAAAAAggAQKA=</HashCode>
+      <FileName>Clientes\CapaDeNegocio\Clases\Clientes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Clientes.CapaDeNegocio.Clases.Clientes" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAABgAAAAAAAAAAAAAAAAAAABAAAAAAAAAEAAA=</HashCode>
+      <FileName>Clientes\CapaDeNegocio\Clases\Clientes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Inicio" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Inicio.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.WebForm1" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIABAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Plataforma.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeDatos.PlataformaDAO" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAhAEAAAAAgAAEAAABAAACAAAAAAAAAAAAgAEAA=</HashCode>
+      <FileName>Plataforma\CapaDeDatos\PlataformaDAO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plataforma.SqlHelper" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAEAAAAAAAAAAAAAAAAAIAAABCACFACAAAA=</HashCode>
+      <FileName>Plataforma\CapaDeDatos\SqlHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Plataforma" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIABAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Plataforma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Productos.Cuenta" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAQAAAgAAAAABAAAAAAAABAAAAAAAAg=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Productos\Cuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Productos.Prestamo" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAABAgAABgAAAACEABAAAABEAAAAAABAAgIg=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Productos\Prestamo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Productos.Producto" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Productos\Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Productos.Tarjeta" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAABAAAACAAEAAAABAAAAgICAAAAAAgAAMIAgACAAAg=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Productos\Tarjeta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes.Solicitud" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABQAAAIiAAAAAAQCAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Solicitudes\Solicitud.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes.SolicitudCuenta" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Solicitudes\SolicitudCuenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes.SolicitudPrestamo" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAgSAAAAAAAIggBAAAAAIAAAABAAAQAEAAAAgABAAA=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Solicitudes\SolicitudPrestamo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes.SolicitudTarjeta" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAQAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Solicitudes\SolicitudTarjeta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Productos.Productos" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAIQAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Productos\Productos.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Productos.VerProducto" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAIAAAACAAAAAAAAIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Productos\VerProducto.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudConfirmacion" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosLaborales" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAgAIARAIAAAEAgABAAIABQAAAAAAAAAQIAAEA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosProductoca" Collapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAIAAAAAAABAAIABAAQAAAAAAAQIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductoca.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosProductocc" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAIAAAAAAABAAYBBAACAAAAAAAQIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductocc.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosProductopp" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAACIAAAAAAABAAIBBAAAAABAABAQIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductopp.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosProductotc" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAgAAAAAIAAAABAABAAIABAAAAAAAAAAQIAAgA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotc.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosProductotd" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAAAAAAAAAIAAAAAAABAAYABAAAAAAAAAAQIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotd.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.SolicitudDatosSolicitante" Collapsed="true">
+    <Position X="14.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAIAAAEABAIIAAAAEADAAIABAAAAgAAAAAQIABwA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.Solicitudes" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAAAACAAAACAAAQAAAIAAAAIACAAAAAAIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\Solicitudes.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes.VerSolicitud" Collapsed="true">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAGoAAAAAAAAAAAACIAAAA=</HashCode>
+      <FileName>Plataforma\CapaDePresentacion\Solicitudes\VerSolicitud.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="appBancoBinario.Plataforma.CapaDeNegocio.Productos.TipoProducto" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQQAAAAAACAAAAAAAAEAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Plataforma\CapaDeNegocio\Productos\TipoProducto.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,10 @@
+C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\bin\PlataformaAccesoDatos.dll
+C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\bin\PlataformaAccesoDatos.pdb
+C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.dll
+C:\Users\Darlin\Documents\My Dropbox\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.pdb
+C:\Users\Guest001\Documents\My Dropbox\2010-3\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\bin\PlataformaAccesoDatos.dll
+C:\Users\Guest001\Documents\My Dropbox\2010-3\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\bin\PlataformaAccesoDatos.pdb
+C:\Users\Guest001\Documents\My Dropbox\2010-3\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Guest001\Documents\My Dropbox\2010-3\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.dll
+C:\Users\Guest001\Documents\My Dropbox\2010-3\Web2\Proyecto BB\appBancoBinario\PlataformaAccesoDatos\obj\Debug\PlataformaAccesoDatos.pdb

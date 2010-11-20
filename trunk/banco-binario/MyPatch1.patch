@@ -1,0 +1,20 @@
+Index: test.txt.txt
+===================================================================
+--- test.txt.txt	(revision 6)
++++ test.txt.txt	(working copy)
+@@ -1,5 +1,3 @@
+-
+-
+ public class MyClass{
+ 
+ private String something;
+@@ -14,4 +12,6 @@
+ {
+ 
+ 
+-}
+\ No newline at end of file
++}
++
++//comment
+\ No newline at end of file
