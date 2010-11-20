@@ -221,7 +221,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sParametroNumeroSolicitud.Value = solicitudCuenta.NumeroSolicitud;
             sComando.Parameters.Add(sParametroNumeroSolicitud);
 
-            SqlParameter sParametroBalanceInicial = new SqlParameter("@BALANCE_INICIAL", SqlDbType.Float, 50);
+            SqlParameter sParametroBalanceInicial = new SqlParameter("@BALANCE_INICIAL", SqlDbType.Float);
             sParametroBalanceInicial.Value = cuentaAsociada.Balance;
             sComando.Parameters.Add(sParametroBalanceInicial);
 
@@ -230,7 +230,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroTipoProducto);
 
             SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-            sParametroEstado.Value = cuentaAsociada.Estado;
+            sParametroEstado.Value = solicitudCuenta.Estado;
             sComando.Parameters.Add(sParametroEstado);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
@@ -374,7 +374,8 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             }
             catch (Exception ex)
             {
-                //TODO: Manejar exception               
+                Debug.WriteLine("pEjecutarNoConsulta: "+ex.Message);
+                Debug.WriteLine(ex.StackTrace);
             }
             return resultado;
         }

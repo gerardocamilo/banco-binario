@@ -35,8 +35,8 @@ namespace appBancoBinario
 
         protected SqlHelper(string DataBaseName, string DataBaseServer, string DataBaseUser, string DataBasePassword)
         {
-            //        DBConnectionString = "Data Source=" & DataBaseServer & ";Initial Catalog=" & DataBaseName & ";user id=" & DataBaseUser & ";password=" & DataBasePassword & ";persist security info=True; packet size=4096"
-            DBConnectionString = "Data Source=CLAUDIO-PC\\SRVWSQLVS;Initial Catalog=bb;Integrated Security=SSPI;";
+            DBConnectionString = "Data Source=" + DataBaseServer + ";Initial Catalog=" + DataBaseName + ";user id=" + DataBaseUser + ";password=" + DataBasePassword + ";persist security info=True; packet size=4096";
+            //DBConnectionString = "Data Source=CLAUDIO-PC\\SRVWSQLVS;Initial Catalog=bb;Integrated Security=SSPI;";
 
         }
 
@@ -83,7 +83,7 @@ namespace appBancoBinario
             }
             catch (Exception ex)
             {
-                //System.Windows.Forms.MessageBox.Show("Error: " & ex.Message & vbCrLf & ex.StackTrace)
+                
                 return false;
             }
         }

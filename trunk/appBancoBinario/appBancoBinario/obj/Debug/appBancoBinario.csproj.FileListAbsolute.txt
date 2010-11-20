@@ -8,3 +8,8 @@ C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\appBancoBi
 C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\appBancoBinario\bin\appBancoBinario.dll
 C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\appBancoBinario\bin\appBancoBinario.pdb
 C:\Users\Darlin\Documents\Proyecto BB\appBancoBinario\appBancoBinario\appBancoBinario\obj\Debug\appBancoBinario.pdb
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\appBancoBinario\bin\appBancoBinario.dll
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\appBancoBinario\bin\appBancoBinario.pdb
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\appBancoBinario\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\appBancoBinario\obj\Debug\appBancoBinario.dll
+C:\Users\Guest001\Documents\svnBancoBinario\appBancoBinario\appBancoBinario\obj\Debug\appBancoBinario.pdb
