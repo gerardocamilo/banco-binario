@@ -31,6 +31,42 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes {
         protected global::System.Web.UI.WebControls.Button btnCancelar;
         
         /// <summary>
+        /// cvMontoPrestamo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvMontoPrestamo;
+        
+        /// <summary>
+        /// rfvMontoPrestamo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvMontoPrestamo;
+        
+        /// <summary>
+        /// rfvTasa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTasa;
+        
+        /// <summary>
+        /// vsPrestamo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vsPrestamo;
+        
+        /// <summary>
         /// btnSiguiente control.
         /// </summary>
         /// <remarks>
