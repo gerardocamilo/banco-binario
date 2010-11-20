@@ -11,6 +11,6 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio.Productos
             CUENTA_AHORRO,
             TARJETA_DEBITO,
             TARJETA_CREDITO,
-            PRESTAMO,
+            PRESTAMO
     }
 }
