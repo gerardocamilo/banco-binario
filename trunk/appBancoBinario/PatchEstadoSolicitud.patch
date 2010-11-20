@@ -1,0 +1,174 @@
+Index: appBancoBinario.suo
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: appBancoBinario/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: appBancoBinario/Plataforma/CapaDeNegocio/Solicitudes/Solicitud.cs
+===================================================================
+--- appBancoBinario/Plataforma/CapaDeNegocio/Solicitudes/Solicitud.cs	(revision 11)
++++ appBancoBinario/Plataforma/CapaDeNegocio/Solicitudes/Solicitud.cs	(working copy)
+@@ -13,7 +13,7 @@
+         private ClientesDetails _cliente;
+         private String _sNumeroSolicitud;
+         private String _sNumeroSolicitudAsociado;
+-        private String _estado;
++        private String _sEstado;
+ 
+         public Producto ProductoAsociado
+         {
+@@ -38,5 +38,11 @@
+             get { return _sNumeroSolicitudAsociado; }
+             set { _sNumeroSolicitudAsociado = value; }
+         }
++
++        public String Estado
++        {
++            get { return _sEstado; }
++            set { _sEstado = value; }
++        }
+     }
+ }
+\ No newline at end of file
+Index: appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/SolicitudConfirmacion.aspx.cs
+===================================================================
+--- appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/SolicitudConfirmacion.aspx.cs	(revision 11)
++++ appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/SolicitudConfirmacion.aspx.cs	(working copy)
+@@ -25,10 +25,12 @@
+ 
+                     Solicitud solicitudAsociada = (Solicitud)Session["solicitud Asociada"];
+                     if(solicitudAsociada!=null){
++                        solicitudAsociada.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
+                         plataforma.solicitarProducto(solicitudAsociada);
+                     }
+                     
+                 }
++                solicitud.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
+                 plataforma.solicitarProducto(solicitud);
+ 
+                 _sNoSolicitud = solicitud.NumeroSolicitud;
+Index: appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/SolicitudDatosProductoca.aspx.cs
+===================================================================
+--- appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/SolicitudDatosProductoca.aspx.cs	(revision 11)
++++ appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/SolicitudDatosProductoca.aspx.cs	(working copy)
+@@ -34,6 +34,7 @@
+                 Cuenta cuenta = new Cuenta();
+                 cuenta.TipoProducto = TipoProducto.CUENTA_AHORRO.ToString();
+                 solicitud.ProductoAsociado = cuenta;
++                
+ 
+                 if(rbTarjeta.SelectedValue.Equals("si")){
+                     SolicitudTarjeta solicitudTarjeta = new SolicitudTarjeta();
+Index: appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/VerSolicitud.aspx
+===================================================================
+--- appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/VerSolicitud.aspx	(revision 11)
++++ appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/VerSolicitud.aspx	(working copy)
+@@ -439,7 +439,8 @@
+ 
+ <div id=u74 style="position:absolute; left:144px; top:371px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+ <div id=u74_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Numero de solicitud</span></div></div>
+-<div id=u75 style="position:absolute; left:274px; top:371px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
++<div id=u75 
++            style="position:absolute; left:274px; top:371px; width:187px; height:16px; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;" >
+ <div id=u75_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>
+ 
+ <%=noSolicitud%>
+@@ -447,12 +448,13 @@
+ </b></span></div></div>
+ <div id=u76 style="position:absolute; left:144px; top:400px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+ <div id=u76_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tipo de solicitud</span></div></div>
+-<div id=u77 style="position:absolute; left:274px; top:400px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+-<div id=u77_rtf><span style=" color:#000000; font-size:13px;"><b>Solicitud de </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Prestamo</b></span></div></div>
++<div id=u77 
++            style="position:absolute; left:274px; top:400px; width:256px; height:16px; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;" >
++<div id=u77_rtf><span style=" color:#000000; font-size:13px;"><b>Solicitud de </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><%=producto%></b></span></div></div>
+ <div id=u78 style="position:absolute; left:144px; top:430px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+ <div id=u78_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Estado</span></div></div>
+ <div id=u79 style="position:absolute; left:274px; top:430px; width:146px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+-<div id=u79_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>Pendiente Aprobación</b></span></div></div>
++<div id=u79_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=estado%></b></span></div></div>
+ <div id=ou80 style="position:absolute; left:134px; top:487px; width:461px; height:124px;; overflow:visible; ">
+ 
+ <span style="position:absolute; left:-3px; top:-3px; width:469px; height:132px; ;
+Index: appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/VerSolicitud.aspx.cs
+===================================================================
+--- appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/VerSolicitud.aspx.cs	(revision 11)
++++ appBancoBinario/Plataforma/CapaDePresentacion/Solicitudes/VerSolicitud.aspx.cs	(working copy)
+@@ -6,6 +6,7 @@
+ using System.Web.UI.WebControls;
+ using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
+ using appBancoBinario.Clientes.CapaDeNegocio.Clases;
++using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
+ 
+ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
+ {
+@@ -13,6 +14,8 @@
+     {
+         public ClientesDetails cliente;
+         public string noSolicitud;
++        public string producto;
++        public string estado;
+         protected void Page_Load(object sender, EventArgs e)
+         {
+             Solicitud solicitud = (Solicitud)Session["solicitud"];
+@@ -22,17 +25,51 @@
+             SolicitudTarjeta solicitudTarjeta = null;
+ 
+             cliente = solicitud.Cliente;
++            string tipoProducto = solicitud.ProductoAsociado.TipoProducto;
++            estado = solicitud.Estado;
+ 
++            if (estado.Equals(EstadoSolicitud.PENDIENTE_APROBACION.ToString())) {
++                estado = "Pendiente Aprobación";
++            }
++            else if (estado.Equals(EstadoSolicitud.CANCELADA.ToString()))
++            {
++                estado = "Cancelada";
++            }
++            else if (estado.Equals(EstadoSolicitud.APROBADA.ToString()))
++            {
++                estado = "Aprobada";
++            }
+ 
+             if(solicitud is SolicitudPrestamo){
+                 solicitudPrestamo = (SolicitudPrestamo)solicitud;
++                producto = "Préstamo";
+ 
+             }
+             else if(solicitud is SolicitudCuenta){
+-                solicitudCuenta = (SolicitudCuenta)solicitud;}
+-            else if(solicitud is SolicitudCuenta){
+-                solicitudTarjeta = (SolicitudTarjeta)solicitud;}
++                solicitudCuenta = (SolicitudCuenta)solicitud;
++                
+ 
++                if (tipoProducto.Equals(TipoProducto.CUENTA_AHORRO.ToString())) {
++                    producto = "Cuenta de Ahorro";
++                }
++                else if (tipoProducto.Equals(TipoProducto.CUENTA_CORRIENTE.ToString()))
++                {
++                    producto = "Cuenta Corriente";
++                }            
++            }
++            else if(solicitud is SolicitudTarjeta){
++                solicitudTarjeta = (SolicitudTarjeta)solicitud;
++                
++                if (tipoProducto.Equals(TipoProducto.TARJETA_CREDITO.ToString()))
++                {
++                    producto = "Tarjeta de Crédito";
++                }
++                else if (tipoProducto.Equals(TipoProducto.TARJETA_DEBITO.ToString()))
++                {
++                    producto = "Tarjeta de Débito";
++                }
++            }
++
+         }
+ 
+         protected void btnAprobar_Click(object sender, EventArgs e)
+Index: PlataformaAccesoDatos/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
