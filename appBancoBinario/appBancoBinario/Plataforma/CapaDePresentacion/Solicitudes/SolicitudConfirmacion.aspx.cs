@@ -28,7 +28,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                     {
                         solicitudAsociada.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
                         Tarjeta tarjeta = (Tarjeta)solicitudAsociada.ProductoAsociado;
-                        solicitudAsociada.NumeroSolicitudAsociado = "";
+                        solicitudAsociada.NumeroSolicitudAsociado = ""; 
                         plataforma.solicitarProducto(solicitudAsociada);
                     }
 
