@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appBancoBinario", "appBancoBinario\appBancoBinario.csproj", "{44104FD4-5343-4D21-9B43-BF7DDFCFFF01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plataforma", "PlataformaAccesoDatos\Plataforma.csproj", "{F16771F4-C55F-48DE-A457-5E7171B7FFED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44104FD4-5343-4D21-9B43-BF7DDFCFFF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44104FD4-5343-4D21-9B43-BF7DDFCFFF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44104FD4-5343-4D21-9B43-BF7DDFCFFF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44104FD4-5343-4D21-9B43-BF7DDFCFFF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16771F4-C55F-48DE-A457-5E7171B7FFED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16771F4-C55F-48DE-A457-5E7171B7FFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16771F4-C55F-48DE-A457-5E7171B7FFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16771F4-C55F-48DE-A457-5E7171B7FFED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

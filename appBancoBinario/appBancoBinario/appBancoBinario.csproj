@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44104FD4-5343-4D21-9B43-BF7DDFCFFF01}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>appBancoBinario</RootNamespace>
+    <AssemblyName>appBancoBinario</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Resources\ann.html" />
+    <Content Include="Resources\axurerppage.css" />
+    <Content Include="Resources\axurerpprototype.css" />
+    <Content Include="Resources\axurerp_beforepagescript.js" />
+    <Content Include="Resources\axurerp_pagescript.js" />
+    <Content Include="Resources\CloseButton.gif" />
+    <Content Include="Resources\doc.gif" />
+    <Content Include="Resources\flow.gif" />
+    <Content Include="Resources\images.html" />
+    <Content Include="Resources\leaf.gif" />
+    <Content Include="Resources\logo-apec.jpg" />
+    <Content Include="Resources\minus.gif" />
+    <Content Include="Resources\newwindow.gif" />
+    <Content Include="Resources\note.gif" />
+    <Content Include="Resources\Other.html" />
+    <Content Include="Resources\page.gif" />
+    <Content Include="Resources\plus.gif" />
+    <Content Include="Resources\reload.html" />
+    <Content Include="Resources\resize.gif" />
+    <Content Include="Resources\transparent.gif" />
+    <Content Include="Resources\window_01.gif" />
+    <Content Include="Resources\window_02.gif" />
+    <Content Include="Resources\window_04.gif" />
+    <Content Include="Resources\window_05.gif" />
+    <Content Include="Resources\window_07.gif" />
+    <Content Include="Resources\window_09.gif" />
+    <Content Include="Resources\window_10.gif" />
+    <Content Include="Resources\window_11.gif" />
+    <Content Include="Resources\window_12.gif" />
+    <Content Include="Resources\wm.gif" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\ru42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\ru44.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\ru46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\ru48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\ru50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u155.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u158.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u162.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u164.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u31.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u35.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u40.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u44.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u56.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u59.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u61.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Productos_files\u63.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotc.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductoca.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotd.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductocc.aspx" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Inicio_files\axurerp_pagespecificscript.js" />
+    <Content Include="Inicio_files\ru18.png" />
+    <Content Include="Inicio_files\ru20.png" />
+    <Content Include="Inicio_files\ru22.png" />
+    <Content Include="Inicio_files\ru24.png" />
+    <Content Include="Inicio_files\ru26.png" />
+    <Content Include="Inicio_files\u0.png" />
+    <Content Include="Inicio_files\u102.png" />
+    <Content Include="Inicio_files\u103.png" />
+    <Content Include="Inicio_files\u13.png" />
+    <Content Include="Inicio_files\u16.png" />
+    <Content Include="Inicio_files\u20.png" />
+    <Content Include="Inicio_files\u22.png" />
+    <Content Include="Inicio_files\u24.png" />
+    <Content Include="Inicio_files\u26.png" />
+    <Content Include="Inicio_files\u28.png" />
+    <Content Include="Inicio_files\u32.png" />
+    <Content Include="Inicio_files\u34.png" />
+    <Content Include="Inicio_files\u4.png" />
+    <Content Include="Inicio_files\u42.png" />
+    <Content Include="Inicio_files\u7.png" />
+    <Content Include="Inicio_files\u9.png" />
+    <Content Include="Inicio_files\u97.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductopp.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\ru42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\ru44.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\ru46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\ru48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\ru50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u200.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u203.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u207.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u209.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u211.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u213.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u31.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u35.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u40.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u44.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u56.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u60.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u62.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u64.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\ru53.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\ru55.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\ru57.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\ru59.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\ru61.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u14.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u18.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u22.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u28.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u31.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u33.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u37.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u43.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u5.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u51.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u53.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u55.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u57.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u61.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u67.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u84.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u91.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Plataforma_files\u93.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\ann.html" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\axurerppage.css" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\axurerpprototype.css" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\axurerp_beforepagescript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\axurerp_pagescript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\CloseButton.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\doc.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\flow.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\images.html" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\leaf.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\minus.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\newwindow.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\note.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\Other.html" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\page.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\plus.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\reload.html" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\resize.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\transparent.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_01.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_02.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_04.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_05.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_07.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_09.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_10.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_11.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\window_12.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Resources\wm.gif" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\ru100.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\ru102.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\ru104.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\ru106.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\ru98.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u100.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u102.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u106.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u117.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u119.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u33.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u35.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u37.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u39.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u69.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u71.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u75.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u80.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u82.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u84.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u86.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u90.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u96.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante_files\u98.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\ru86.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\ru88.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\ru90.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\ru92.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\ru94.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u32.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u34.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u36.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u40.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u44.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u53.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u55.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u57.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u59.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u61.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u63.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u84.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u86.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u88.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u90.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales_files\u94.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\ru100.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\ru92.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\ru94.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\ru96.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\ru98.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u100.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u32.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u34.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u38.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u40.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u51.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u53.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u55.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u57.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u59.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u61.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u63.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u65.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u78.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u88.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u90.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u92.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u94.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProducto_files\u96.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\ru66.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\ru68.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\ru70.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\ru72.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\ru74.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u32.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u34.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u38.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u43.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u45.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u47.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u51.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u53.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u59.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u61.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u64.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u66.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u68.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u70.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion_files\u74.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u67.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u70.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u74.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u76.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u78.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes_files\u80.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\ru66.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\ru68.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\ru70.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\ru72.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\ru74.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u30.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u32.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u34.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u38.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u40.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u51.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u53.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u55.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u64.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u66.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u68.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u70.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u74.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u78.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u80.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u82.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files\u84.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\ru50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\ru52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\ru54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\ru56.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\ru58.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u30.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u32.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u36.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u38.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u58.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u62.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u64.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u73.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u75.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u77.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u79.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u81.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u83.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u85.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u87.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_existente_files\u89.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\ru50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\ru52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\ru54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\ru56.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\ru58.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u30.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u32.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u36.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u38.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u42.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u58.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u62.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u64.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u73.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u75.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u77.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u79.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u81.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u83.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u85.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u87.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files\u89.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\VerProducto.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\VerSolicitud.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\ru48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\ru50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\ru52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\ru54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\ru56.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u33.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u35.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u37.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u41.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u46.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u56.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u58.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\Ver_Producto_-_Préstamo_files\u60.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\axurerp_pagespecificscript.js" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\ru50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\ru52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\ru54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\ru56.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\ru58.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u0.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u12.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u15.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u19.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u2.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u25.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u26.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u33.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u35.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u37.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u39.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u4.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u43.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u48.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u50.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u52.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u54.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u58.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u6.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u60.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u62.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u70.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u72.png" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\Ver_Solicitud_-_Prestamo_files\u80.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDeDatos\PlataformaDAO.cs" />
+    <Compile Include="Plataforma\CapaDeDatos\SqlHelper.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Plataforma.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\Cuenta.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\Prestamo.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\Producto.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\Solicitud.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudCuenta.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudPrestamo.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudTarjeta.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\Tarjeta.cs" />
+    <Compile Include="Clientes\CapaDeNegocio\Clases\Clientes.cs" />
+    <Compile Include="Clientes\CapaDeNegocio\Clases\Sqlhelper.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\TipoProducto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Productos\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Productos\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotc.aspx.cs">
+      <DependentUpon>SolicitudDatosProductotc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotc.aspx.designer.cs">
+      <DependentUpon>SolicitudDatosProductotc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductoca.aspx.cs">
+      <DependentUpon>SolicitudDatosProductoca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductoca.aspx.designer.cs">
+      <DependentUpon>SolicitudDatosProductoca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotd.aspx.cs">
+      <DependentUpon>SolicitudDatosProductotd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductotd.aspx.designer.cs">
+      <DependentUpon>SolicitudDatosProductotd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductocc.aspx.cs">
+      <DependentUpon>SolicitudDatosProductocc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductocc.aspx.designer.cs">
+      <DependentUpon>SolicitudDatosProductocc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion.aspx.cs">
+      <DependentUpon>SolicitudConfirmacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudConfirmacion.aspx.designer.cs">
+      <DependentUpon>SolicitudConfirmacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductopp.aspx.cs">
+      <DependentUpon>SolicitudDatosProductopp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosProductopp.aspx.designer.cs">
+      <DependentUpon>SolicitudDatosProductopp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes.aspx.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\Solicitudes.aspx.designer.cs">
+      <DependentUpon>Solicitudes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales.aspx.cs">
+      <DependentUpon>SolicitudDatosLaborales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosLaborales.aspx.designer.cs">
+      <DependentUpon>SolicitudDatosLaborales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante.aspx.cs">
+      <DependentUpon>SolicitudDatosSolicitante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\SolicitudDatosSolicitante.aspx.designer.cs">
+      <DependentUpon>SolicitudDatosSolicitante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Plataforma.aspx.cs">
+      <DependentUpon>Plataforma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Plataforma.aspx.designer.cs">
+      <DependentUpon>Plataforma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Productos\VerProducto.aspx.cs">
+      <DependentUpon>VerProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Productos\VerProducto.aspx.designer.cs">
+      <DependentUpon>VerProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\VerSolicitud.aspx.cs">
+      <DependentUpon>VerSolicitud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plataforma\CapaDePresentacion\Solicitudes\VerSolicitud.aspx.designer.cs">
+      <DependentUpon>VerSolicitud.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Caja\CapaDeNegocio\" />
+    <Folder Include="Caja\CapaDePresentacion\" />
+    <Folder Include="Clientes\CapaDePresentacion\" />
+    <Folder Include="ConfParam\CapaDeNegocio\" />
+    <Folder Include="ConfParam\CapaDePresentacion\" />
+    <Folder Include="test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Plataforma\CapaDePresentacion\Productos.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49980</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
