@@ -601,6 +601,8 @@
     <Compile Include="Plataforma\CapaDeDatos\PlataformaDAO.cs" />
     <Compile Include="Plataforma\CapaDeDatos\SqlHelper.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Plataforma.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\EstadoTarjeta.cs" />
+    <Compile Include="Plataforma\CapaDeNegocio\Productos\EstadoCuenta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Cuenta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Prestamo.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Producto.cs" />
@@ -757,7 +759,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49980</DevelopmentServerPort>
+          <DevelopmentServerPort>50846</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

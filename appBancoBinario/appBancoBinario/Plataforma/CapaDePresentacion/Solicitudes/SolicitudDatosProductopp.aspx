@@ -209,7 +209,7 @@ src="SolicitudDatosProducto_files/u34.png" border="0" alt=""></span>
 
             <input type="reset" value="Limpiar"/>
 </div>
-&nbsp;<div id=u40container style="position:absolute; left:355px; top:640px; width:76px; height:21px; overflow:visible;">
+<div id=u40container style="position:absolute; left:355px; top:640px; width:76px; height:21px; overflow:visible;">
 
     <asp:CompareValidator ID="cvMontoPrestamo" runat="server" ErrorMessage="Monto Préstamo" Type="Double" ControlToValidate="txtMontoPrestamo" Display="None" SetFocusOnError="true"></asp:CompareValidator>
 
