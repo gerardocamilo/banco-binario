@@ -282,6 +282,19 @@ src="SolicitudDatosSolicitante_files/u37.png" border="0" alt=""></span>
 <div id=u69container 
         style="position:absolute; left:274px; top:640px; width:78px; height:23px; overflow:visible;">
 
+    <asp:RequiredFieldValidator ID="rfvNoIdentificacion" runat="server" ErrorMessage="No. Identificación." 
+                ControlToValidate="txtNoIdentificacion" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvNombres" runat="server" ErrorMessage="Nombres." 
+                ControlToValidate="txtNombres" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvApellidos" runat="server" ErrorMessage="Apellidos." 
+                ControlToValidate="txtApellidos" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvTelefono" runat="server" ErrorMessage="Teléfono." 
+                ControlToValidate="txtTelefono" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvDireccion" runat="server" ErrorMessage="Dirección." 
+                ControlToValidate="txtDireccion" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
+    <asp:ValidationSummary ID="vsDatosSolicitante" runat="server" ShowMessageBox="True" 
+                ShowSummary="false" HeaderText="Campos vacios o inválidos:" />
+    
     <asp:Button ID="btnSiguiente" runat="server" Text="Siguiente" Width="73px" 
         onclick="btnSiguiente_Click"/>
 </div>
