@@ -13,6 +13,15 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes {
     public partial class SolicitudDatosProductocc {
         
         /// <summary>
+        /// Head1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+        
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>
@@ -31,15 +40,6 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes {
         protected global::System.Web.UI.WebControls.Button btnCancelar;
         
         /// <summary>
-        /// btnAtras control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAtras;
-        
-        /// <summary>
         /// btnSiguiente control.
         /// </summary>
         /// <remarks>
@@ -49,21 +49,12 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes {
         protected global::System.Web.UI.WebControls.Button btnSiguiente;
         
         /// <summary>
-        /// rdlConGarante control.
+        /// rbTarjeta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rdlConGarante;
-        
-        /// <summary>
-        /// u76 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList u76;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbTarjeta;
     }
 }

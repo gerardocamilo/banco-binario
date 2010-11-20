@@ -24,12 +24,13 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 
                 if (solicitud.NumeroSolicitudAsociado != null) {
 
-                    Solicitud solicitudAsociado = (Solicitud)Session["solicitudAsociada"];
-                    if (solicitudAsociado != null)
+                    Solicitud solicitudAsociada = (Solicitud)Session["solicitudAsociada"];
+                    if (solicitudAsociada != null)
                     {
-                        solicitudAsociado.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
-                        solicitudAsociado.Estado = EstadoTarjeta.ACTIVA.ToString();
-                        plataforma.solicitarProducto(solicitudAsociado);
+                        solicitudAsociada.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
+                        solicitudAsociada.Estado = EstadoTarjeta.ACTIVA.ToString();
+                        solicitudAsociada.NumeroSolicitudAsociado = "";
+                        plataforma.solicitarProducto(solicitudAsociada);
                     }
 
 
