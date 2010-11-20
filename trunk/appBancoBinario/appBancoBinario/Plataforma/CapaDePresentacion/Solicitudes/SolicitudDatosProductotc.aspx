@@ -295,10 +295,9 @@ src="Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files/u55.png" borde
 <asp:DropDownList ID="ddlTipoTarjeta" style="position:absolute; left:275px; top:263px; width:180px; height:22px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" runat="server">
 <asp:ListItem Value="visa" Text="Visa"></asp:ListItem>
 <asp:ListItem Value="mastercard" Text="MasterCard"></asp:ListItem>
-<asp:ListItem></asp:ListItem>
 </asp:DropDownList>
 
-<asp:DropDownList id="ddlLigaraRecibirTarjeta" style="position:absolute; left:274px; top:308px; width:180px; height:22px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" runat="server">
+<asp:DropDownList id="ddlLugaraRecibirTarjeta" style="position:absolute; left:274px; top:308px; width:180px; height:22px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" runat="server">
 <asp:ListItem Value="casa" Text="Casa"></asp:ListItem>
 <asp:ListItem Value="oficina" Text="Oficina"></asp:ListItem>
 </asp:DropDownList>

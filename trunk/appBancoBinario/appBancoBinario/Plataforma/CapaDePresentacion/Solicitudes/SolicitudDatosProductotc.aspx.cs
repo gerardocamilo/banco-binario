@@ -28,13 +28,36 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 
         protected void btnSiguiente_Click(object sender, EventArgs e)
         {
+
             Solicitud solicitud = (Solicitud)Session["solicitud"];
             if (solicitud != null)
             {
-                solicitud.NumeroSolicitud = "testnumber";
+                solicitud.NumeroSolicitud = "solTarjeta03";
                 Tarjeta tarjeta = new Tarjeta();
+
+                if (ddlTipoTarjeta.SelectedValue.Equals("visa"))
+                {
+                    tarjeta.TipoTrarjeta = TipoTarjeta.VISA.ToString();
+                }
+                else if (ddlTipoTarjeta.SelectedValue.Equals("mastercard"))
+                {
+                    tarjeta.TipoTrarjeta = TipoTarjeta.MASTERCARD.ToString();
+                }
+
+                tarjeta.RecibirTarjeta = ddlLugaraRecibirTarjeta.SelectedItem.Text;
+                tarjeta.EnvioTarjeta = ddlEnvioEstadoCuenta.SelectedItem.Text;
                 tarjeta.TipoProducto = TipoProducto.TARJETA_CREDITO.ToString();
                 solicitud.ProductoAsociado = tarjeta;
+                SolicitudCuenta solicitudCuenta = new SolicitudCuenta();
+                solicitudCuenta.NumeroSolicitud = "solCuenta";
+                solicitudCuenta.Cliente = solicitud.Cliente;
+                Cuenta cuenta = new Cuenta();
+                cuenta.TipoProducto = TipoProducto.CUENTA_CREDITO.ToString();
+                solicitudCuenta.ProductoAsociado = cuenta;
+                solicitud.NumeroSolicitudAsociado = solicitudCuenta.NumeroSolicitud;
+                Session["solicitudAsociada"] = solicitudCuenta;
+
+                Session["solicitud"] = solicitud;
                 Response.Redirect("SolicitudConfirmacion.aspx");
             }
 

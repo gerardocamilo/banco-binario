@@ -49,12 +49,12 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes {
         protected global::System.Web.UI.WebControls.RadioButtonList rdbCuenta;
         
         /// <summary>
-        /// u72 control.
+        /// ddlTipoCuenta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList u72;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTipoCuenta;
     }
 }

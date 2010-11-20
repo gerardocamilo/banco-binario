@@ -435,7 +435,7 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 </div>
 <div id=u71 style="position:absolute; left:150px; top:250px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u71_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Cuenta</span></div></div>
-<asp:DropDownList id=u72  style="position:absolute; left:250px; top:308px; width:180px; height:22px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" runat="server">
+<asp:DropDownList id="ddlTipoCuenta"  style="position:absolute; left:250px; top:308px; width:180px; height:22px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" runat="server">
 <asp:ListItem Value="cc" Text="Cuenta Corriente" ></asp:ListItem>
 <asp:ListItem Value="ca" Text="Cuenta de Ahorro" ></asp:ListItem>
 </asp:DropDownList>

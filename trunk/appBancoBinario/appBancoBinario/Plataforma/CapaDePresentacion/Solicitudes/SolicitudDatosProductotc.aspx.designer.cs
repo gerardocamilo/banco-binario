@@ -49,13 +49,13 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes {
         protected global::System.Web.UI.WebControls.DropDownList ddlTipoTarjeta;
         
         /// <summary>
-        /// ddlLigaraRecibirTarjeta control.
+        /// ddlLugaraRecibirTarjeta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLigaraRecibirTarjeta;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLugaraRecibirTarjeta;
         
         /// <summary>
         /// ddlEnvioEstadoCuenta control.
