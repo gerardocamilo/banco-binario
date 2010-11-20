@@ -11,7 +11,7 @@
         To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
     </p>
     <p>
-        Gerardo can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
+        que tollo
             title="MSDN ASP.NET Docs">Gerardo on ASP.NET at MSDN</a>.
     </p>
 </asp:Content>
