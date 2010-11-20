@@ -5,7 +5,7 @@ using System.Web;
 
 namespace appBancoBinario.Plataforma.CapaDeNegocio.Productos
 {
-    enum EstadoTarjeta 
+    enum EstadoTarjeta
     {
         ACTIVA,
         INACTIVA
