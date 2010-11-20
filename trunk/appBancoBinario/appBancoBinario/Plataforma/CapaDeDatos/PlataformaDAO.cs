@@ -123,9 +123,9 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             SqlParameter sParametroPlazoPago = new SqlParameter("@PLAZO_PAGO", SqlDbType.Int);
             sParametroPlazoPago.Value = prestamoAsociado.CantidadCuotas;
             sComando.Parameters.Add(sParametroPlazoPago);
-            //continue here
+            
             SqlParameter sParametroMontoPrestamo = new SqlParameter("@MONTO_PRESTAMO", SqlDbType.Float);
-            sParametroMontoPrestamo.Value = prestamoAsociado;
+            sParametroMontoPrestamo.Value = prestamoAsociado.DesembolsoInicial;
             sComando.Parameters.Add(sParametroMontoPrestamo);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
