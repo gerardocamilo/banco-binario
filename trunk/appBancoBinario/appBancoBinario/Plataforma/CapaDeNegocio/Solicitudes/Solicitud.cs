@@ -13,7 +13,7 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes
         private ClientesDetails _cliente;
         private String _sNumeroSolicitud;
         private String _sNumeroSolicitudAsociado;
-        private String _estado;
+        private String _sEstado;
 
         public Producto ProductoAsociado
         {
@@ -37,6 +37,12 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes
         {
             get { return _sNumeroSolicitudAsociado; }
             set { _sNumeroSolicitudAsociado = value; }
+        }
+
+        public String Estado
+        {
+            get { return _sEstado; }
+            set { _sEstado = value; }
         }
     }
 }
