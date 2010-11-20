@@ -180,7 +180,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroTipoProducto);
 
             SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-            sParametroEstado.Value = tarjetaAsociada.Estado;
+            sParametroEstado.Value = solicitudTarjeta.Estado;
             sComando.Parameters.Add(sParametroEstado);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
