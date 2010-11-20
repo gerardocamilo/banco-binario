@@ -234,21 +234,6 @@ var u81 = document.getElementById('u81');
 gv_vAlignTable['u81'] = 'center';
 var u27 = document.getElementById('u27');
 gv_vAlignTable['u27'] = 'center';
-var u33 = document.getElementById('u33');
-
-u33.style.cursor = 'pointer';
-if (bIE) u33.attachEvent("onclick", Clicku33);
-else u33.addEventListener("click", Clicku33, true);
-function Clicku33(e)
-{
-
-if (true) {
-
-	self.location.href="Plataforma.aspx" + GetQuerystring();
-
-}
-
-}
 
 var u101 = document.getElementById('u101');
 gv_vAlignTable['u101'] = 'top';
@@ -298,21 +283,6 @@ var u62 = document.getElementById('u62');
 
 var u46 = document.getElementById('u46');
 gv_vAlignTable['u46'] = 'top';
-var u117 = document.getElementById('u117');
-
-u117.style.cursor = 'pointer';
-if (bIE) u117.attachEvent("onclick", Clicku117);
-else u117.addEventListener("click", Clicku117, true);
-function Clicku117(e)
-{
-
-if (true) {
-
-	NewWindow("Consultar_-_pop_up.aspx" + GetQuerystring(), "", "directories=0, height=510, location=0, menubar=0, resizable=0, scrollbars=0, status=0, toolbar=0, width=820", true, 820, 510);
-
-}
-
-}
 
 var u85 = document.getElementById('u85');
 gv_vAlignTable['u85'] = 'center';
@@ -432,21 +402,6 @@ var u41 = document.getElementById('u41');
 
 var u111 = document.getElementById('u111');
 gv_vAlignTable['u111'] = 'top';
-var u69 = document.getElementById('u69');
-
-u69.style.cursor = 'pointer';
-if (bIE) u69.attachEvent("onclick", Clicku69);
-else u69.addEventListener("click", Clicku69, true);
-function Clicku69(e)
-{
-
-if (true) {
-
-	self.location.href="Solicitudes/Solicitudes.aspx" + GetQuerystring();
-
-}
-
-}
 
 var u32 = document.getElementById('u32');
 gv_vAlignTable['u32'] = 'top';

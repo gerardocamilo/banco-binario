@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
 using appBancoBinario.Plataforma.CapaDeNegocio;
+using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 
 namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 {
@@ -27,6 +28,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                     if (solicitudAsociado != null)
                     {
                         solicitudAsociado.Estado = EstadoSolicitud.PENDIENTE_APROBACION.ToString();
+                        solicitudAsociado.Estado = EstadoTarjeta.ACTIVA.ToString();
                         plataforma.solicitarProducto(solicitudAsociado);
                     }
 

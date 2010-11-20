@@ -401,7 +401,7 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 <div style="position:absolute; left:324px; top:270px; width:85px; height:27px; text-align: left" >
 <asp:RadioButtonList id="rbTarjeta" RepeatDirection="Horizontal" style=" font-family:'Arial'; color:#000000; font-size:13px;" runat="server">
 <asp:ListItem Enabled="true" Text="Si" Selected="True"></asp:ListItem>
-<asp:ListItem Text="No"></asp:ListItem>
+<asp:ListItem Value Text="No"></asp:ListItem>
 </asp:RadioButtonList>
 </div>
 <div id=u71 
