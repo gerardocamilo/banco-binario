@@ -21,7 +21,6 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             if (solicitud != null)
             {   
                 appBancoBinario.Plataforma.CapaDeNegocio.Plataforma plataforma = new appBancoBinario.Plataforma.CapaDeNegocio.Plataforma();
-
                 if (solicitud.NumeroSolicitudAsociado != null) {
 
                     Solicitud solicitudAsociada = (Solicitud)Session["solicitudAsociada"];
