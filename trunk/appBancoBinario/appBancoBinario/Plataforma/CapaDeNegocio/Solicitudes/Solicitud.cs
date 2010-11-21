@@ -44,5 +44,7 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes
             get { return _sEstado; }
             set { _sEstado = value; }
         }
+
+        public Solicitud SolicitudAsociada { get; set; }
     }
 }

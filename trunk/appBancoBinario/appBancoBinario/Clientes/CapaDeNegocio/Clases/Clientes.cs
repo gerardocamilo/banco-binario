@@ -37,6 +37,8 @@ namespace appBancoBinario.Clientes.CapaDeNegocio.Clases
         public string Estatus = null;
 
 
+
+        public string Prospecto { get; set; }
     }
 
     // En esta parte ponemos : SqlHelper para heredar los metodos de la clase para ejecutar procedimientos.

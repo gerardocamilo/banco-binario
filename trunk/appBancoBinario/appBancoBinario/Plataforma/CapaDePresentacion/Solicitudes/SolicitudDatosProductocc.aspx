@@ -57,31 +57,12 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 </div>
 <div id=u6container style="position:absolute; left:947px; top:86px; width:203px; height:585px;; overflow:visible;">
 
-<div id=u7 style="position:absolute; left:2px; top:284px; width:198px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u7_rtf>&nbsp;</div></div>
 </div>
 &nbsp;<div id=u9 style="position:absolute; left:967px; top:95px; width:181px; height:19px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 </div>
 
 
-<div id=ou12 style="position:absolute; left:960px; top:478px; width:191px; height:154px;; overflow:visible; ">
-
-<span style="position:absolute; left:0px; top:0px; width:190px; height:153px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/u12.png',sizingMethod='scale');
-"><img style="width:190px; height:153px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/u12.png" border="0" alt=""></span>
-
-</div>
-<div id=u12container style="position:absolute; left:960px; top:478px; width:191px; height:154px;; overflow:visible;">
-
-<div id=u13 style="position:absolute; left:2px; top:68px; width:186px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u13_rtf>&nbsp;</div></div>
-</div>
-<IMG id=u12 src="../Resources/transparent.gif" style="position:absolute; left:960px; top:478px; width:190px; height:153px"   >
-
-<div id=u14 style="position:absolute; left:949px; top:467px; width:200px; height:30px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u14_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:12px;"><b>Proyecto Académico Desarrollado por Estudiantes de la:</b></span></div></div></div>
-<div id=ou15 style="position:absolute; left:110px; top:9px; width:1041px; height:68px;; overflow:visible; ">
+&nbsp;<div id=ou15 style="position:absolute; left:110px; top:9px; width:1041px; height:68px;; overflow:visible; ">
 
 <span style="position:absolute; left:-3px; top:-3px; width:1049px; height:76px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/u15.png',sizingMethod='scale');
@@ -545,6 +526,40 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 <div id=u99 style="position:absolute; left:282px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u99_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div><script type="text/javascript" src="../Resources/axurerp_pagescript.js"></script>
 <script type="text/javascript" src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/axurerp_pagespecificscript.js"></script>
+<div id = "leftside"><div id=u30 style="position:absolute; left:959px; top:95px; width:183px; height:124px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">
+<b style="color: #000099; font-family:'Castellar';">Banco Binario</b></div>
+<div style="text-align:justify; font-family:'Arial'; color:#000000; font-size:12px;">
+<p style="width: 163px; margin-left: 10px; color: #333333;">Es un proyecto de caracter académico, desarrollado por estudiantes de la asignatura Programacion Web 2 del Decanato de Infomatica de la Universidad APEC.</p>
+</div>
+
+</div>
+
+<div style="position:absolute; left:954px; top:539px; width:184px; height:127px;">
+    <img style="width:190px; height:153px; margin-top: 0px;" 
+src="../../../Resources/u12.png" border="0" alt=""/></div>
+
+<div style="position:absolute; left:960px; top:227px; width:184px; height:348px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word; bottom: -171px;" >
+<div>
+<div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">
+<b style="color: #000099">Módulos</b>
+</div>
+
+<div style=" font-family:'Arial'; color:#000000; font-size:12px; margin-top:10px">
+<u style="text-align:left"><b style="color: #000099">Configuración y Parametros</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Provee configuraciones y parametros para los demas módulos.</p>
+<u style="text-align:left"><b style="color: #000099">Clientes</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Gestiona los clientes del banco.</p>
+<u style="text-align:left"><b style="color: #000099">Plataforma</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Maneja solicitudes de productos y servicios.</p>
+<u style="text-align:left"><b style="color: #000099">Caja</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Depositos retiros y pagos.</p>
+<u style="text-align:left"><b style="color: #000099">ATM</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Retiros y tranferecia a cuentas.</p>
+
+</div></div>
+
+</div></div>
     </div>
     </form>
 </body>
