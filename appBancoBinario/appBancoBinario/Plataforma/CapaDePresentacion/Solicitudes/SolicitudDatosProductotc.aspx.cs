@@ -52,7 +52,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                 solicitudCuenta.NumeroSolicitud = "solCuenta";
                 solicitudCuenta.Cliente = solicitud.Cliente;
                 Cuenta cuenta = new Cuenta();
-                cuenta.TipoProducto = TipoProducto.CUENTA_CREDITO.ToString();
+                cuenta.TipoProducto = TipoProducto.CUENTA_TARJETA.ToString();
                 solicitudCuenta.ProductoAsociado = cuenta;
                 solicitud.NumeroSolicitudAsociado = solicitudCuenta.NumeroSolicitud;
                 Session["solicitudAsociada"] = solicitudCuenta;

@@ -481,19 +481,29 @@ src="Ver_Solicitud_-_Prestamo_files/u72.png" border="0" alt=""></span>
 <div id=u84 style="position:absolute; left:144px; top:501px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u84_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tipo de Prodcuto</span></div></div>
 <div id=u85 style="position:absolute; left:274px; top:501px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u85_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>Prestamo</b></span></div></div>
-<div id=u86 style="position:absolute; left:144px; top:530px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=u85_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=producto%></b></span></div></div>
+<%if (producto.Equals("Préstamo")) { 
+%><div id=u86 style="position:absolute; left:144px; top:530px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u86_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Monto</span></div></div>
-<div id=u87 style="position:absolute; left:274px; top:530px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u87_rtf><span style=" color:#000000; font-size:13px;"><b>RD$ </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;">100,000.00</b></span></div></div>
+<div id=Div4 style="position:absolute; left:270px; top:530px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div5><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=montoPrestamo%></b></span></div></div>
 <div id=u88 style="position:absolute; left:144px; top:560px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u88_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Plazo de pago</span></div></div>
 <div id=u89 style="position:absolute; left:274px; top:560px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u89_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>12</b></span></div></div>
+<div id=u89_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=numeroPagos%></b></span></div></div>
 <div id=u90 style="position:absolute; left:144px; top:584px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u90_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Destino</span></div></div>
 <div id=u91 style="position:absolute; left:270px; top:584px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u91_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>Comprar carro</b></span></div></div>
+<div id=u91_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=destino%></b></span></div></div>
+
+<%}
+  else if (producto.Equals("Tarjeta de Crédito")) {%>
+  <div id=Div2 style="position:absolute; left:144px; top:530px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div3><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tipo Tarjeta</span></div></div>
+<div id=Div6 style="position:absolute; left:274px; top:530px; width:140px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div7><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=tipoTarjeta%></b></span></div></div>
+  <%}%>
+
 <div id=u92 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u92_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u93 style="position:absolute; left:290px; top:126px; width:110px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >

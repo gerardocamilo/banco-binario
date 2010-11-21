@@ -8,7 +8,7 @@ using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
 using appBancoBinario.Plataforma.CapaDeDatos;
 using System.Data;
-using appBancoBinario.Clientes.CapaDeNegocio.Clases;
+using appBancoBinario.Clientes.CapaDeNegocio;
 
 //Package that contains Debug class.
 using System.Diagnostics;

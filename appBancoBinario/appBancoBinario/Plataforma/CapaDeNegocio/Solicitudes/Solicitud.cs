@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
-using appBancoBinario.Clientes.CapaDeNegocio.Clases;
+using appBancoBinario.Clientes.CapaDeNegocio;
 
 namespace appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes
 {

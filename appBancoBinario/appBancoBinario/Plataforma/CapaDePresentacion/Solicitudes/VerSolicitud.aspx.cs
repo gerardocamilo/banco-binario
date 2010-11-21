@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
-using appBancoBinario.Clientes.CapaDeNegocio.Clases;
+using appBancoBinario.Clientes.CapaDeNegocio;
 using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 
 namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
@@ -17,13 +17,18 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
         public string producto;
         public string estado;
         public Solicitud solicitud;
+        public SolicitudPrestamo solicitudPrestamo = null;
+        public SolicitudCuenta solicitudCuenta = null;
+        public SolicitudTarjeta solicitudTarjeta = null;
+        public string tipoTarjeta;
+        public string destino;
+        public string montoPrestamo;
+        public string numeroPagos;
         protected void Page_Load(object sender, EventArgs e)
         {
             solicitud = (Solicitud)Session["solicitud"];
             noSolicitud = solicitud.NumeroSolicitud;
-            SolicitudPrestamo solicitudPrestamo = null;
-            SolicitudCuenta solicitudCuenta = null;
-            SolicitudTarjeta solicitudTarjeta = null;
+            
 
             cliente = solicitud.Cliente;
             string tipoProducto = solicitud.ProductoAsociado.TipoProducto;
@@ -44,6 +49,9 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             if(solicitud is SolicitudPrestamo){
                 solicitudPrestamo = (SolicitudPrestamo)solicitud;
                 producto = "Préstamo";
+                destino = solicitudPrestamo.Destino;
+                montoPrestamo = solicitudPrestamo.MontoPrestamo.ToString();
+                numeroPagos = solicitudPrestamo.PlazoPago.ToString();
 
             }
             else if(solicitud is SolicitudCuenta){
@@ -64,6 +72,9 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                 if (tipoProducto.Equals(TipoProducto.TARJETA_CREDITO.ToString()))
                 {
                     producto = "Tarjeta de Crédito";
+                    Tarjeta tarjeta = (Tarjeta)solicitud.ProductoAsociado;
+                    tipoTarjeta = tarjeta.TipoTrarjeta.ToString();
+
                 }
                 else if (tipoProducto.Equals(TipoProducto.TARJETA_DEBITO.ToString()))
                 {

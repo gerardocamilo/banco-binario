@@ -8,6 +8,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
+using appBancoBinario.Clientes.CapaDeNegocio;
 
 using System.Diagnostics;
 

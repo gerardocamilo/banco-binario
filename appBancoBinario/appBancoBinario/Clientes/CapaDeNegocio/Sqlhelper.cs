@@ -8,7 +8,7 @@ using System.Diagnostics;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Text;
-namespace appBancoBinario
+namespace appBancoBinario.Clientes.CapaDeNegocio
 {
     public class SqlHelper
     {
@@ -35,8 +35,8 @@ namespace appBancoBinario
 
         protected SqlHelper(string DataBaseName, string DataBaseServer, string DataBaseUser, string DataBasePassword)
         {
-            DBConnectionString = "Data Source=" + DataBaseServer + ";Initial Catalog=" + DataBaseName + ";user id=" + DataBaseUser + ";password=" + DataBasePassword + ";persist security info=True; packet size=4096";
-            //DBConnectionString = "Data Source=CLAUDIO-PC\\SRVWSQLVS;Initial Catalog=bb;Integrated Security=SSPI;";
+            //        DBConnectionString = "Data Source=" & DataBaseServer & ";Initial Catalog=" & DataBaseName & ";user id=" & DataBaseUser & ";password=" & DataBasePassword & ";persist security info=True; packet size=4096"
+            DBConnectionString = "Data Source=CLAUDIO-PC\\SRVWSQLVS;Initial Catalog=bb;Integrated Security=SSPI;";
 
         }
 
@@ -83,7 +83,7 @@ namespace appBancoBinario
             }
             catch (Exception ex)
             {
-                
+                //System.Windows.Forms.MessageBox.Show("Error: " & ex.Message & vbCrLf & ex.StackTrace)
                 return false;
             }
         }
@@ -105,7 +105,8 @@ namespace appBancoBinario
             {
                 // System.Windows.Forms.MessageBox.Show("Error: " & ex.Message & vbCrLf & ex.StackTrace)
                 // System.Windows.Forms.MessageBox.Show("Error:" & ex.Message)
-                throw ex;                
+                throw ex;
+                return false;
             }
         }
 

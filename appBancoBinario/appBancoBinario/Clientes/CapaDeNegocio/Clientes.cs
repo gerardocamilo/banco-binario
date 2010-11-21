@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 using System.ComponentModel;
 
 
-namespace appBancoBinario.Clientes.CapaDeNegocio.Clases
+namespace appBancoBinario.Clientes.CapaDeNegocio
 {
 
     /**En esta clase tenemos todos los campos de la tabla de clientes para pasarlos como parametros a cada procedimientos.
