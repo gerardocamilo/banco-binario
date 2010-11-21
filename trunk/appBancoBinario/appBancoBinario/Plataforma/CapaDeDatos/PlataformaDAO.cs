@@ -21,7 +21,6 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
         public PlataformaDAO()
             : base("BANCO_BINARIO", "GERARDOCAMILO", "plataforma", "plataforma")
         {
-            //protected SqlHelper(string DataBaseName, string DataBaseServer, string DataBaseUser, string DataBasePassword)
         }
 
         public bool pCrearCuenta(Cuenta cuenta)
@@ -301,7 +300,6 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
                 DataRow fila = tabla.Rows[0];
                 tipoProducto = fila["TIPO_PRODUCTO"].ToString();
 
-                //Continuar creando condiciones para los demas posibles valores de TIPO_PRODUCTO
                 if( (tipoProducto.Equals(CUENTA_CORRIENTE)) || (tipoProducto.Equals(CUENTA_AHORRO)) ){
                     Cuenta cuenta = new Cuenta();
                     cuenta.NumeroCuenta = codigoProducto;
@@ -343,27 +341,23 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             return null;
         }
 
+        public bool actualizarPinTarjeta(String numeroTarjeta, String PIN) {
+            bool resultado = false;
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_PIN_TARJETA");
+            sComando.CommandType = CommandType.StoredProcedure;
 
-        //DEPRECATED
-        //private bool pCrearSolicitud(String numeroSolicitud, Cuenta cuenta) {
+            SqlParameter sParametroNumeroTarjeta = new SqlParameter("@NUMERO_TARJETA",SqlDbType.VarChar, 50);
+            sParametroNumeroTarjeta.Value = numeroTarjeta;
+            sComando.Parameters.Add(sParametroNumeroTarjeta);
 
-        //    SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_CREAR_SOLICITUD_CUENTA");
-        //    sComando.CommandType = CommandType.StoredProcedure;
+            SqlParameter sParametroPinTarjeta = new SqlParameter("@PIN", SqlDbType.VarChar, 50);
+            sParametroPinTarjeta.Value = PIN;
+            sComando.Parameters.Add(sParametroPinTarjeta);
 
-        //    SqlParameter sParametroNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
-        //    sParametroNumeroSolicitud.Value = numeroSolicitud;
-        //    sComando.Parameters.Add(sParametroNumeroSolicitud);
+            resultado = pEjecutarNoConsulta(sComando);
 
-        //    SqlParameter sParametroTipoProducto = new SqlParameter("@TIPO_PRODUCTO", SqlDbType.VarChar, 50);
-        //    sParametroTipoProducto.Value = cuenta.TipoProducto;
-        //    sComando.Parameters.Add(sParametroTipoProducto);
-
-        //    SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-        //    sParametroEstado.Value = cuenta.Estado;
-        //    sComando.Parameters.Add(sParametroEstado);
-
-        //    return pEjecutarComando(sComando);
-        //}
+            return resultado;
+        }
 
         protected bool pEjecutarNoConsulta(SqlCommand comando)
         {

@@ -19,24 +19,54 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
     {
         PlataformaDAO _plataformaDAO;
 
-        public Plataforma() {
+        public Plataforma()
+        {
             this._plataformaDAO = new PlataformaDAO();
         }
-        
-        public void solicitarProducto(Solicitud solicitud) {
+
+        public void solicitarProducto(Solicitud solicitud)
+        {
             bool res = this._plataformaDAO.pCrearSolicitud(solicitud);
 
             if (res)
             {
                 Debug.WriteLine("Solicitud Creada!");
             }
-            else { Debug.WriteLine("Solicitud Fallida."); }
+            else
+            {
+                Debug.WriteLine("Solicitud Fallida.");
+            }
         }
 
-        public List<Producto> pObtenerProductosPorCliente(ClientesDetails cliente) {
-            List<Producto> productos = this._plataformaDAO.pObtenerProductosPorIdentificacionCliente(cliente.identificacion);
+        public List<Producto> pObtenerProductosPorCliente(ClientesDetails cliente)
+        {
+            return pObtenerProductosPorCliente(cliente.identificacion);
+        }
+
+        public List<Producto> pObtenerProductosPorCliente(String identificacionCliente)
+        {
+            List<Producto> productos = this._plataformaDAO.pObtenerProductosPorIdentificacionCliente(identificacionCliente);
             return productos;
         }
+
+        public Producto pObtenerProductoPorCodigo(String codigo)
+        {
+            Producto prod = this._plataformaDAO.pObtenerProductoPorCodigo(codigo);
+            return prod;
+        }
+
+        public bool actualizarPinTarjeta(Tarjeta tarjeta)
+        {
+
+            return actualizarPinTarjeta(tarjeta.NumeroTarjeta, tarjeta.PIN);
+        }
+
+        public bool actualizarPinTarjeta(String numeroTajeta, String PIN)
+        {
+            bool resultado = this._plataformaDAO.actualizarPinTarjeta(numeroTajeta, PIN);
+            return resultado;
+        }
+
 
     }
 }
