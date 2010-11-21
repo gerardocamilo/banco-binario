@@ -16,9 +16,10 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
         public string noSolicitud;
         public string producto;
         public string estado;
+        public Solicitud solicitud;
         protected void Page_Load(object sender, EventArgs e)
         {
-            Solicitud solicitud = (Solicitud)Session["solicitud"];
+            solicitud = (Solicitud)Session["solicitud"];
             noSolicitud = solicitud.NumeroSolicitud;
             SolicitudPrestamo solicitudPrestamo = null;
             SolicitudCuenta solicitudCuenta = null;
@@ -74,7 +75,19 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 
         protected void btnAprobar_Click(object sender, EventArgs e)
         {
+            ClientesDetails cliente = solicitud.Cliente;
+            if(cliente.Prospecto == "True"){
+                solicitud.Cliente.Prospecto = "False";
+            }
 
+            if (solicitud.SolicitudAsociada != null) {
+                solicitud.SolicitudAsociada.Estado = EstadoSolicitud.APROBADA.ToString();
+            }
+            
+            solicitud.Estado = EstadoSolicitud.APROBADA.ToString();
+
+            Session["solicitud"] = solicitud;
+                
         }        
     }
 }

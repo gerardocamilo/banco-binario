@@ -75,6 +75,7 @@
     <Content Include="Resources\reload.html" />
     <Content Include="Resources\resize.gif" />
     <Content Include="Resources\transparent.gif" />
+    <Content Include="Resources\u12.png" />
     <Content Include="Resources\window_01.gif" />
     <Content Include="Resources\window_02.gif" />
     <Content Include="Resources\window_04.gif" />

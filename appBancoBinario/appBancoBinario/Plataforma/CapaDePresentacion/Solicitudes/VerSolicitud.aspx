@@ -58,16 +58,7 @@ src="Ver_Solicitud_-_Prestamo_files/u6.png" border="0" alt=""></span>
 <div id=u7 style="position:absolute; left:2px; top:284px; width:198px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u7_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u6 src="../Resources/transparent.gif" style="position:absolute; left:947px; top:86px; width:202px; height:584px"   >
-
-
-
-<div id=u9 style="position:absolute; left:967px; top:95px; width:181px; height:19px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-</div>
-<IMG id=u12 src="../Resources/transparent.gif" style="position:absolute; left:960px; top:478px; width:190px; height:153px"   >
-
-<div id=u14 style="position:absolute; left:949px; top:467px; width:200px; height:30px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u14_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:12px;"><b>Proyecto Académico Desarrollado por Estudiantes de la:</b></span></div></div></div>
+<IMG id=u6 src="../Resources/transparent.gif" style="position:absolute; left:947px; top:86px; width:202px; height:584px"   >&nbsp;
 <div id=ou15 style="position:absolute; left:110px; top:9px; width:1041px; height:68px;; overflow:visible; ">
 
 <span style="position:absolute; left:-3px; top:-3px; width:1049px; height:76px; ;
@@ -84,7 +75,7 @@ src="Ver_Solicitud_-_Prestamo_files/u15.png" border="0" alt=""></span>
 <IMG id=u15 src="../Resources/transparent.gif" style="position:absolute; left:110px; top:9px; width:1040px; height:67px"   >
 
 <div id=u17 style="position:absolute; left:910px; top:53px; width:230px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u17_rtf><span style=" color:#000000; font-size:13px;">Domingo, 16 de Octubre 2010 5:18 PM</span></div></div>
+<div id=u17_rtf><span style=" color:#000000; font-size:13px;">Domingo, 16 de Octubre 2010 5:18 PM></div></div>
 <div id=u18 style="position:absolute; left:197px; top:19px; width:283px; height:35px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u18_rtf><span style=" font-family:'Castellar'; color:#00339A; font-size:29px;"><b>Banco Binario</b></span></div></div>
 <div id=ou19 style="position:absolute; left:119px; top:7px; width:82px; height:71px;; overflow:visible; ">
@@ -524,5 +515,39 @@ src="Ver_Solicitud_-_Prestamo_files/u72.png" border="0" alt=""></span>
 <script type="text/javascript" src="Ver_Solicitud_-_Prestamo_files/axurerp_pagespecificscript.js"></script>
     </div>
     </form>
+    <div id = "leftside"><div id=Div1 style="position:absolute; left:959px; top:95px; width:183px; height:124px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">
+<b style="color: #000099; font-family:'Castellar';">Banco Binario</b></div>
+<div style="text-align:justify; font-family:'Arial'; color:#000000; font-size:12px;">
+<p style="width: 163px; margin-left: 10px; color: #333333;">Es un proyecto de caracter académico, desarrollado por estudiantes de la asignatura Programacion Web 2 del Decanato de Infomatica de la Universidad APEC.</p>
+</div>
+
+</div>
+
+<div style="position:absolute; left:954px; top:539px; width:184px; height:127px;">
+    <img style="width:190px; height:153px; margin-top: 0px;" 
+src="../../../Resources/u12.png" border="0" alt=""/></div>
+
+<div style="position:absolute; left:960px; top:227px; width:184px; height:348px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word; bottom: -171px;" >
+<div>
+<div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">
+<b style="color: #000099">Módulos</b>
+</div>
+
+<div style=" font-family:'Arial'; color:#000000; font-size:12px; margin-top:10px">
+<u style="text-align:left"><b style="color: #000099">Configuración y Parametros</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Provee configuraciones y parametros para los demas módulos.</p>
+<u style="text-align:left"><b style="color: #000099">Clientes</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Gestiona los clientes del banco.</p>
+<u style="text-align:left"><b style="color: #000099">Plataforma</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Maneja solicitudes de productos y servicios.</p>
+<u style="text-align:left"><b style="color: #000099">Caja</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Depositos retiros y pagos.</p>
+<u style="text-align:left"><b style="color: #000099">ATM</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Retiros y tranferecia a cuentas.</p>
+
+</div></div>
+
+</div></div>
 </body>
 </html>

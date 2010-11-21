@@ -61,8 +61,6 @@ src="Inicio_files/u7.png" border="0" alt=""></span>
 </div>
 <div id=u7container style="position:absolute; left:947px; top:86px; width:203px; height:585px; overflow:visible;">
 
-<div id=u8 style="position:absolute; left:2px; top:284px; width:198px; height:16px;text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u8_rtf>&nbsp;</div></div>
 </div>
 <IMG id=u7 src="Resources/transparent.gif" style="position:absolute; left:947px; top:86px; width:202px; height:584px"   >
 
@@ -687,25 +685,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Inicio_files/u102
 "><img style="width:1043px; height:8px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="Inicio_files/u102.png" border="0" alt=""></span>
 
-<IMG id=u102 src="Resources/transparent.gif" style="position:absolute; left:110px; top:79px; width:1040px; height:5px">
-
-<div id=ou103 style="position:absolute; left:960px; top:478px; width:191px; height:154px; overflow:visible; ">
-
-<span style="position:absolute; left:0px; top:0px; width:190px; height:153px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Inicio_files/u103.png',sizingMethod='scale');
-"><img style="width:190px; height:153px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Inicio_files/u103.png" border="0" alt=""></span>
-
-</div>
-<div id=u103container style="position:absolute; left:960px; top:478px; width:191px; height:154px; overflow:visible;">
-
-<div id=u104 style="position:absolute; left:2px; top:68px; width:186px; height:16px;text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u104_rtf>&nbsp;</div></div>
-</div>
-<IMG id=u103 src="Resources/transparent.gif" style="position:absolute; left:960px; top:478px; width:190px; height:153px"   >
-
-<div id=u105 style="position:absolute; left:949px; top:467px; width:200px; height:30px;text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u105_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:12px;"><b>Proyecto Académico Desarrollado por Estudiantes de la:</b></span></div></div></div>
+<IMG id=u102 src="Resources/transparent.gif" style="position:absolute; left:110px; top:79px; width:1040px; height:5px">&nbsp;
 <div id=u106 style="position:absolute; left:242px; top:211px; width:150px; height:16px;text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u106_rtf><span style=" color:#0000FF; font-size:13px;"><u>Crear Tasa de Interés</u></span></div></div>
 <div id=u107 style="position:absolute; left:242px; top:241px; width:210px; height:16px;text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
@@ -734,5 +714,39 @@ src="Inicio_files/u34.png" border="0" alt=""></span>
 <script type="text/javascript" src="Inicio_files/axurerp_pagespecificscript.js"></script>
     </div>
     </form>
+    <div id = "leftside"><div id=Div1 style="position:absolute; left:959px; top:95px; width:183px; height:124px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">
+<b style="color: #000099; font-family:'Castellar';">Banco Binario</b></div>
+<div style="text-align:justify; font-family:'Arial'; color:#000000; font-size:12px;">
+<p style="width: 163px; margin-left: 10px; color: #333333;">Es un proyecto de caracter académico, desarrollado por estudiantes de la asignatura Programacion Web 2 del Decanato de Infomatica de la Universidad APEC.</p>
+</div>
+
+</div>
+
+<div style="position:absolute; left:954px; top:539px; width:184px; height:127px;">
+    <img style="width:190px; height:153px; margin-top: 0px;" 
+src="../../../Resources/u12.png" border="0" alt=""/></div>
+
+<div style="position:absolute; left:960px; top:227px; width:184px; height:348px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word; bottom: -171px;" >
+<div>
+<div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">
+<b style="color: #000099">Módulos</b>
+</div>
+
+<div style=" font-family:'Arial'; color:#000000; font-size:12px; margin-top:10px">
+<u style="text-align:left"><b style="color: #000099">Configuración y Parametros</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Provee configuraciones y parametros para los demas módulos.</p>
+<u style="text-align:left"><b style="color: #000099">Clientes</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Gestiona los clientes del banco.</p>
+<u style="text-align:left"><b style="color: #000099">Plataforma</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Maneja solicitudes de productos y servicios.</p>
+<u style="text-align:left"><b style="color: #000099">Caja</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Depositos retiros y pagos.</p>
+<u style="text-align:left"><b style="color: #000099">ATM</b></u>
+<p style="text-align:justify; width: 150px; margin-left: 10px; margin-top: 5px; color: #333333;">Retiros y tranferecia a cuentas.</p>
+
+</div></div>
+
+</div></div>
 </body>
 </html>
