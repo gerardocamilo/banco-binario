@@ -64,5 +64,9 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio.Productos
             set { _iCantidadCuotas = value; }
         }
 
+
+        public object FechaPago { get; set; }
+
+        public object FechaDesembolsoInicial { get; set; }
     }       
 }
