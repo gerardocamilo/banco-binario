@@ -26,7 +26,7 @@ src="SolicitudDatosProducto_files/u0.png" border="0" alt=""></span>
 <div id=u0container style="position:absolute; left:110px; top:180px; width:835px; height:491px;; overflow:visible;">
 
 <div id=u1 style="position:absolute; left:2px; top:237px; width:830px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u1_rtf>&nbsp;</div></div>
+<div id=u1_rtf>&nbsp;</div></div> 
 </div>
 <IMG id=u0 src="../Resources/transparent.gif" style="position:absolute; left:110px; top:180px; width:834px; height:490px"   >
 

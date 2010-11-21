@@ -382,28 +382,29 @@ src="Ver_Producto_-_Préstamo_files/u60.png" border="0" alt=""></span>
 <div id=u62 style="position:absolute; left:147px; top:260px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u62_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tipo de Prodcuto</span></div></div>
 <div id=u63 style="position:absolute; left:309px; top:260px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u63_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>Préstamo</b></span></div></div>
-<div id=u64 style="position:absolute; left:147px; top:320px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Estatus</span></div></div>
+<div id=u63_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=producto.TipoProducto%></b></span></div></div>
+<%if (producto.TipoProducto.Equals("Préstamo")) {
+   %>
+   <div id=u64 style="position:absolute; left:147px; top:320px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Estado</span></div></div>
 <div id=u65 style="position:absolute; left:309px; top:320px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u65_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>Vigente</b></span></div></div>
+<div id=u65_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.Estado%></b></span></div></div>
 <div id=u66 style="position:absolute; left:147px; top:350px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u66_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Balance Préstamo</span></div></div>
 <div id=u67 style="position:absolute; left:309px; top:350px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u67_rtf><span style=" color:#000000; font-size:13px;"><b>RD$ </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;">100,000.00</b></span></div></div>
-<div id=u72 
-            style="position:absolute; left:151px; top:380px; width:140px; height:16px; ; ; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=u67_rtf><span style=" color:#000000; font-size:13px;"><b>RD$ </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><%=prestamo.BalancePrestamo%></b></span></div></div>
+<div id=u72 style="position:absolute; left:151px; top:380px; width:140px; height:16px; ; ; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u72_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tasa de Interés</span></div></div>
 <div id=u73 style="position:absolute; left:310px; top:380px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u73_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>23%</b></span></div></div>
+<div id=u73_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.TasaInteres%></b></span></div></div>
 <div id=u74 style="position:absolute; left:147px; top:470px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u74_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Fecha próximo pago</span></div></div>
 <div id=u75 style="position:absolute; left:310px; top:470px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u75_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>25/03/2010</b></span></div></div>
+<div id=u75_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.FechaPago%></b></span></div></div>
 <div id=u76 style="position:absolute; left:147px; top:440px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u76_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Fecha de desembolso</span></div></div>
 <div id=u77 style="position:absolute; left:310px; top:440px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u77_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>25/03/2010</b></span></div></div>
+<div id=u77_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.FechaDesembolsoInicial%></b></span></div></div>
 <div id=u78 style="position:absolute; left:147px; top:530px; width:140px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u78_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Número de pagos restantes</span></div></div>
 <div id=u79 style="position:absolute; left:311px; top:530px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
@@ -411,15 +412,19 @@ src="Ver_Producto_-_Préstamo_files/u60.png" border="0" alt=""></span>
 <div id=u80 style="position:absolute; left:147px; top:500px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u80_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Monto Cuota</span></div></div>
 <div id=u81 style="position:absolute; left:310px; top:500px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u81_rtf><span style=" color:#000000; font-size:13px;"><b>RD$ 2,000.00</b></span></div></div>
+<div id=u81_rtf><span style=" color:#000000; font-size:13px;"><b><%=prestamo.MontoCuota %></b></span></div></div>
 <div id=u82 style="position:absolute; left:147px; top:410px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u82_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Desembolso Inicial</span></div></div>
 <div id=u83 style="position:absolute; left:311px; top:410px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u83_rtf><span style=" color:#000000; font-size:13px;"><b>RD$ 150,000.00</b></span></div></div>
+<div id=u83_rtf><span style=" color:#000000; font-size:13px;"><b><%=prestamo.DesembolsoInicial%></b></span></div></div>
 <div id=u84 style="position:absolute; left:147px; top:290px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u84_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Número de préstamo</span></div></div>
 <div id=u85 style="position:absolute; left:310px; top:290px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u85_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=Session["noProducto"]%></b></span></div></div>
+
+   <%   
+  } %>
+
 <div id=u86 style="position:absolute; left:116px; top:126px; width:74px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u86_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u87 style="position:absolute; left:290px; top:126px; width:110px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
