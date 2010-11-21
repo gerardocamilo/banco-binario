@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
-using appBancoBinario.Clientes.CapaDeNegocio.Clases;
+using appBancoBinario.Clientes.CapaDeNegocio;
 
 namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 {
@@ -78,6 +78,13 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                 }
             }            
             Response.Redirect("SolicitudDatosLaborales.aspx");
+        }
+
+        protected void txtNoIdentificacion_TextChanged(object sender, EventArgs e)
+        {
+            //string noIdentificacion = txtNoIdentificacion.Text;
+            //Clientes.CapaDeNegocio.Clases.Clientes clientes = new Clientes.CapaDeNegocio.Clases.Clientes();
+            //ClientesDetails cliente = clientes.BuscarClientePorIdentificacion(noIdentificacion);
         }
 
         

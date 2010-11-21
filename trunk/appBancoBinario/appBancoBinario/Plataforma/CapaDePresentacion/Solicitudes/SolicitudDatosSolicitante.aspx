@@ -193,7 +193,8 @@ src="SolicitudDatosSolicitante_files/u37.png" border="0" alt=""></span>
 <div id=u44_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Apellidos</span></div></div>
 <asp:TextBox id="txtNoIdentificacion"   value=""  
             style="position:absolute; left:261px; top:252px; width:93px; height:22px; text-align: left; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   
-            runat="server" Height="20px" MaxLength="11"></asp:TextBox> </div>
+            runat="server" Height="20px" MaxLength="11" 
+            ontextchanged="txtNoIdentificacion_TextChanged"></asp:TextBox> </div>
 
 
 <div id=u50 style="position:absolute; left:137px; top:254px; width:110px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >

@@ -599,6 +599,14 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConfParam\CapaDeNegocio\codigoTransaccion.cs" />
+    <Compile Include="ConfParam\CapaDeNegocio\configuracionParametro.cs" />
+    <Compile Include="ConfParam\CapaDeNegocio\Sqlhelper.cs" />
+    <Compile Include="ConfParam\CapaDeNegocio\tasaInteres.cs" />
+    <Compile Include="ConfParam\CapaDeNegocio\tipoProducto.cs" />
+    <Compile Include="ConfParam\CapaDeNegocio\TiposSolicitudes.cs" />
+    <Compile Include="ConfParam\CapaDeNegocio\TiposTarjetas.cs" />
+    <Compile Include="ConfParam\CapaDeNegocio\tipoTasa.cs" />
     <Compile Include="Plataforma\CapaDeDatos\PlataformaDAO.cs" />
     <Compile Include="Plataforma\CapaDeDatos\SqlHelper.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Plataforma.cs" />
@@ -614,8 +622,8 @@
     <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudPrestamo.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudTarjeta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Tarjeta.cs" />
-    <Compile Include="Clientes\CapaDeNegocio\Clases\Clientes.cs" />
-    <Compile Include="Clientes\CapaDeNegocio\Clases\Sqlhelper.cs" />
+    <Compile Include="Clientes\CapaDeNegocio\Clientes.cs" />
+    <Compile Include="Clientes\CapaDeNegocio\Sqlhelper.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -739,7 +747,6 @@
     <Folder Include="Caja\CapaDeNegocio\" />
     <Folder Include="Caja\CapaDePresentacion\" />
     <Folder Include="Clientes\CapaDePresentacion\" />
-    <Folder Include="ConfParam\CapaDeNegocio\" />
     <Folder Include="ConfParam\CapaDePresentacion\" />
     <Folder Include="test\" />
   </ItemGroup>

@@ -403,7 +403,9 @@ src="Solicitud_de_Tarjeta_de_Débito_-_Datos_de_la_Tarjeta_-_Cuenta_nueva_files/
 <div id=u66_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tipo</span></div></div>
 <div style="position:absolute; left:250px; top:250px; width:141px; height:20px; text-align: left" >
 
-<asp:RadioButtonList id="rdbCuenta" RepeatDirection="Horizontal" style=" font-family:'Arial'; color:#000000; font-size:13px;" runat="server">
+<asp:RadioButtonList id="rdbCuenta" RepeatDirection="Horizontal" 
+        style=" font-family:'Arial'; color:#000000; font-size:13px;" runat="server" 
+        Height="24px" Width="149px">
 <asp:ListItem Selected="True" Text="Nueva" Value="nueva"></asp:ListItem>
 <asp:ListItem Text="Existente" Value="existente"></asp:ListItem>
 </asp:RadioButtonList>
