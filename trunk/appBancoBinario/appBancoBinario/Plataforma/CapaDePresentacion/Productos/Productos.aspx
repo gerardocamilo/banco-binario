@@ -369,6 +369,30 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Productos_files/u
 "><img style="width:789px; height:341px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="Productos_files/u59.png" border="0" alt=""></span>
 
+<div style="padding-top:20px">
+    <asp:GridView ID="gvProductos" runat="server" AutoGenerateColumns="False" 
+        CellPadding="4" ForeColor="#333333" GridLines="None" 
+        AllowPaging = "True" Width="777px" 
+        onselectedindexchanged="gvProductos_SelectedIndexChanged"> 
+        <AlternatingRowStyle BackColor="White" />
+        <Columns>
+            <asp:BoundField DataField="CODIGO_PRODUCTO" HeaderText="Número" />
+            <asp:BoundField HeaderText="Tipo de Producto" DataField="TIPO_PRODUCTO" />
+            <asp:BoundField HeaderText="Fecha Creacion" DataField="FECHA_CREACION" />
+        </Columns>
+        <EditRowStyle BackColor="#2461BF" />
+        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <PagerSettings FirstPageText="&lt;&lt;" LastPageText="&gt;&gt;" 
+            NextPageText="&gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
+        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#EFF3FB" />
+        <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+        <SortedAscendingCellStyle BackColor="#F5F7FB" />
+        <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+        <SortedDescendingCellStyle BackColor="#E9EBEF" />
+        <SortedDescendingHeaderStyle BackColor="#4870BE" />
+    </asp:GridView></div>
 </div>
 <div id=u59container style="position:absolute; left:140px; top:318px; width:781px; height:333px;; overflow:visible;">
 
