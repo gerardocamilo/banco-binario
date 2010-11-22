@@ -30,11 +30,11 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
 
             if (res)
             {
-                Debug.WriteLine("Solicitud Creada!");
+                Debug.Write("Solicitud Creada! "); Debug.Write(solicitud.ProductoAsociado.TipoProducto);
             }
             else
             {
-                Debug.WriteLine("Solicitud Fallida.");
+                Debug.WriteLine("Solicitud Fallida."); Debug.Write(solicitud.ProductoAsociado.TipoProducto);
             }
         }
 

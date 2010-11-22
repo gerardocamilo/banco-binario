@@ -9,7 +9,6 @@ using System.Data.SqlClient;
 using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
 using appBancoBinario.Clientes.CapaDeNegocio;
-
 using System.Diagnostics;
 
 namespace appBancoBinario.Plataforma.CapaDeDatos
@@ -116,9 +115,8 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroTipoProducto);
 
             SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-            sParametroEstado.Value = prestamoAsociado.Estado;
+            sParametroEstado.Value = solicitudPrestamo.Estado;
             sComando.Parameters.Add(sParametroEstado);
-
 
             SqlParameter sParametroPlazoPago = new SqlParameter("@PLAZO_PAGO", SqlDbType.Int);
             sParametroPlazoPago.Value = prestamoAsociado.CantidadCuotas;
@@ -127,6 +125,27 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             SqlParameter sParametroMontoPrestamo = new SqlParameter("@MONTO_PRESTAMO", SqlDbType.Float);
             sParametroMontoPrestamo.Value = prestamoAsociado.DesembolsoInicial;
             sComando.Parameters.Add(sParametroMontoPrestamo);
+
+
+            SqlParameter sParametroMontoCuota = new SqlParameter("@MONTO_CUOTA", SqlDbType.Float);
+            sParametroMontoCuota.Value = prestamoAsociado.MontoCuota;
+            sComando.Parameters.Add(sParametroMontoCuota);
+
+            SqlParameter sParametroTasaInteres = new SqlParameter("@TASA_INTERES", SqlDbType.Float);
+            sParametroTasaInteres.Value = solicitudPrestamo.Tasa;
+            sComando.Parameters.Add(sParametroTasaInteres);
+
+            SqlParameter sParametroDestino = new SqlParameter("@DESTINO", SqlDbType.VarChar);
+            sParametroDestino.Value = solicitudPrestamo.Destino;
+            sComando.Parameters.Add(sParametroDestino);
+
+            SqlParameter sParametroConGarante = new SqlParameter("@CON_GARANTE", SqlDbType.Bit);
+            sParametroConGarante.Value = solicitudPrestamo.ConGarante;
+            sComando.Parameters.Add(sParametroConGarante);
+
+            SqlParameter sParametroIdentificacionGarante = new SqlParameter("@IDENTIFICACION_GARANTE", SqlDbType.VarChar);
+            sParametroIdentificacionGarante.Value = solicitudPrestamo.IdentificacionGarante;
+            sComando.Parameters.Add(sParametroIdentificacionGarante);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
             sNumeroSolicitudAsociado.Value = solicitudPrestamo.NumeroSolicitudAsociado;

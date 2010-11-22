@@ -9,7 +9,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace Plataforma
+namespace appBancoBinario.Plataforma.CapaDeDatos
 {
 
     public class SqlHelper
