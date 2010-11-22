@@ -50,10 +50,8 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                     Response.Write("alert(\"Valor no valido\")"); 
                     txtTasa.Focus();
                 }
-                             
-                
-
-                solicitud.Destino = txtDestino.Text;
+                string destino = txtDestino.Text;
+                solicitud.Destino = (destino == null) ? "" : destino;
                 Prestamo prestamo = new Prestamo();
                 prestamo.TipoProducto = TipoProducto.PRESTAMO.ToString();
                 solicitud.ProductoAsociado = prestamo;

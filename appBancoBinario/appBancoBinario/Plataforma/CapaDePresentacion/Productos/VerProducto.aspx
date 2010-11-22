@@ -423,7 +423,45 @@ src="Ver_Producto_-_Préstamo_files/u60.png" border="0" alt=""></span>
 <div id=u85_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=Session["noProducto"]%></b></span></div></div>
 
    <%   
-  } %>
+   } if (producto.TipoProducto.Equals("Tarjeta de Crédito")) { %>
+   <div id=Div2 style="position:absolute; left:147px; top:320px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div3><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Estado</span></div></div>
+<div id=Div4 style="position:absolute; left:309px; top:320px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div5><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.Estado%></b></span></div></div>
+<div id=Div6 style="position:absolute; left:147px; top:350px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div7><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Balance Préstamo</span></div></div>
+<div id=Div8 style="position:absolute; left:309px; top:350px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div9><span style=" color:#000000; font-size:13px;"><b>RD$ </b></span><b><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><%=prestamo.BalancePrestamo%></b></span></div></div>
+<div id=Div10 style="position:absolute; left:151px; top:380px; width:140px; height:16px; ; ; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div11><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tasa de Interés</span></div></div>
+<div id=Div12 style="position:absolute; left:310px; top:380px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div13><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.TasaInteres%></b></span></div></div>
+<div id=Div14 style="position:absolute; left:147px; top:470px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div15><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Fecha próximo pago</span></div></div>
+<div id=Div16 style="position:absolute; left:310px; top:470px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div17><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.FechaPago%></b></span></div></div>
+<div id=Div18 style="position:absolute; left:147px; top:440px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div19><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Fecha de desembolso</span></div></div>
+<div id=Div20 style="position:absolute; left:310px; top:440px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div21><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=prestamo.FechaDesembolsoInicial%></b></span></div></div>
+<div id=Div22 style="position:absolute; left:147px; top:530px; width:140px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div23><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Número de pagos restantes</span></div></div>
+<div id=Div24 style="position:absolute; left:311px; top:530px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div25><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b>23</b></span></div></div>
+<div id=Div26 style="position:absolute; left:147px; top:500px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div27><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Monto Cuota</span></div></div>
+<div id=Div28 style="position:absolute; left:310px; top:500px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div29><span style=" color:#000000; font-size:13px;"><b><%=prestamo.MontoCuota %></b></span></div></div>
+<div id=Div30 style="position:absolute; left:147px; top:410px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div31><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Desembolso Inicial</span></div></div>
+<div id=Div32 style="position:absolute; left:311px; top:410px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div33><span style=" color:#000000; font-size:13px;"><b><%=prestamo.DesembolsoInicial%></b></span></div></div>
+<div id=Div34 style="position:absolute; left:147px; top:290px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div35><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Número de Tarjeta</span></div></div>
+<div id=Div36 style="position:absolute; left:310px; top:290px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
+<div id=Div37><span style=" font-family:'Arial'; color:#000000; font-size:13px;"><b><%=Session["noProducto"]%></b></span></div></div>
+
+   <%} %>
 
 <div id=u86 style="position:absolute; left:116px; top:126px; width:74px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u86_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>

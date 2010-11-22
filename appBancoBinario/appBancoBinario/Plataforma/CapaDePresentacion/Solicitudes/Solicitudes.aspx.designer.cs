@@ -7,8 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
-{
+namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes {
     
     
     public partial class Solicitudes {
@@ -41,13 +40,13 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
         protected global::System.Web.UI.WebControls.DropDownList ddlTipoSolicitud;
         
         /// <summary>
-        /// GridView1 control.
+        /// gvSolicitudes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView gvSolicitudes;
         
         /// <summary>
         /// btnBuscar control.

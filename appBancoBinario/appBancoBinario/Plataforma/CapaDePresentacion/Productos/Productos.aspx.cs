@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using appBancoBinario.Plataforma.CapaDeDatos;
 
 namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
 {
@@ -18,6 +19,11 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
         {
             
             Session["noProducto"] = txtNoProducto.Text;
+
+            PlataformaDAO plataforma = new PlataformaDAO();
+
+            plataforma.pObtenerProductoPorCodigo(txtNoProducto.Text);
+
             Response.Redirect("VerProducto.aspx");
         }
     }

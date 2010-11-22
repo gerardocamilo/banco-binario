@@ -390,7 +390,8 @@ src="Productos_files/u61.png" border="0" alt=""></span>
 <div id=u62 style="position:absolute; left:2px; top:2px; width:66px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u62_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Productos</span></div></div></div>
 </div>
-<IMG id=u61 src="../Resources/transparent.gif" style="position:absolute; left:160px; top:310px; width:70px; height:20px"   >&nbsp;
+<IMG id=u61 src="../Resources/transparent.gif" 
+            style="position:absolute; left:160px; top:311px; width:70px; height:20px"   >&nbsp;
 
 <asp:TextBox ID="txtNoProducto" style="position:absolute; left:278px; top:241px; width:180px; height:25px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   runat="server"></asp:TextBox>
 
