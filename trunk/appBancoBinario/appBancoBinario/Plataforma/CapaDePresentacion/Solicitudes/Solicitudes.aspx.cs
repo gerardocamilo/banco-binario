@@ -62,7 +62,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             if (!txtNumeroSolicitud.Text.Equals(""))
             {
                 PlataformaDAO plataforma = new PlataformaDAO();
-                plataforma.pObtenerSolicitudPorNumero();
+                plataforma.pObtenerSolicitudPorNumero(txtNumeroSolicitud.Text);
                 Response.Redirect("VerSolicitud.aspx?solicitud=" + txtNumeroSolicitud.Text);
             }
         }
