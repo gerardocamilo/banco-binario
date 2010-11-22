@@ -345,7 +345,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
         public Solicitud pObtenerSolicitudPorNumero(String numeroSolicitud)
         {
             //Producto producto = null;
-            String tipoProducto = null;
+            String tipoSolicitud = null;
             const String CUENTA_CORRIENTE = "CUENTA_CORRIENTE";
             const String CUENTA_AHORRO = "CUENTA_AHORRO";
             const String TARJETA_DEBITO = "TARJETA_DEBITO";
@@ -357,47 +357,36 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             SqlParameter sNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
             sNumeroSolicitud.Value = numeroSolicitud;
             sComando.Parameters.Add(sNumeroSolicitud);
-            DataSet setDeProductos = pEjecutarConsulta(sComando);
+            DataSet setDeSolicitudes = pEjecutarConsulta(sComando);
 
-            if ((setDeProductos.Tables.Count > 0) && (setDeProductos.Tables[0].Rows.Count > 0))
+            if ((setDeSolicitudes.Tables.Count > 0) && (setDeSolicitudes.Tables[0].Rows.Count > 0))
             {
-                DataTable tabla = setDeProductos.Tables[0];
+                DataTable tabla = setDeSolicitudes.Tables[0];
                 DataRow fila = tabla.Rows[0];
-                tipoProducto = fila["TIPO_PRODUCTO"].ToString();
+                tipoSolicitud = fila["TIPO_SOLICITUD"].ToString();
 
-                if ((tipoProducto.Equals(CUENTA_CORRIENTE)) || (tipoProducto.Equals(CUENTA_AHORRO)))
+                if ((tipoSolicitud.Equals(CUENTA_CORRIENTE)) || (tipoSolicitud.Equals(CUENTA_AHORRO)))
                 {
                     SolicitudCuenta solicitudCuenta = new SolicitudCuenta();
                     solicitudCuenta.NumeroSolicitud = numeroSolicitud;
-                    solicitudCuenta.Balance = float.Parse(fila["BALANCE"].ToString());
+                    solicitudCuenta.ProductoAsociado.TipoProducto = fila["TIPO_SOLICITUD"].ToString();
                     solicitudCuenta.Estado = fila["ESTADO"].ToString();
                     return solicitudCuenta;
                 }
-                else if (tipoProducto.Equals(TARJETA_CREDITO) || tipoProducto.Equals(TARJETA_DEBITO))
+                else if (tipoSolicitud.Equals(TARJETA_CREDITO) || tipoSolicitud.Equals(TARJETA_DEBITO))
                 {
                     SolicitudTarjeta solicitudTarjeta = new SolicitudTarjeta();
-                    //solicitudTarjeta.CuentaAsociada = fila["CUENTA_ASOCIADA"].ToString();
-                    //solicitudTarjeta.Estado = fila["ESTADO"].ToString();
-                    //solicitudTarjeta.LimiteCredito = float.Parse(fila["LIMITE_CREDITO"].ToString());
-                    //solicitudTarjeta.NumeroTarjeta = fila["NUMERO_TARJETA"].ToString();
-                    //solicitudTarjeta.PIN = fila["PIN"].ToString();
-                    //solicitudTarjeta.TipoProducto = tipoProducto;
-                    //solicitudTarjeta.TipoTrarjeta = fila["TIPO_TARJETA"].ToString();
-                    //solicitudTarjeta.ValidarDesde = DateTime.Parse(fila["VALIDAR_DESDE"].ToString());
-                    //solicitudTarjeta.ValidarHasta = DateTime.Parse(fila["VALIDAR_HASTA"].ToString());
+                    solicitudTarjeta.NumeroSolicitud = numeroSolicitud;
+                    solicitudTarjeta.ProductoAsociado.TipoProducto = fila["TIPO_SOLICITUD"].ToString();
+                    solicitudTarjeta.Estado = fila["ESTADO"].ToString();
                     return solicitudTarjeta;
                 }
-                else if (tipoProducto.Equals(PRESTAMO))
+                else if (tipoSolicitud.Equals(PRESTAMO))
                 {
                     SolicitudPrestamo solicitudPrestamo = new SolicitudPrestamo();
-                    //solicitudPrestamo.BalancePrestamo = float.Parse(fila["BALANCE_PRESTAMO"].ToString());
-                    //solicitudPrestamo.CantidadCuotas = int.Parse(fila["CANTIDAD_CUOTAS"].ToString());
-                    //solicitudPrestamo.DesembolsoInicial = float.Parse(fila["DESEMBOLSO_INICIAL"].ToString());
-                    //solicitudPrestamo.Estado = fila["ESTADO"].ToString();
-                    //solicitudPrestamo.MontoCuota = float.Parse(fila["MONTO_CUOTA"].ToString());
-                    //solicitudPrestamo.NumeroPrestamo = fila["NUMERO_PRESTAMO"].ToString();
-                    //solicitudPrestamo.TasaInteres = float.Parse(fila["TASA_INTERES"].ToString());
-                    //solicitudPrestamo.TipoProducto = tipoProducto;
+                    solicitudPrestamo.NumeroSolicitud = numeroSolicitud;
+                    solicitudPrestamo.ProductoAsociado.TipoProducto = fila["TIPO_SOLICITUD"].ToString();
+                    solicitudPrestamo.Estado = fila["ESTADO"].ToString();
                     return solicitudPrestamo;
                 }
                 //obtener tipo producto del primer row y en base al tipo de producto asignar a una referencia del Producto 

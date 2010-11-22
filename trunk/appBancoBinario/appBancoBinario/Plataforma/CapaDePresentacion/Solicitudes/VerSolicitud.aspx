@@ -152,7 +152,8 @@ src="Ver_Solicitud_-_Prestamo_files/u35.png" border="0" alt=""></span>
 <div id=u36_rtf>&nbsp;</div></div>
 </div>
 <IMG id=u35 src="../Resources/transparent.gif" style="position:absolute; left:122px; top:214px; width:810px; height:412px"   >
-<div id=u37container style="position:absolute; left:210px; top:640px; width:86px; height:21px;; overflow:visible;">
+<div id=u37container 
+            style="position:absolute; left:210px; top:640px; width:86px; height:21px;; overflow:visible; right: 637px;">
 
     <asp:Button ID="btnAprobar" runat="server" Text="Aprobar" Width="70px" 
         onclick="btnAprobar_Click" />
