@@ -164,14 +164,6 @@ src="SolicitudDatosProducto_files/u34.png" border="0" alt=""></span>
 </div>
 <div id=u40container style="position:absolute; left:355px; top:640px; width:76px; height:21px; overflow:visible;">
 
-    <asp:CompareValidator ID="cvMontoPrestamo" runat="server" ErrorMessage="Monto Préstamo" Type="Double" ControlToValidate="txtMontoPrestamo" Display="None" SetFocusOnError="true"></asp:CompareValidator>
-
-    <asp:RequiredFieldValidator ID="rfvMontoPrestamo" runat="server" ErrorMessage="Monto Préstamo." 
-                ControlToValidate="txtMontoPrestamo" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
-    <asp:RequiredFieldValidator ID="rfvTasa" runat="server" ErrorMessage="Tasa." 
-                ControlToValidate="txtTasa" Display="None" SetFocusOnError="true"></asp:RequiredFieldValidator>
-    <asp:ValidationSummary ID="vsPrestamo" runat="server" ShowMessageBox="True" 
-                ShowSummary="false" HeaderText="Campos vacios o inválidos:" />
     <asp:Button ID="btnSiguiente" runat="server" Text="Siguiente" 
 
                 onclick="btnSiguiente_Click" />
@@ -358,7 +350,7 @@ src="SolicitudDatosProducto_files/u65.png" border="0" alt=""></span>
             style="position:absolute; left:265px; top:408px; width:92px; height:16px; text-align: left" >
 <asp:RadioButtonList ID="rdlConGarante" RepeatDirection="Horizontal" style=" font-family:'Arial'; color:#000000; font-size:13px;" runat="server">
 <asp:ListItem Value="si" Text="Si"></asp:ListItem>
-<asp:ListItem Value="si" Text="No"></asp:ListItem>
+<asp:ListItem Value="no" Text="No"></asp:ListItem>
 </asp:RadioButtonList>
 </div>
 <div style=" font-family:'Arial'; color:#000000; font-size:13px;">
@@ -396,7 +388,7 @@ src="SolicitudDatosProducto_files/u78.png" border="0" alt=""></span>
 
 <div id=u81 style="position:absolute; left:148px; top:464px; width:108px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u81_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Nombre</span></div></div>
-<asp:TextBox style="position:absolute; left:263px; top:502px; width:271px; height:25px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   runat="server"></asp:TextBox>
+<asp:TextBox id="txtIdentificacionGarante" style="position:absolute; left:263px; top:502px; width:271px; height:25px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   runat="server"></asp:TextBox>
 
 <div id=u83 style="position:absolute; left:148px; top:504px; width:108px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u83_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Cédula</span></div></div>

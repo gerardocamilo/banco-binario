@@ -599,6 +599,7 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Clientes\CapaDeNegocio\Sqlhelper.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\codigoTransaccion.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\configuracionParametro.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\Sqlhelper.cs" />
@@ -623,7 +624,6 @@
     <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudTarjeta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Tarjeta.cs" />
     <Compile Include="Clientes\CapaDeNegocio\Clientes.cs" />
-    <Compile Include="Clientes\CapaDeNegocio\Sqlhelper.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -32,29 +32,29 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             
             if (solicitud != null)
             {
+                //NUMERO_SOLICITUD
                 solicitud.NumeroSolicitud = "testnumber";
-                try {
-                    solicitud.MontoPrestamo = float.Parse(txtMontoPrestamo.Text);
-                }
-                catch(FormatException) {
-                    
-                    Response.Write("<script>alert(\"Valor no valido\")</script>");
-                    txtMontoPrestamo.Focus();
-                }
-                try
-                {
-                    solicitud.Tasa = float.Parse(txtTasa.Text);
-                }
-                catch (FormatException)
-                {
-                    Response.Write("alert(\"Valor no valido\")"); 
-                    txtTasa.Focus();
-                }
-                string destino = txtDestino.Text;
+                //MONTO_PRESTAMO
+                solicitud.MontoPrestamo = (txtMontoPrestamo.Text == null || txtMontoPrestamo.Text=="") ? 0.0f : float.Parse(txtMontoPrestamo.Text);
+                
+                String destino = txtDestino.Text;
                 solicitud.Destino = (destino == null) ? "" : destino;
+                //CON_GARANTE
+                solicitud.ConGarante = (rdlConGarante.SelectedValue == "si") ? true : false;
+                //IDENTIFICACION_GARANTE
+                String garanteID = txtIdentificacionGarante.Text;
+                solicitud.IdentificacionGarante = (garanteID == null || garanteID=="") ? "" : garanteID;
+                //TASA INTERES
+                solicitud.Tasa = (txtTasa.Text == null || txtTasa.Text=="") ? 0.0f : float.Parse(txtTasa.Text);
+                
+                
+
                 Prestamo prestamo = new Prestamo();
                 prestamo.TipoProducto = TipoProducto.PRESTAMO.ToString();
+                //MONTO_CUOTA
+                prestamo.MontoCuota = (solicitud.MontoPrestamo * solicitud.Tasa) / float.Parse(ddlPlazo.Text);
                 solicitud.ProductoAsociado = prestamo;
+
                 Session["solicitud"] = solicitud;
                 Response.Redirect("SolicitudConfirmacion.aspx");
             }
