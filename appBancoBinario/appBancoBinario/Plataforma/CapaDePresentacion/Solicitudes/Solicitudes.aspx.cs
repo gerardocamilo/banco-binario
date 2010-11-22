@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
+using appBancoBinario.Plataforma.CapaDeDatos;
+
 
 namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 {
@@ -12,7 +14,9 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            PlataformaDAO plataforma = new PlataformaDAO();
+            gvSolicitudes.DataSource = plataforma.dObtenerSolicitudes();
+            gvSolicitudes.DataBind();
         }
 
         protected void btnIr_Click(object sender, EventArgs e)
@@ -57,8 +61,15 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
         {
             if (!txtNumeroSolicitud.Text.Equals(""))
             {
+                PlataformaDAO plataforma = new PlataformaDAO();
+                plataforma.pObtenerSolicitudPorNumero();
                 Response.Redirect("VerSolicitud.aspx?solicitud=" + txtNumeroSolicitud.Text);
             }
+        }
+
+        protected void gvSolicitudes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.Redirect("VerSolicitud.aspx?solicitud=" + gvSolicitudes.SelectedRow.Cells[0].Text);
         }
     }
 }

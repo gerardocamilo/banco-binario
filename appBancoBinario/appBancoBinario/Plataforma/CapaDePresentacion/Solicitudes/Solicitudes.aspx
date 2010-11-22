@@ -382,13 +382,15 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
 <div id=u61_rtf>&nbsp;</div></div>
     <asp:GridView ID="gvSolicitudes" runat="server" AutoGenerateColumns="False" 
         CellPadding="4" ForeColor="#333333" GridLines="None" 
-        AllowPaging = "true" Width="777px"> 
+        AllowPaging = "True" Width="777px" 
+        onselectedindexchanged="gvSolicitudes_SelectedIndexChanged"> 
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="Nombre" HeaderText="Numero" />
-            <asp:BoundField HeaderText="Tipo de Solicitud" />
-            <asp:BoundField HeaderText="Estado Solicitud" />
-            <asp:BoundField HeaderText="Producto asociado" />
+            <asp:BoundField DataField="NUMERO_SOLICITUD" HeaderText="Numero" />
+            <asp:BoundField HeaderText="Tipo de Solicitud" DataField="TIPO_PRODUCTO" />
+            <asp:BoundField HeaderText="Estado Solicitud" DataField="ESTADO" />
+            <asp:BoundField HeaderText="Producto asociado" 
+                DataField="NUMERO_SOLICITUD_ASOCIADO" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

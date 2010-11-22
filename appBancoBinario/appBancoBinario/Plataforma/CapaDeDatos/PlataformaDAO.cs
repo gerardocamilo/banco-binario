@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
 using appBancoBinario.Clientes.CapaDeNegocio;
+
 using System.Diagnostics;
 
 namespace appBancoBinario.Plataforma.CapaDeDatos
@@ -115,8 +116,9 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroTipoProducto);
 
             SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-            sParametroEstado.Value = solicitudPrestamo.Estado;
+            sParametroEstado.Value = prestamoAsociado.Estado;
             sComando.Parameters.Add(sParametroEstado);
+
 
             SqlParameter sParametroPlazoPago = new SqlParameter("@PLAZO_PAGO", SqlDbType.Int);
             sParametroPlazoPago.Value = prestamoAsociado.CantidadCuotas;
@@ -125,27 +127,6 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             SqlParameter sParametroMontoPrestamo = new SqlParameter("@MONTO_PRESTAMO", SqlDbType.Float);
             sParametroMontoPrestamo.Value = prestamoAsociado.DesembolsoInicial;
             sComando.Parameters.Add(sParametroMontoPrestamo);
-
-
-            SqlParameter sParametroMontoCuota = new SqlParameter("@MONTO_CUOTA", SqlDbType.Float);
-            sParametroMontoCuota.Value = prestamoAsociado.MontoCuota;
-            sComando.Parameters.Add(sParametroMontoCuota);
-
-            SqlParameter sParametroTasaInteres = new SqlParameter("@TASA_INTERES", SqlDbType.Float);
-            sParametroTasaInteres.Value = solicitudPrestamo.Tasa;
-            sComando.Parameters.Add(sParametroTasaInteres);
-
-            SqlParameter sParametroDestino = new SqlParameter("@DESTINO", SqlDbType.VarChar);
-            sParametroDestino.Value = solicitudPrestamo.Destino;
-            sComando.Parameters.Add(sParametroDestino);
-
-            SqlParameter sParametroConGarante = new SqlParameter("@CON_GARANTE", SqlDbType.Bit);
-            sParametroConGarante.Value = solicitudPrestamo.ConGarante;
-            sComando.Parameters.Add(sParametroConGarante);
-
-            SqlParameter sParametroIdentificacionGarante = new SqlParameter("@IDENTIFICACION_GARANTE", SqlDbType.VarChar);
-            sParametroIdentificacionGarante.Value = solicitudPrestamo.IdentificacionGarante;
-            sComando.Parameters.Add(sParametroIdentificacionGarante);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
             sNumeroSolicitudAsociado.Value = solicitudPrestamo.NumeroSolicitudAsociado;
@@ -361,6 +342,71 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             return null;
         }
 
+        public Solicitud pObtenerSolicitudPorNumero(String numeroSolicitud)
+        {
+            //Producto producto = null;
+            String tipoProducto = null;
+            const String CUENTA_CORRIENTE = "CUENTA_CORRIENTE";
+            const String CUENTA_AHORRO = "CUENTA_AHORRO";
+            const String TARJETA_DEBITO = "TARJETA_DEBITO";
+            const String TARJETA_CREDITO = "TARJETA_CREDITO";
+            const String PRESTAMO = "PRESTAMO";
+
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_OBTENER_SOLICITUD_POR_NUMERO");
+            sComando.CommandType = CommandType.StoredProcedure;
+            SqlParameter sNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
+            sNumeroSolicitud.Value = numeroSolicitud;
+            sComando.Parameters.Add(sNumeroSolicitud);
+            DataSet setDeProductos = pEjecutarConsulta(sComando);
+
+            if ((setDeProductos.Tables.Count > 0) && (setDeProductos.Tables[0].Rows.Count > 0))
+            {
+                DataTable tabla = setDeProductos.Tables[0];
+                DataRow fila = tabla.Rows[0];
+                tipoProducto = fila["TIPO_PRODUCTO"].ToString();
+
+                if ((tipoProducto.Equals(CUENTA_CORRIENTE)) || (tipoProducto.Equals(CUENTA_AHORRO)))
+                {
+                    SolicitudCuenta solicitudCuenta = new SolicitudCuenta();
+                    solicitudCuenta.NumeroSolicitud = numeroSolicitud;
+                    solicitudCuenta.Balance = float.Parse(fila["BALANCE"].ToString());
+                    solicitudCuenta.Estado = fila["ESTADO"].ToString();
+                    return solicitudCuenta;
+                }
+                else if (tipoProducto.Equals(TARJETA_CREDITO) || tipoProducto.Equals(TARJETA_DEBITO))
+                {
+                    SolicitudTarjeta solicitudTarjeta = new SolicitudTarjeta();
+                    //solicitudTarjeta.CuentaAsociada = fila["CUENTA_ASOCIADA"].ToString();
+                    //solicitudTarjeta.Estado = fila["ESTADO"].ToString();
+                    //solicitudTarjeta.LimiteCredito = float.Parse(fila["LIMITE_CREDITO"].ToString());
+                    //solicitudTarjeta.NumeroTarjeta = fila["NUMERO_TARJETA"].ToString();
+                    //solicitudTarjeta.PIN = fila["PIN"].ToString();
+                    //solicitudTarjeta.TipoProducto = tipoProducto;
+                    //solicitudTarjeta.TipoTrarjeta = fila["TIPO_TARJETA"].ToString();
+                    //solicitudTarjeta.ValidarDesde = DateTime.Parse(fila["VALIDAR_DESDE"].ToString());
+                    //solicitudTarjeta.ValidarHasta = DateTime.Parse(fila["VALIDAR_HASTA"].ToString());
+                    return solicitudTarjeta;
+                }
+                else if (tipoProducto.Equals(PRESTAMO))
+                {
+                    SolicitudPrestamo solicitudPrestamo = new SolicitudPrestamo();
+                    //solicitudPrestamo.BalancePrestamo = float.Parse(fila["BALANCE_PRESTAMO"].ToString());
+                    //solicitudPrestamo.CantidadCuotas = int.Parse(fila["CANTIDAD_CUOTAS"].ToString());
+                    //solicitudPrestamo.DesembolsoInicial = float.Parse(fila["DESEMBOLSO_INICIAL"].ToString());
+                    //solicitudPrestamo.Estado = fila["ESTADO"].ToString();
+                    //solicitudPrestamo.MontoCuota = float.Parse(fila["MONTO_CUOTA"].ToString());
+                    //solicitudPrestamo.NumeroPrestamo = fila["NUMERO_PRESTAMO"].ToString();
+                    //solicitudPrestamo.TasaInteres = float.Parse(fila["TASA_INTERES"].ToString());
+                    //solicitudPrestamo.TipoProducto = tipoProducto;
+                    return solicitudPrestamo;
+                }
+                //obtener tipo producto del primer row y en base al tipo de producto asignar a una referencia del Producto 
+                //la instancia hija de producto que corresponda asi el modulo externo puede castear esa instancia y obtener los valores deseados.
+            }
+
+            return null;
+        }
+
         public bool actualizarPinTarjeta(String numeroTarjeta, String PIN) {
             bool resultado = false;
             SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_PIN_TARJETA");
@@ -402,5 +448,22 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             return resultado;
         }
 
+
+        public DataSet dObtenerSolicitudes()
+        {
+            DataSet resultado = null;
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_OBTENER_SOLICITUDES");
+            sComando.CommandType = CommandType.StoredProcedure;
+            resultado = pEjecutarConsulta(sComando);
+            return resultado;
+        }
+        public DataSet dObtenerProductos()
+        {
+            DataSet resultado = null;
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_OBTENER_PRODUCTOS");
+            sComando.CommandType = CommandType.StoredProcedure;
+            resultado = pEjecutarConsulta(sComando);
+            return resultado;
+        }
     }
 }

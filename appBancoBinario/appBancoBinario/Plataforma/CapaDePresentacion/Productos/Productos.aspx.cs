@@ -12,7 +12,9 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            PlataformaDAO plataforma = new PlataformaDAO();
+            gvProductos.DataSource = plataforma.dObtenerProductos();
+            gvProductos.DataBind();
         }
 
         protected void btnIr_Click(object sender, EventArgs e)
@@ -25,6 +27,11 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
             plataforma.pObtenerProductoPorCodigo(txtNoProducto.Text);
 
             Response.Redirect("VerProducto.aspx");
+        }
+
+        protected void gvProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.Redirect("VerProducto.aspx?solicitud=" + gvProductos.SelectedRow.Cells[0].Text);
         }
     }
 }
