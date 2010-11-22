@@ -33,7 +33,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             if (solicitud != null)
             {
                 //NUMERO_SOLICITUD
-                solicitud.NumeroSolicitud = "testnumber";
+                solicitud.NumeroSolicitud = "PP000001";
                 //MONTO_PRESTAMO
                 solicitud.MontoPrestamo = (txtMontoPrestamo.Text == null || txtMontoPrestamo.Text=="") ? 0.0f : float.Parse(txtMontoPrestamo.Text);
                 
