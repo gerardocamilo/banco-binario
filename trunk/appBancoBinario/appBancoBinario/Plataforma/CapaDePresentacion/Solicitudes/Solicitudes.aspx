@@ -380,9 +380,9 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
 
 <div id=u61 style="position:absolute; left:2px; top:158px; width:776px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u61_rtf>&nbsp;</div></div>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+    <asp:GridView ID="gvSolicitudes" runat="server" AutoGenerateColumns="False" 
         CellPadding="4" ForeColor="#333333" GridLines="None" 
-        AllowPaging = "true" PageSize="5" Width="777px"> 
+        AllowPaging = "true" Width="777px"> 
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="Nombre" HeaderText="Numero" />
@@ -394,7 +394,7 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
         <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
         <PagerSettings FirstPageText="&lt;&lt;" LastPageText="&gt;&gt;" 
-            NextPageText="&gt;" PreviousPageText="&lt;" />
+            NextPageText="&gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
         <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
         <RowStyle BackColor="#EFF3FB" />
         <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
