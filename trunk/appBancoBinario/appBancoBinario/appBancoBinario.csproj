@@ -87,7 +87,6 @@
     <Content Include="Resources\window_12.gif" />
     <Content Include="Resources\wm.gif" />
     <Content Include="Styles\Site.css" />
-    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -624,13 +623,6 @@
     <Compile Include="Plataforma\CapaDeNegocio\Solicitudes\SolicitudTarjeta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\Tarjeta.cs" />
     <Compile Include="Clientes\CapaDeNegocio\Clientes.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

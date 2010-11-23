@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
+using appBancoBinario.Plataforma.CapaDeNegocio;
 using appBancoBinario.Clientes.CapaDeNegocio;
 using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 
@@ -82,11 +83,22 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                 }
             }
 
+            //SI LA SOLICITUD ESTA APROBADA EL BOTON DE "APROBAR" NO SE MUESTRA
+            if (solicitud.Estado.Equals("APROBADA"))
+            {
+                btnAprobar.Enabled = false;
+            }
+            else {
+                btnAprobar.Enabled = true;
+            }
+
         }
 
         protected void btnAprobar_Click(object sender, EventArgs e)
         {
             ClientesDetails cliente = solicitud.Cliente;
+            appBancoBinario.Plataforma.CapaDeNegocio.Plataforma p = new appBancoBinario.Plataforma.CapaDeNegocio.Plataforma();
+            
             if(cliente.Prospecto == "True"){
                 solicitud.Cliente.Prospecto = "False";
             }
@@ -97,8 +109,13 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             
             solicitud.Estado = EstadoSolicitud.APROBADA.ToString();
 
-            Session["solicitud"] = solicitud;
-                
+            //Remover la linea a continuacion
+            //solicitud.NumeroSolicitud = "testnumber";
+
+
+            p.pAprobarSolicitud(solicitud);
+            //Session["solicitud"] = solicitud;
+            
         }        
     }
 }

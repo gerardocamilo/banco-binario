@@ -417,6 +417,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
         protected bool pEjecutarNoConsulta(SqlCommand comando)
         {
             bool resultado = false;
+            comando.CommandType = CommandType.StoredProcedure;
             try
             {
                 resultado = SQLExecuteNonQuery(comando);
@@ -431,7 +432,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
 
         protected DataSet pEjecutarConsulta(SqlCommand comando)
         {
-
+            comando.CommandType = CommandType.StoredProcedure;
             DataSet resultado = GetDataSetSP(comando);
 
             return resultado;
@@ -454,5 +455,102 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             resultado = pEjecutarConsulta(sComando);
             return resultado;
         }
+
+        public bool pActualizarEstadoSolicitud(string numeroSolicitud, String estado)
+        {
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_ESTADO_SOLICITUD");
+
+            SqlParameter sParametroNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
+            sParametroNumeroSolicitud.Value = numeroSolicitud;
+            sComando.Parameters.Add(sParametroNumeroSolicitud);
+
+            SqlParameter sParametroEstadoSolicitud = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
+            sParametroEstadoSolicitud.Value = estado;
+            sComando.Parameters.Add(sParametroEstadoSolicitud);
+
+            return pEjecutarNoConsulta(sComando);
+        }
+
+        public bool pCrearProducto(Producto producto) {
+
+            Cuenta cuenta = null;
+            Tarjeta tarjeta = null;
+            Prestamo prestamo = null;
+            bool resultado = false;
+
+            if (producto == null)
+            {
+                return resultado;
+            }
+
+            if (producto is Cuenta)
+            {
+                cuenta = (Cuenta)producto;
+                resultado = pCrearCuenta(cuenta);
+            }
+            else if (producto is Tarjeta)
+            {
+                tarjeta = (Tarjeta)producto;
+                resultado = pCrearTarjeta(tarjeta);
+            }
+            else if (producto is Prestamo)
+            {
+                prestamo = (Prestamo)producto;
+                resultado = pCrearPrestamo(prestamo);
+            }
+
+            return resultado;
+        }
+
+        private bool pCrearPrestamo(Prestamo prestamo)
+        {
+
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_CREAR_PRESTAMO");
+            
+            SqlParameter sParametroNumeroSolicitud = new SqlParameter("@BALANCE_PRESTAMO", SqlDbType.Float);
+            sParametroNumeroSolicitud.Value = prestamo.BalancePrestamo;
+            sComando.Parameters.Add(sParametroNumeroSolicitud);
+
+            SqlParameter sParametroCantidadCuotas = new SqlParameter("@CANTIDAD_CUOTAS", SqlDbType.Int);
+            sParametroCantidadCuotas.Value = prestamo.CantidadCuotas;
+            sComando.Parameters.Add(sParametroCantidadCuotas);
+
+            SqlParameter sParametroDesembolsoInicial = new SqlParameter("@DESEMBOLSO_INICIAL", SqlDbType.Float);
+            sParametroDesembolsoInicial.Value = prestamo.DesembolsoInicial;
+            sComando.Parameters.Add(sParametroDesembolsoInicial);
+
+            SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar,50);
+            sParametroEstado.Value = prestamo.Estado;
+            sComando.Parameters.Add(sParametroEstado);
+
+            SqlParameter sParametroFechaDesembolsoInicial = new SqlParameter("@FECHA_DESEMBOLSO_INICIAL", SqlDbType.DateTime);
+            sParametroFechaDesembolsoInicial.Value = DateTime.Now;
+            sComando.Parameters.Add(sParametroFechaDesembolsoInicial);
+
+            SqlParameter sParametroFechaPago = new SqlParameter("@FECHA_PAGO", SqlDbType.Int);
+            sParametroFechaPago.Value = DateTime.Now.Day;
+            sComando.Parameters.Add(sParametroFechaPago);
+
+            //Continue here..........................
+            //prestamo.
+
+            return pEjecutarNoConsulta(sComando);
+        }
+
+        private bool pCrearTarjeta(Tarjeta tarjeta)
+        {
+
+            //SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_ESTADO_SOLICITUD");
+
+            //SqlParameter sParametroNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
+            //sParametroNumeroSolicitud.Value = numeroSolicitud;
+            //sComando.Parameters.Add(sParametroNumeroSolicitud);
+
+            return pEjecutarNoConsulta(sComando);
+        }
+
+
+
+
     }
 }

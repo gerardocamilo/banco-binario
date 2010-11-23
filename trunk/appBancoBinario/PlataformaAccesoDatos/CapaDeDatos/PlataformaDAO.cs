@@ -6,10 +6,11 @@ using System.Web;
 using System.Data;
 using System.Data.Sql;
 using System.Data.SqlClient;
-using Plataforma.CapaDeNegocio.Productos;
+using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 using Plataforma.CapaDeNegocio.Solicitudes;
+using Plataforma.CapaDeNegocio;
+//using appBancoBinario.Clientes.CapaDeNegocio;
 
-//Package that contains Debug class.
 using System.Diagnostics;
 
 namespace Plataforma.CapaDeDatos
@@ -22,34 +23,33 @@ namespace Plataforma.CapaDeDatos
         public PlataformaDAO()
             : base("BANCO_BINARIO", "GERARDOCAMILO", "plataforma", "plataforma")
         {
-            //protected SqlHelper(string DataBaseName, string DataBaseServer, string DataBaseUser, string DataBasePassword)
         }
 
-        public bool pCrearCuenta(Cuenta cuenta)
-        {
+        //public bool pCrearCuenta(Cuenta cuenta)
+        //{
 
-            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_CREAR_CUENTA");
-            sComando.CommandType = CommandType.StoredProcedure;
+        //    SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_CREAR_CUENTA");
+        //    sComando.CommandType = CommandType.StoredProcedure;
 
-            SqlParameter sParametroNumeroCuenta = new SqlParameter("@NUMERO_CUENTA", SqlDbType.VarChar, 50);
-            sParametroNumeroCuenta.Value = cuenta.NumeroCuenta;
-            sComando.Parameters.Add(sParametroNumeroCuenta);
+        //    SqlParameter sParametroNumeroCuenta = new SqlParameter("@NUMERO_CUENTA", SqlDbType.VarChar, 50);
+        //    sParametroNumeroCuenta.Value = cuenta.NumeroCuenta;
+        //    sComando.Parameters.Add(sParametroNumeroCuenta);
 
-            SqlParameter sParametroBalance = new SqlParameter("@BALANCE", SqlDbType.Float);
-            sParametroBalance.Value = cuenta.Balance;
-            sComando.Parameters.Add(sParametroBalance);
+        //    SqlParameter sParametroBalance = new SqlParameter("@BALANCE", SqlDbType.Float);
+        //    sParametroBalance.Value = cuenta.Balance;
+        //    sComando.Parameters.Add(sParametroBalance);
 
-            SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-            sParametroEstado.Value = cuenta.Estado;
-            sComando.Parameters.Add(sParametroEstado);
+        //    SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
+        //    sParametroEstado.Value = cuenta.Estado;
+        //    sComando.Parameters.Add(sParametroEstado);
 
-            SqlParameter sParametroTipoProducto = new SqlParameter("@TIPO_PRODUCTO", SqlDbType.VarChar, 50);
-            sParametroTipoProducto.Value = cuenta.TipoProducto;
-            sComando.Parameters.Add(sParametroTipoProducto);
+        //    SqlParameter sParametroTipoProducto = new SqlParameter("@TIPO_PRODUCTO", SqlDbType.VarChar, 50);
+        //    sParametroTipoProducto.Value = cuenta.TipoProducto;
+        //    sComando.Parameters.Add(sParametroTipoProducto);
 
-            return pEjecutarNoConsulta(sComando);
+        //    return pEjecutarNoConsulta(sComando);
 
-        }
+        //}
 
         public bool pCrearSolicitud(Solicitud solicitud)
         {
@@ -124,9 +124,9 @@ namespace Plataforma.CapaDeDatos
             SqlParameter sParametroPlazoPago = new SqlParameter("@PLAZO_PAGO", SqlDbType.Int);
             sParametroPlazoPago.Value = prestamoAsociado.CantidadCuotas;
             sComando.Parameters.Add(sParametroPlazoPago);
-            //continue here
+            
             SqlParameter sParametroMontoPrestamo = new SqlParameter("@MONTO_PRESTAMO", SqlDbType.Float);
-            sParametroMontoPrestamo.Value = prestamoAsociado;
+            sParametroMontoPrestamo.Value = prestamoAsociado.DesembolsoInicial;
             sComando.Parameters.Add(sParametroMontoPrestamo);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
@@ -165,15 +165,15 @@ namespace Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroNumeroSolicitud);
 
             SqlParameter sParametroTipoTarjeta = new SqlParameter("@TIPO_TARJETA", SqlDbType.VarChar, 50);
-            sParametroTipoTarjeta.Value = tarjetaAsociada.TipoProducto;
+            sParametroTipoTarjeta.Value = tarjetaAsociada.TipoTrarjeta;
             sComando.Parameters.Add(sParametroTipoTarjeta);
 
             SqlParameter sParametrorRecibirTarjeta = new SqlParameter("@RECIBIR_TARJETA", SqlDbType.VarChar, 50);
-            sParametrorRecibirTarjeta.Value = tarjetaAsociada.TipoProducto;
+            sParametrorRecibirTarjeta.Value = tarjetaAsociada.RecibirTarjeta;
             sComando.Parameters.Add(sParametrorRecibirTarjeta);
 
             SqlParameter sParametrorEnvioTarjeta = new SqlParameter("@ENVIO_TARJETA", SqlDbType.VarChar, 50);
-            sParametrorEnvioTarjeta.Value = tarjetaAsociada.TipoProducto;
+            sParametrorEnvioTarjeta.Value = tarjetaAsociada.EnvioTarjeta;
             sComando.Parameters.Add(sParametrorEnvioTarjeta);
 
             SqlParameter sParametroTipoProducto = new SqlParameter("@TIPO_PRODUCTO", SqlDbType.VarChar, 50);
@@ -181,7 +181,7 @@ namespace Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroTipoProducto);
 
             SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-            sParametroEstado.Value = tarjetaAsociada.Estado;
+            sParametroEstado.Value = solicitudTarjeta.Estado;
             sComando.Parameters.Add(sParametroEstado);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
@@ -198,7 +198,9 @@ namespace Plataforma.CapaDeDatos
 
             if (solicitudCuenta == null)
             {
+                Debug.WriteLine("SolicitudCuenta: [null] ");
                 return false;
+               
             }
 
             prod = solicitudCuenta.ProductoAsociado;
@@ -209,6 +211,7 @@ namespace Plataforma.CapaDeDatos
             }
             else
             {
+                Debug.WriteLine("Producto es o invalido: [null] ");
                 return false;
             }
 
@@ -219,7 +222,7 @@ namespace Plataforma.CapaDeDatos
             sParametroNumeroSolicitud.Value = solicitudCuenta.NumeroSolicitud;
             sComando.Parameters.Add(sParametroNumeroSolicitud);
 
-            SqlParameter sParametroBalanceInicial = new SqlParameter("@BALANCE_INICIAL", SqlDbType.Float, 50);
+            SqlParameter sParametroBalanceInicial = new SqlParameter("@BALANCE_INICIAL", SqlDbType.Float);
             sParametroBalanceInicial.Value = cuentaAsociada.Balance;
             sComando.Parameters.Add(sParametroBalanceInicial);
 
@@ -228,7 +231,7 @@ namespace Plataforma.CapaDeDatos
             sComando.Parameters.Add(sParametroTipoProducto);
 
             SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-            sParametroEstado.Value = cuentaAsociada.Estado;
+            sParametroEstado.Value = solicitudCuenta.Estado;
             sComando.Parameters.Add(sParametroEstado);
 
             SqlParameter sNumeroSolicitudAsociado = new SqlParameter("@NUMERO_SOLICITUD_ASOCIADO", SqlDbType.VarChar, 50);
@@ -299,7 +302,6 @@ namespace Plataforma.CapaDeDatos
                 DataRow fila = tabla.Rows[0];
                 tipoProducto = fila["TIPO_PRODUCTO"].ToString();
 
-                //Continuar creando condiciones para los demas posibles valores de TIPO_PRODUCTO
                 if( (tipoProducto.Equals(CUENTA_CORRIENTE)) || (tipoProducto.Equals(CUENTA_AHORRO)) ){
                     Cuenta cuenta = new Cuenta();
                     cuenta.NumeroCuenta = codigoProducto;
@@ -341,49 +343,144 @@ namespace Plataforma.CapaDeDatos
             return null;
         }
 
+        public Solicitud pObtenerSolicitudPorNumero(String numeroSolicitud)
+        {
+            //Producto producto = null;
+            String tipoProducto = null;
+            const String CUENTA_CORRIENTE = "CUENTA_CORRIENTE";
+            const String CUENTA_AHORRO = "CUENTA_AHORRO";
+            const String TARJETA_DEBITO = "TARJETA_DEBITO";
+            const String TARJETA_CREDITO = "TARJETA_CREDITO";
+            const String PRESTAMO = "PRESTAMO";
 
-        //DEPRECATED
-        //private bool pCrearSolicitud(String numeroSolicitud, Cuenta cuenta) {
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_OBTENER_SOLICITUD_POR_NUMERO");
+            sComando.CommandType = CommandType.StoredProcedure;
+            SqlParameter sNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
+            sNumeroSolicitud.Value = numeroSolicitud;
+            sComando.Parameters.Add(sNumeroSolicitud);
+            DataSet setDeProductos = pEjecutarConsulta(sComando);
 
-        //    SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_CREAR_SOLICITUD_CUENTA");
-        //    sComando.CommandType = CommandType.StoredProcedure;
+            if ((setDeProductos.Tables.Count > 0) && (setDeProductos.Tables[0].Rows.Count > 0))
+            {
+                DataTable tabla = setDeProductos.Tables[0];
+                DataRow fila = tabla.Rows[0];
+                tipoProducto = fila["TIPO_PRODUCTO"].ToString();
 
-        //    SqlParameter sParametroNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
-        //    sParametroNumeroSolicitud.Value = numeroSolicitud;
-        //    sComando.Parameters.Add(sParametroNumeroSolicitud);
+                if ((tipoProducto.Equals(CUENTA_CORRIENTE)) || (tipoProducto.Equals(CUENTA_AHORRO)))
+                {
+                    SolicitudCuenta solicitudCuenta = new SolicitudCuenta();
+                    solicitudCuenta.NumeroSolicitud = numeroSolicitud;
+                    solicitudCuenta.Balance = float.Parse(fila["BALANCE"].ToString());
+                    solicitudCuenta.Estado = fila["ESTADO"].ToString();
+                    return solicitudCuenta;
+                }
+                else if (tipoProducto.Equals(TARJETA_CREDITO) || tipoProducto.Equals(TARJETA_DEBITO))
+                {
+                    SolicitudTarjeta solicitudTarjeta = new SolicitudTarjeta();
+                    //solicitudTarjeta.CuentaAsociada = fila["CUENTA_ASOCIADA"].ToString();
+                    //solicitudTarjeta.Estado = fila["ESTADO"].ToString();
+                    //solicitudTarjeta.LimiteCredito = float.Parse(fila["LIMITE_CREDITO"].ToString());
+                    //solicitudTarjeta.NumeroTarjeta = fila["NUMERO_TARJETA"].ToString();
+                    //solicitudTarjeta.PIN = fila["PIN"].ToString();
+                    //solicitudTarjeta.TipoProducto = tipoProducto;
+                    //solicitudTarjeta.TipoTrarjeta = fila["TIPO_TARJETA"].ToString();
+                    //solicitudTarjeta.ValidarDesde = DateTime.Parse(fila["VALIDAR_DESDE"].ToString());
+                    //solicitudTarjeta.ValidarHasta = DateTime.Parse(fila["VALIDAR_HASTA"].ToString());
+                    return solicitudTarjeta;
+                }
+                else if (tipoProducto.Equals(PRESTAMO))
+                {
+                    SolicitudPrestamo solicitudPrestamo = new SolicitudPrestamo();
+                    //solicitudPrestamo.BalancePrestamo = float.Parse(fila["BALANCE_PRESTAMO"].ToString());
+                    //solicitudPrestamo.CantidadCuotas = int.Parse(fila["CANTIDAD_CUOTAS"].ToString());
+                    //solicitudPrestamo.DesembolsoInicial = float.Parse(fila["DESEMBOLSO_INICIAL"].ToString());
+                    //solicitudPrestamo.Estado = fila["ESTADO"].ToString();
+                    //solicitudPrestamo.MontoCuota = float.Parse(fila["MONTO_CUOTA"].ToString());
+                    //solicitudPrestamo.NumeroPrestamo = fila["NUMERO_PRESTAMO"].ToString();
+                    //solicitudPrestamo.TasaInteres = float.Parse(fila["TASA_INTERES"].ToString());
+                    //solicitudPrestamo.TipoProducto = tipoProducto;
+                    return solicitudPrestamo;
+                }
+                //obtener tipo producto del primer row y en base al tipo de producto asignar a una referencia del Producto 
+                //la instancia hija de producto que corresponda asi el modulo externo puede castear esa instancia y obtener los valores deseados.
+            }
 
-        //    SqlParameter sParametroTipoProducto = new SqlParameter("@TIPO_PRODUCTO", SqlDbType.VarChar, 50);
-        //    sParametroTipoProducto.Value = cuenta.TipoProducto;
-        //    sComando.Parameters.Add(sParametroTipoProducto);
+            return null;
+        }
 
-        //    SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
-        //    sParametroEstado.Value = cuenta.Estado;
-        //    sComando.Parameters.Add(sParametroEstado);
+        public bool actualizarPinTarjeta(String numeroTarjeta, String PIN) {
+            bool resultado = false;
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_PIN_TARJETA");
+            sComando.CommandType = CommandType.StoredProcedure;
 
-        //    return pEjecutarComando(sComando);
-        //}
+            SqlParameter sParametroNumeroTarjeta = new SqlParameter("@NUMERO_TARJETA",SqlDbType.VarChar, 50);
+            sParametroNumeroTarjeta.Value = numeroTarjeta;
+            sComando.Parameters.Add(sParametroNumeroTarjeta);
+
+            SqlParameter sParametroPinTarjeta = new SqlParameter("@PIN", SqlDbType.VarChar, 50);
+            sParametroPinTarjeta.Value = PIN;
+            sComando.Parameters.Add(sParametroPinTarjeta);
+
+            resultado = pEjecutarNoConsulta(sComando);
+
+            return resultado;
+        }
 
         protected bool pEjecutarNoConsulta(SqlCommand comando)
         {
             bool resultado = false;
+            comando.CommandType = CommandType.StoredProcedure;
             try
             {
                 resultado = SQLExecuteNonQuery(comando);
             }
             catch (Exception ex)
             {
-                //TODO: Manejar exception               
+                Debug.WriteLine("pEjecutarNoConsulta: "+ex.Message);
+                Debug.WriteLine(ex.StackTrace);
             }
             return resultado;
         }
 
         protected DataSet pEjecutarConsulta(SqlCommand comando)
         {
-
+            comando.CommandType = CommandType.StoredProcedure;
             DataSet resultado = GetDataSetSP(comando);
 
             return resultado;
         }
 
+
+        public DataSet dObtenerSolicitudes()
+        {
+            DataSet resultado = null;
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_OBTENER_SOLICITUDES");
+            sComando.CommandType = CommandType.StoredProcedure;
+            resultado = pEjecutarConsulta(sComando);
+            return resultado;
+        }
+        public DataSet dObtenerProductos()
+        {
+            DataSet resultado = null;
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_OBTENER_PRODUCTOS");
+            sComando.CommandType = CommandType.StoredProcedure;
+            resultado = pEjecutarConsulta(sComando);
+            return resultado;
+        }
+
+        public bool pActualizarEstadoSolicitud(string numeroSolicitud, String estado)
+        {
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_ESTADO_SOLICITUD");
+
+            SqlParameter sParametroNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
+            sParametroNumeroSolicitud.Value = numeroSolicitud;
+            sComando.Parameters.Add(sParametroNumeroSolicitud);
+
+            SqlParameter sParametroEstadoSolicitud = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
+            sParametroEstadoSolicitud.Value = estado;
+            sComando.Parameters.Add(sParametroEstadoSolicitud);
+
+            return pEjecutarNoConsulta(sComando);
+        }
     }
 }

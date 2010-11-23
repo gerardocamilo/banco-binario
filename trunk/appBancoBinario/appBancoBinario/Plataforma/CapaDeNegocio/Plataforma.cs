@@ -67,6 +67,23 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
             return resultado;
         }
 
+        public bool pAprobarSolicitud(Solicitud solicitud) {
+            pActualizarEstadoSolicitud(solicitud.NumeroSolicitud, solicitud.Estado);
+
+            return true;
+        }
+
+        private bool pActualizarEstadoSolicitud(String numeroSolicitud, String estado)
+        {
+            bool resultado = false;
+            resultado = this._plataformaDAO.pActualizarEstadoSolicitud(numeroSolicitud, estado);
+            return resultado;
+        }
+
+        private bool pCrearProductoAprobado(Solicitud solicitud) {
+            //this._plataformaDAO.crear
+            return true;
+        }
 
     }
 }
