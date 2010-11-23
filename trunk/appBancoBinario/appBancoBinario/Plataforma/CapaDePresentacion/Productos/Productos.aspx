@@ -17,6 +17,8 @@
 
 <div id=ou0 style="position:absolute; left:110px; top:180px; width:835px; height:491px;; overflow:visible; ">
 
+&nbsp;&nbsp;&nbsp;
+
 <span style="position:absolute; left:-3px; top:-3px; width:843px; height:499px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Productos_files/u0.png',sizingMethod='scale');
 "><img style="width:843px; height:499px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
@@ -371,7 +373,7 @@ src="Productos_files/u59.png" border="0" alt=""></span>
 
 <div style="padding-top:20px">
     <asp:GridView ID="gvProductos" runat="server" AutoGenerateColumns="False" 
-        CellPadding="4" ForeColor="#333333" GridLines="None" 
+        CellPadding="3" ForeColor="#333333" GridLines="None" 
         AllowPaging = "True" Width="777px" 
         onselectedindexchanged="gvProductos_SelectedIndexChanged"> 
         <AlternatingRowStyle BackColor="White" />
@@ -382,7 +384,8 @@ src="Productos_files/u59.png" border="0" alt=""></span>
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" 
+            HorizontalAlign="Left" />
         <PagerSettings FirstPageText="&lt;&lt;" LastPageText="&gt;&gt;" 
             NextPageText="&gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
         <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
