@@ -44,7 +44,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                     solicitudTarjeta.NumeroSolicitud = "solTarjeta";
                     solicitudTarjeta.Cliente = solicitud.Cliente;
                     Tarjeta tarjeta = new Tarjeta();
-                    tarjeta.TipoTrarjeta = TipoTarjeta.DEBITO.ToString();
+                    tarjeta.TipoTarjeta = TipoTarjeta.DEBITO.ToString();
                     tarjeta.RecibirTarjeta = "";
                     tarjeta.EnvioTarjeta = "";                    
                     tarjeta.TipoProducto = TipoProducto.TARJETA_DEBITO.ToString();

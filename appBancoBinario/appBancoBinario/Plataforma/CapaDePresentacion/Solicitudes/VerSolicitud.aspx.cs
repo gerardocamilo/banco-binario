@@ -74,7 +74,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                 {
                     producto = "Tarjeta de Crédito";
                     Tarjeta tarjeta = (Tarjeta)solicitud.ProductoAsociado;
-                    tipoTarjeta = tarjeta.TipoTrarjeta.ToString();
+                    //tipoTarjeta = tarjeta.TipoTarjeta.ToString();
 
                 }
                 else if (tipoProducto.Equals(TipoProducto.TARJETA_DEBITO.ToString()))

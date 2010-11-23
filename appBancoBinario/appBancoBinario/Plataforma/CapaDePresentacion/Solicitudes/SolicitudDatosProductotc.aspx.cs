@@ -37,11 +37,11 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 
                 if (ddlTipoTarjeta.SelectedValue.Equals("visa"))
                 {
-                    tarjeta.TipoTrarjeta = TipoTarjeta.VISA.ToString();
+                    tarjeta.TipoTarjeta = TipoTarjeta.VISA.ToString();
                 }
                 else if (ddlTipoTarjeta.SelectedValue.Equals("mastercard"))
                 {
-                    tarjeta.TipoTrarjeta = TipoTarjeta.MASTERCARD.ToString();
+                    tarjeta.TipoTarjeta = TipoTarjeta.MASTERCARD.ToString();
                 }
 
                 tarjeta.RecibirTarjeta = ddlLugaraRecibirTarjeta.SelectedItem.Text;

@@ -81,8 +81,8 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
         }
 
         private bool pCrearProductoAprobado(Solicitud solicitud) {
-            //this._plataformaDAO.crear
-            return true;
+            bool resultado = this._plataformaDAO.pCrearProducto(solicitud.ProductoAsociado);
+            return resultado;
         }
 
 
@@ -96,9 +96,9 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
             return this._plataformaDAO.dObtenerSolicitudes();
         }
 
-        public Solicitud pObtenerSolicitudPorNumero(string p)
+        public Solicitud pObtenerSolicitudPorNumero(String numeroSolicitud)
         {
-            return this._plataformaDAO.pObtenerSolicitudPorNumero(p);
+            return this._plataformaDAO.pObtenerSolicitudPorNumero(numeroSolicitud);
         }
     }
 }
