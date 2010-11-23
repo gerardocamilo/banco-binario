@@ -8,7 +8,7 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio.Productos
     public class Tarjeta : Producto
     {
         private String _sNumeroTarjeta;
-        private String _sTipoTrarjeta;
+        private String _sTipoTarjeta;
         private String _sEstado;
         private DateTime _dValidarDesde;
         private DateTime _dValidarHasta;
@@ -49,10 +49,10 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio.Productos
             set { _sNumeroTarjeta = value; }
         }
         
-        public String TipoTrarjeta
+        public String TipoTarjeta
         {
-            get { return _sTipoTrarjeta; }
-            set { _sTipoTrarjeta = value; }
+            get { return _sTipoTarjeta; }
+            set { _sTipoTarjeta = value; }
         }
         
         public String Estado
