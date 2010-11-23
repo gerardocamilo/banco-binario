@@ -46,6 +46,10 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sParametroTipoProducto.Value = cuenta.TipoProducto;
             sComando.Parameters.Add(sParametroTipoProducto);
 
+            SqlParameter sParametroIdentificacionCliente = new SqlParameter("@IDENTIFICACION_CLIENTE", SqlDbType.VarChar, 50);
+            sParametroIdentificacionCliente.Value = cuenta.ClienteProducto;
+            sComando.Parameters.Add(sParametroIdentificacionCliente);
+
             return pEjecutarNoConsulta(sComando);
 
         }
@@ -620,18 +624,59 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
             sParametroTipoProducto.Value = prestamo.TipoProducto;
             sComando.Parameters.Add(sParametroTipoProducto);
 
+            SqlParameter sParametroIdentificacionCliente = new SqlParameter("@IDENTIFICACION_CLIENTE", SqlDbType.VarChar, 50);
+            sParametroIdentificacionCliente.Value = prestamo.ClienteProducto;
+            sComando.Parameters.Add(sParametroIdentificacionCliente);
+
+
             return pEjecutarNoConsulta(sComando);
         }
 
         private bool pCrearTarjeta(Tarjeta tarjeta)
         {
 
-            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_ESTADO_SOLICITUD");
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_CREAR_TARJETA");
 
-            //SqlParameter sParametroNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
-            //sParametroNumeroSolicitud.Value = numeroSolicitud;
-            //sComando.Parameters.Add(sParametroNumeroSolicitud);
+            SqlParameter sParametroNumeroTarjeta = new SqlParameter("@NUMERO_TARJETA", SqlDbType.VarChar, 50);
+            sParametroNumeroTarjeta.Value = tarjeta.NumeroTarjeta;
+            sComando.Parameters.Add(sParametroNumeroTarjeta);
 
+            SqlParameter sParametroTipoTarjeta = new SqlParameter("@TIPO_TARJETA", SqlDbType.VarChar, 50);
+            sParametroTipoTarjeta.Value = tarjeta.TipoTarjeta;
+            sComando.Parameters.Add(sParametroTipoTarjeta);
+
+            SqlParameter sParametroEstado = new SqlParameter("@ESTADO", SqlDbType.VarChar, 50);
+            sParametroEstado.Value = tarjeta.TipoTarjeta;
+            sComando.Parameters.Add(sParametroEstado);
+
+            SqlParameter sParametroValidaDesde = new SqlParameter("@VALIDA_DESDE", SqlDbType.Date);
+            sParametroValidaDesde.Value = tarjeta.ValidarDesde;
+            sComando.Parameters.Add(sParametroValidaDesde);
+
+            SqlParameter sParametroValidaHasta = new SqlParameter("@VALIDA_HASTA", SqlDbType.Date);
+            sParametroValidaHasta.Value = tarjeta.ValidarHasta;
+            sComando.Parameters.Add(sParametroValidaHasta);
+
+            SqlParameter sParametroTipoProducto = new SqlParameter("@TIPO_PRODUCTO", SqlDbType.VarChar, 50);
+            sParametroTipoProducto.Value = tarjeta.TipoProducto;
+            sComando.Parameters.Add(sParametroTipoProducto);
+
+            SqlParameter sParametroPIN = new SqlParameter("@PIN", SqlDbType.VarChar, 50);
+            sParametroPIN.Value = tarjeta.PIN;
+            sComando.Parameters.Add(sParametroPIN);
+
+            SqlParameter sParametroCuentaAsociada = new SqlParameter("@CUENTA_ASOCIADA", SqlDbType.VarChar, 50);
+            sParametroCuentaAsociada.Value = tarjeta.CuentaAsociada;
+            sComando.Parameters.Add(sParametroCuentaAsociada);
+
+            SqlParameter sParametroLimiteCredito = new SqlParameter("@LIMITE_CREDITO", SqlDbType.Float);
+            sParametroLimiteCredito.Value = tarjeta.LimiteCredito;
+            sComando.Parameters.Add(sParametroLimiteCredito);
+
+            SqlParameter sParametroIdentificacionCliente = new SqlParameter("@IDENTIFICACION_CLIENTE", SqlDbType.VarChar, 50);
+            sParametroIdentificacionCliente.Value = tarjeta.ClienteProducto;
+            sComando.Parameters.Add(sParametroIdentificacionCliente);
+            
             return pEjecutarNoConsulta(sComando);
         }
 
