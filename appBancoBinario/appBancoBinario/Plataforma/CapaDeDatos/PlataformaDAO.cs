@@ -20,7 +20,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
 
 
         public PlataformaDAO()
-            : base("BANCO_BINARIO", "GERARDOCAMILO", "plataforma", "plataforma")
+            : base("BANCO_BINARIO", "DARLINPC-PC", "SA", "")
         {
         }
 

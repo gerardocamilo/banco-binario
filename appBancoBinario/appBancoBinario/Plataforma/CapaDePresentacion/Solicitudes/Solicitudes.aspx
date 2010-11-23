@@ -379,14 +379,15 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
 <div id=u60container style="position:absolute; left:140px; top:318px; width:781px; height:333px;; overflow:visible;">
 
 <div id=u61 style="position:absolute; left:2px; top:158px; width:776px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u61_rtf>&nbsp;</div></div>
-    <asp:GridView ID="gvSolicitudes" runat="server" AutoGenerateColumns="False" 
-        CellPadding="4" ForeColor="#333333" GridLines="None" 
-        AllowPaging = "True" Width="777px" 
-        onselectedindexchanged="gvSolicitudes_SelectedIndexChanged"> 
+<div id=u61_rtf >&nbsp;</div></div>
+    <div style="padding-top:20px"><asp:GridView ID="gvSolicitudes" runat="server" AutoGenerateColumns="False" 
+        CellPadding="0" ForeColor="#333333" GridLines="None" 
+        AllowPaging = "True" Width="752px" 
+        onselectedindexchanged="gvSolicitudes_SelectedIndexChanged" 
+            ShowHeaderWhenEmpty="True" style="margin-left: 10px"> 
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="NUMERO_SOLICITUD" HeaderText="Numero" />
+            <asp:BoundField DataField="NUMERO_SOLICITUD" HeaderText="Número" />
             <asp:BoundField HeaderText="Tipo de Solicitud" DataField="TIPO_PRODUCTO" />
             <asp:BoundField HeaderText="Estado Solicitud" DataField="ESTADO" />
             <asp:BoundField HeaderText="Producto asociado" 
@@ -394,9 +395,10 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" 
+            HorizontalAlign="Left" />
         <PagerSettings FirstPageText="&lt;&lt;" LastPageText="&gt;&gt;" 
-            NextPageText="&gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
+            NextPageText="&gt;" PreviousPageText="&lt;" />
         <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
         <RowStyle BackColor="#EFF3FB" />
         <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
@@ -404,7 +406,7 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
         <SortedAscendingHeaderStyle BackColor="#6D95E1" />
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
-    </asp:GridView>
+    </asp:GridView></div>
 </div>
 <IMG id=u60 src="../Resources/transparent.gif" style="position:absolute; left:140px; top:318px; width:780px; height:332px"   >
 

@@ -31,7 +31,12 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
 
         protected void gvProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Response.Redirect("VerProducto.aspx?solicitud=" + gvProductos.SelectedRow.Cells[0].Text);
+            if (gvProductos.SelectedIndex > 0) {
+                //Response.Redirect("VerProducto.aspx?solicitud=" + gvProductos.SelectedRow.Cells[0].Text);
+            }
+            
         }
+
+        
     }
 }
