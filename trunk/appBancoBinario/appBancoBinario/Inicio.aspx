@@ -471,12 +471,6 @@ src="Inicio_files/u42.png" border="0" alt=""></span>
 <div id=u64_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Solicitudes</u></span></div></div>
 <div id=u65 style="position:absolute; left:240px; top:452px; width:210px; height:16px;text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u65_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Productos</u></span></div></div>
-<div id=u66 style="position:absolute; left:240px; top:478px; width:180px; height:16px;text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u66_rtf><span style=" color:#0000FF; font-size:13px;"><u>P</u></span><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>IN de Tarjetas</u></span></div></div>
-<div id=u67 style="position:absolute; left:240px; top:508px; width:190px; height:16px;text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u67_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Reportes</u></span></div></div>
-<div id=u68 style="position:absolute; left:240px; top:538px; width:190px; height:16px;text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u68_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:13px;"><u>Calculadora de Préstamo</u></span></div></div>
 <div id=ou69 style="position:absolute; left:220px; top:422px; width:17px; height:18px; overflow:visible; ">
 
 <span style="position:absolute; left:0px; top:0px; width:16px; height:17px;
@@ -509,50 +503,23 @@ src="Inicio_files/u34.png" border="0" alt=""></span>
 
 <div id=ou73 style="position:absolute; left:220px; top:479px; width:17px; height:18px; overflow:visible; ">
 
-<span style="position:absolute; left:0px; top:0px; width:16px; height:17px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Inicio_files/u34.png',sizingMethod='scale');
-"><img style="width:16px; height:17px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Inicio_files/u34.png" border="0" alt=""></span>
-
-</div>
+&nbsp;</div>
 <div id=u73container style="position:absolute; left:220px; top:479px; width:17px; height:18px; overflow:visible;">
 
-<div id=u74 style="position:absolute; left:2px; top:0px; width:12px; height:16px;text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u74_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u73 src="Resources/transparent.gif" style="position:absolute; left:220px; top:479px; width:16px; height:17px"   >
+&nbsp;<div id=ou75 style="position:absolute; left:220px; top:507px; width:17px; height:18px; overflow:visible; ">
 
-<div id=ou75 style="position:absolute; left:220px; top:507px; width:17px; height:18px; overflow:visible; ">
-
-<span style="position:absolute; left:0px; top:0px; width:16px; height:17px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Inicio_files/u34.png',sizingMethod='scale');
-"><img style="width:16px; height:17px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Inicio_files/u34.png" border="0" alt=""></span>
-
-</div>
+&nbsp;</div>
 <div id=u75container style="position:absolute; left:220px; top:507px; width:17px; height:18px; overflow:visible;">
 
-<div id=u76 style="position:absolute; left:2px; top:0px; width:12px; height:16px;text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u76_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u75 src="Resources/transparent.gif" style="position:absolute; left:220px; top:507px; width:16px; height:17px"   >
+&nbsp;<div id=ou77 style="position:absolute; left:220px; top:537px; width:17px; height:18px; overflow:visible; ">
 
-<div id=ou77 style="position:absolute; left:220px; top:537px; width:17px; height:18px; overflow:visible; ">
-
-<span style="position:absolute; left:0px; top:0px; width:16px; height:17px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Inicio_files/u34.png',sizingMethod='scale');
-"><img style="width:16px; height:17px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Inicio_files/u34.png" border="0" alt=""></span>
-
-</div>
+&nbsp;</div>
 <div id=u77container style="position:absolute; left:220px; top:537px; width:17px; height:18px; overflow:visible;">
 
-<div id=u78 style="position:absolute; left:2px; top:0px; width:12px; height:16px;text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u78_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u77 src="Resources/transparent.gif" style="position:absolute; left:220px; top:537px; width:16px; height:17px"   >
-
-<div id=ou79 style="position:absolute; left:580px; top:407px; width:291px; height:175px; overflow:visible; ">
+&nbsp;<div id=ou79 style="position:absolute; left:580px; top:407px; width:291px; height:175px; overflow:visible; ">
 
 <span style="position:absolute; left:-3px; top:-3px; width:299px; height:183px;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Inicio_files/u32.png',sizingMethod='scale');

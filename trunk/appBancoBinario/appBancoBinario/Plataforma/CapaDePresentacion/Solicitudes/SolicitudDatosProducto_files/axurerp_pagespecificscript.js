@@ -334,7 +334,7 @@ function Clicku108(e)
 
 if (true) {
 
-	self.location.href="Reportes.aspx" + GetQuerystring();
+	self.location.href=".aspx" + GetQuerystring();
 
 }
 

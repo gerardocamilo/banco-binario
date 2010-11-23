@@ -545,21 +545,16 @@ src="SolicitudDatosLaborales_files/u94.png" border="0" alt=""></span>
 <div id=u97 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u97_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u98 style="position:absolute; left:290px; top:126px; width:110px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u98_rtf><span style=" color:#0000FF; font-size:15px;"><u>PIN de Tarjetas</u></span></div></div>
+<div id=u98_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u99 style="position:absolute; left:409px; top:126px; width:60px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u99_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Reportes</u></span></div></div>
+<div id=u99_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u100 style="position:absolute; left:193px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u100_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
-<div id=u101 style="position:absolute; left:397px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u101_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=u102 style="position:absolute; left:491px; top:126px; width:209px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u102_rtf><span style=" color:#0000FF; font-size:15px;"><u>Calculadora de Préstamo</u></span></div></div>
-<div id=u103 style="position:absolute; left:479px; top:127px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u103_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
+<div id=u102_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u104 style="position:absolute; left:206px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u104_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Productos</u></span></div></div>
-<div id=u105 style="position:absolute; left:282px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u105_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div><script type="text/javascript" src="../Resources/axurerp_pagescript.js"></script>
+        <script type="text/javascript" src="../Resources/axurerp_pagescript.js"></script>
 <script type="text/javascript" src="SolicitudDatosLaborales_files/axurerp_pagespecificscript.js"></script>
 <div id = "leftside"><div id=Div1 style="position:absolute; left:959px; top:95px; width:183px; height:124px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">

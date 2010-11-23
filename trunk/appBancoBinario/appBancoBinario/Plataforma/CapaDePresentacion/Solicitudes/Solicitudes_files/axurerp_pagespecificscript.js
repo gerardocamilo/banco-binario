@@ -126,20 +126,7 @@ var u55 = document.getElementById('u55');
 gv_vAlignTable['u55'] = 'center';
 var u93 = document.getElementById('u93');
 
-u93.style.cursor = 'pointer';
-if (bIE) u93.attachEvent("onclick", Clicku93);
-else u93.addEventListener("click", Clicku93, true);
-function Clicku93(e)
-{
 
-if (true) {
-
-	self.location.href="Calculadora_de_Préstamos.aspx" + GetQuerystring();
-
-}
-
-}
-gv_vAlignTable['u93'] = 'top';
 var u61 = document.getElementById('u61');
 gv_vAlignTable['u61'] = 'center';
 var u84 = document.getElementById('u84');
@@ -148,38 +135,11 @@ var u52 = document.getElementById('u52');
 
 var u90 = document.getElementById('u90');
 
-u90.style.cursor = 'pointer';
-if (bIE) u90.attachEvent("onclick", Clicku90);
-else u90.addEventListener("click", Clicku90, true);
-function Clicku90(e)
-{
-
-if (true) {
-
-	self.location.href="Reportes.aspx" + GetQuerystring();
-
-}
-
-}
-gv_vAlignTable['u90'] = 'top';
 var u36 = document.getElementById('u36');
 gv_vAlignTable['u36'] = 'top';
 var u89 = document.getElementById('u89');
 
-u89.style.cursor = 'pointer';
-if (bIE) u89.attachEvent("onclick", Clicku89);
-else u89.addEventListener("click", Clicku89, true);
-function Clicku89(e)
-{
 
-if (true) {
-
-	self.location.href="PIN_de_Tarjetas.aspx" + GetQuerystring();
-
-}
-
-}
-gv_vAlignTable['u89'] = 'top';
 var u81 = document.getElementById('u81');
 gv_vAlignTable['u81'] = 'center';
 var u27 = document.getElementById('u27');

@@ -540,7 +540,7 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
         private bool pCrearTarjeta(Tarjeta tarjeta)
         {
 
-            //SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_ESTADO_SOLICITUD");
+            SqlCommand sComando = new SqlCommand("UP_PLATAFORMA_ACTUALIZAR_ESTADO_SOLICITUD");
 
             //SqlParameter sParametroNumeroSolicitud = new SqlParameter("@NUMERO_SOLICITUD", SqlDbType.VarChar, 50);
             //sParametroNumeroSolicitud.Value = numeroSolicitud;

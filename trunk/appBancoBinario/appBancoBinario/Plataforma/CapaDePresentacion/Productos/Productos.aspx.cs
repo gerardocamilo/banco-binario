@@ -10,9 +10,10 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
 {
     public partial class Productos : System.Web.UI.Page
     {
+        Plataforma.CapaDeNegocio.Plataforma plataforma;
         protected void Page_Load(object sender, EventArgs e)
         {
-            PlataformaDAO plataforma = new PlataformaDAO();
+            plataforma = new Plataforma.CapaDeNegocio.Plataforma();
             gvProductos.DataSource = plataforma.dObtenerProductos();
             gvProductos.DataBind();
         }
@@ -22,7 +23,7 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
             
             Session["noProducto"] = txtNoProducto.Text;
 
-            PlataformaDAO plataforma = new PlataformaDAO();
+            
 
             plataforma.pObtenerProductoPorCodigo(txtNoProducto.Text);
 
@@ -35,6 +36,12 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
                 //Response.Redirect("VerProducto.aspx?solicitud=" + gvProductos.SelectedRow.Cells[0].Text);
             }
             
+        }
+
+        protected void gvProductos_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvProductos.PageIndex = e.NewPageIndex;
+            gvProductos.DataBind();
         }
 
         

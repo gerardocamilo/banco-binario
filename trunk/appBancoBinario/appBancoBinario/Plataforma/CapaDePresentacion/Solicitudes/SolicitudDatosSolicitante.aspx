@@ -596,21 +596,15 @@ src="SolicitudDatosSolicitante_files/u106.png" border="0" alt=""></span>
 <div id=u108 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u108_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u109 style="position:absolute; left:290px; top:126px; width:110px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u109_rtf><span style=" color:#0000FF; font-size:15px;"><u>PIN de Tarjetas</u></span></div></div>
+<div id=u109_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u110 style="position:absolute; left:409px; top:126px; width:60px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u110_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Reportes</u></span></div></div>
+<div id=u110_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u111 style="position:absolute; left:193px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u111_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
-<div id=u112 style="position:absolute; left:397px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u112_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=u113 style="position:absolute; left:491px; top:126px; width:209px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u113_rtf><span style=" color:#0000FF; font-size:15px;"><u>Calculadora de Préstamo</u></span></div></div>
-<div id=u114 style="position:absolute; left:479px; top:127px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u114_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
+<div id=u113_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u115 style="position:absolute; left:206px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u115_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Productos</u></span></div></div>
-<div id=u116 style="position:absolute; left:282px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u116_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
         &nbsp;
 
 <IMG id=u119 src="../Resources/transparent.gif" style="position:absolute; left:357.5px; top:253px; width:2px; height:25px"/>

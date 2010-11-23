@@ -85,5 +85,20 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
             return true;
         }
 
+
+        public DataSet dObtenerProductos()
+        {
+            return this._plataformaDAO.dObtenerProductos();
+        }
+
+        public DataSet dObtenerSolicitudes()
+        {
+            return this._plataformaDAO.dObtenerSolicitudes();
+        }
+
+        public Solicitud pObtenerSolicitudPorNumero(string p)
+        {
+            return this._plataformaDAO.pObtenerSolicitudPorNumero(p);
+        }
     }
 }

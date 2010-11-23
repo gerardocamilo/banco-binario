@@ -294,21 +294,7 @@ src="SolicitudConfirmacion_files/u53.png" border="0" alt=""></span>
     string noSolicitud1  =solicitud1.NumeroSolicitud;%>
 <a href="VerSolicitud.aspx?solicitud=<%=noSolicitud1%>" >Ver solicitud</a></u></span></div></div>
 
-<%
 
-    string indicadorPagina = Session["indicadorPagina"].ToString();
-
-    if (indicadorPagina.Equals("pp"))
-    {
-        Response.Output.Write(
-            "<div id=u58 style=\"position:absolute; left:140px; top:420px; width:165px; height:16px; text-align: left; font-family:Arial; text-align:left; word-wrap:break-word;\" >"
-            + "<div id=u58_rtf><span style=\" font-family:'Arial'; color:#0033FF; font-size:13px;\">"
-            + "<u>Ver Tabla de Amortización</u>"
-            + "</span></div></div>"
-        );
-    }
-    
-     %>
 
 <div id=ou59 style="position:absolute; left:137px; top:215px; width:141px; height:18px;; overflow:visible; ">
 
@@ -504,21 +490,16 @@ src="SolicitudConfirmacion_files/u74.png" border="0" alt=""></span>
 <div id=u78 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u78_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u79 style="position:absolute; left:290px; top:126px; width:110px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u79_rtf><span style=" color:#0000FF; font-size:15px;"><u>PIN de Tarjetas</u></span></div></div>
+<div id=u79_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u80 style="position:absolute; left:409px; top:126px; width:60px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u80_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Reportes</u></span></div></div>
+<div id=u80_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u81 style="position:absolute; left:193px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u81_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
-<div id=u82 style="position:absolute; left:397px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u82_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=u83 style="position:absolute; left:491px; top:126px; width:209px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u83_rtf><span style=" color:#0000FF; font-size:15px;"><u>Calculadora de Préstamo</u></span></div></div>
-<div id=u84 style="position:absolute; left:479px; top:127px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u84_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
+<div id=u83_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u85 style="position:absolute; left:206px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u85_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Productos</u></span></div></div>
-<div id=u86 style="position:absolute; left:282px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u86_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div><script type="text/javascript" src="../Resources/axurerp_pagescript.js"></script>
+        <script type="text/javascript" src="../Resources/axurerp_pagescript.js"></script>
 <script type="text/javascript" src="SolicitudConfirmacion_files/axurerp_pagespecificscript.js"></script></BODY></HTML>
 <div id = "leftside"><div id=Div1 style="position:absolute; left:959px; top:95px; width:183px; height:124px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div style="text-align:center; font-family:'Arial'; color:#000000; font-size:14px;">

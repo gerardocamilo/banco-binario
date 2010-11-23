@@ -156,24 +156,6 @@ if (true) {
 gv_vAlignTable['u110'] = 'top';
 var u14 = document.getElementById('u14');
 gv_vAlignTable['u14'] = 'center';
-var u67 = document.getElementById('u67');
-
-u67.style.cursor = 'pointer';
-if (bIE) u67.attachEvent("onclick", Clicku67);
-else u67.addEventListener("click", Clicku67, true);
-function Clicku67(e)
-{
-
-if (true) {
-
-	self.location.href="Reportes.aspx" + GetQuerystring();
-
-}
-
-}
-gv_vAlignTable['u67'] = 'top';
-var u20 = document.getElementById('u20');
-
 u20.style.cursor = 'pointer';
 if (bIE) u20.attachEvent("onclick", Clicku20);
 else u20.addEventListener("click", Clicku20, true);
@@ -440,22 +422,6 @@ var u34 = document.getElementById('u34');
 
 var u40 = document.getElementById('u40');
 
-var u68 = document.getElementById('u68');
-
-u68.style.cursor = 'pointer';
-if (bIE) u68.attachEvent("onclick", Clicku68);
-else u68.addEventListener("click", Clicku68, true);
-function Clicku68(e)
-{
-
-if (true) {
-
-    self.location.href = "Plataforma/CapaDePresentacion/Calculadora_de_Préstamos.aspx" + GetQuerystring();
-
-}
-
-}
-gv_vAlignTable['u68'] = 'top';
 var u25 = document.getElementById('u25');
 gv_vAlignTable['u25'] = 'top';
 var u31 = document.getElementById('u31');
@@ -560,22 +526,6 @@ var u9 = document.getElementById('u9');
 
 var u13 = document.getElementById('u13');
 
-var u66 = document.getElementById('u66');
-
-u66.style.cursor = 'pointer';
-if (bIE) u66.attachEvent("onclick", Clicku66);
-else u66.addEventListener("click", Clicku66, true);
-function Clicku66(e)
-{
-
-if (true) {
-
-    self.location.href = "Plataforma/CapaDePresentacion/PIN_de_Tarjetas.aspx" + GetQuerystring();
-
-}
-
-}
-gv_vAlignTable['u66'] = 'top';
 var u105 = document.getElementById('u105');
 gv_vAlignTable['u105'] = 'top';
 var u6 = document.getElementById('u6');

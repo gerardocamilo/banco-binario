@@ -49,13 +49,11 @@ src="Plataforma_files/u2.png" border="0" alt=""></span>
 &nbsp;<div id=u7 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u7_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u8 style="position:absolute; left:290px; top:126px; width:110px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u8_rtf><span style=" color:#0000FF; font-size:15px;"><u>PIN de Tarjetas</u></span></div></div>
+<div id=u8_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u9 style="position:absolute; left:409px; top:126px; width:60px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u9_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Reportes</u></span></div></div>
+<div id=u9_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u10 style="position:absolute; left:193px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u10_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
-<div id=u11 style="position:absolute; left:397px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u11_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=ou12 style="position:absolute; left:120px; top:246px; width:261px; height:135px;; overflow:visible; ">
 
 <span style="position:absolute; left:-3px; top:-3px; width:269px; height:143px; ;
@@ -411,13 +409,9 @@ src="Plataforma_files/u61.png" border="0" alt=""></span>
 </div>
 </div>
 <div id=u63 style="position:absolute; left:491px; top:126px; width:209px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u63_rtf><span style=" color:#0000FF; font-size:15px;"><u>Calculadora de Préstamo</u></span></div></div>
-<div id=u64 style="position:absolute; left:479px; top:127px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u64_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
+<div id=u63_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u65 style="position:absolute; left:206px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u65_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Productos</u></span></div></div>
-<div id=u66 style="position:absolute; left:282px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u66_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=ou67 style="position:absolute; left:120px; top:438px; width:261px; height:133px;; overflow:visible; ">
 
 <span style="position:absolute; left:-3px; top:-3px; width:269px; height:141px; ;
@@ -444,7 +438,7 @@ src="Plataforma_files/u14.png" border="0" alt=""></span>
 <div id=u69container style="position:absolute; left:120px; top:410px; width:261px; height:31px;; overflow:visible;">
 
 <div id=u70 style="position:absolute; left:2px; top:4px; width:256px; height:22px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u70_rtf><span style=" color:#0000FF; font-size:19px;"><b> Reportes</b></span></div></div>
+<div id=u70_rtf><span style=" color:#0000FF; font-size:19px;"><b> </b></span></div></div>
 </div>
 <IMG id=u69 src="Resources/transparent.gif" style="position:absolute; left:120px; top:410px; width:260px; height:30px"   >
 
@@ -602,7 +596,7 @@ src="Plataforma_files/u93.png" border="0" alt=""></span>
 <div id=u93container style="position:absolute; left:393px; top:409px; width:261px; height:29px;; overflow:visible;">
 
 <div id=u94 style="position:absolute; left:2px; top:3px; width:256px; height:22px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u94_rtf><span style=" color:#0000FF; font-size:19px;"><b> Calculadora de Préstamo</b></span></div></div>
+<div id=u94_rtf><span style=" color:#0000FF; font-size:19px;"><b> </b></span></div></div>
 </div>
 <IMG id=u93 src="Resources/transparent.gif" style="position:absolute; left:393px; top:409px; width:260px; height:28px"   >
 

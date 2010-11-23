@@ -82,9 +82,46 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 
         protected void txtNoIdentificacion_TextChanged(object sender, EventArgs e)
         {
-            //string noIdentificacion = txtNoIdentificacion.Text;
-            //Clientes.CapaDeNegocio.Clases.Clientes clientes = new Clientes.CapaDeNegocio.Clases.Clientes();
-            //ClientesDetails cliente = clientes.BuscarClientePorIdentificacion(noIdentificacion);
+            if (txtNoIdentificacion.Text.Length == 11)
+            {
+                string noIdentificacion = txtNoIdentificacion.Text;
+                appBancoBinario.Clientes.CapaDeNegocio.Clientes clientes = new Clientes.CapaDeNegocio.Clientes();
+                ClientesDetails cliente = clientes.BuscarClientePorIdentificacion_(noIdentificacion);
+                if (cliente != null)
+                {
+                    txtNombres.Text = cliente.Nombre;                    
+                    txtApellidos.Text = cliente.Apellido;
+                    ddlEstadoCivil.SelectedValue = cliente.Estado_Civil;
+                    txtTelefono.Text = cliente.Telefono;
+                    txtCelular.Text = cliente.Celular;
+                    txtCorreoElectronico.Text = cliente.Correo;
+                    txtDireccion.Text = cliente.Direccion;
+                    ddlTipoResidencia.SelectedValue = cliente.Tipo_Vivienda;
+                    txtDependientes.Text = cliente.Numero_Dependientes;
+
+                    txtNombres.Enabled = false;
+                    txtApellidos.Enabled = false;
+                    ddlEstadoCivil.Enabled  = false;
+                    txtTelefono.Enabled = false;
+                    txtCelular.Enabled = false;
+                    txtCorreoElectronico.Enabled = false;
+                    txtDireccion.Enabled = false;
+                    ddlTipoResidencia.Enabled = false;
+                    txtDependientes.Enabled = false;
+                }
+                else{
+                    txtNombres.Enabled = true;
+                    txtApellidos.Enabled = true;
+                    ddlEstadoCivil.Enabled = true;
+                    txtTelefono.Enabled = true;
+                    txtCelular.Enabled = true;
+                    txtCorreoElectronico.Enabled = true;
+                    txtDireccion.Enabled = true;
+                    ddlTipoResidencia.Enabled = true;
+                    txtDependientes.Enabled = true;
+                }
+            }
+
         }
 
         

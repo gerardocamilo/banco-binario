@@ -298,7 +298,7 @@ function Clicku88(e)
 
 if (true) {
 
-	self.location.href="Reportes.html" + GetQuerystring();
+	self.location.href=".html" + GetQuerystring();
 
 }
 
