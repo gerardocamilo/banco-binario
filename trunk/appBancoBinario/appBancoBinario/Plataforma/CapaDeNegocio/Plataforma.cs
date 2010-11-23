@@ -67,9 +67,15 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
             return resultado;
         }
 
-        public bool pAprobarSolicitud(Solicitud solicitud) {
-            pActualizarEstadoSolicitud(solicitud.NumeroSolicitud, solicitud.Estado);
-
+        public bool pAprobarSolicitud(Solicitud solicitud)
+        {
+            bool resultado = false;
+            resultado = pActualizarEstadoSolicitud(solicitud.NumeroSolicitud, solicitud.Estado);
+            if (solicitud.Cliente.Prospecto) { solicitud.Cliente.Prospecto = false; }
+            solicitud.ProductoAsociado.ClienteProducto = solicitud.Cliente.identificacion;
+            
+            resultado = this._plataformaDAO.pCrearProducto(solicitud.ProductoAsociado);
+            
             return true;
         }
 
@@ -80,7 +86,8 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
             return resultado;
         }
 
-        private bool pCrearProductoAprobado(Solicitud solicitud) {
+        private bool pCrearProductoAprobado(Solicitud solicitud)
+        {
             bool resultado = this._plataformaDAO.pCrearProducto(solicitud.ProductoAsociado);
             return resultado;
         }
@@ -99,6 +106,10 @@ namespace appBancoBinario.Plataforma.CapaDeNegocio
         public Solicitud pObtenerSolicitudPorNumero(String numeroSolicitud)
         {
             return this._plataformaDAO.pObtenerSolicitudPorNumero(numeroSolicitud);
+        }
+
+        public void promover()
+        {
         }
     }
 }
