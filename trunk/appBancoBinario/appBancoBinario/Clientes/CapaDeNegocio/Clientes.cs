@@ -414,7 +414,17 @@ namespace appBancoBinario.Clientes.CapaDeNegocio
 
             DataTable dtable = new DataTable();
             DataRow dr;
-            dtable = GetDataSetSP(myCommand).Tables[0];
+            DataSet clientePorIdentificacion = GetDataSetSP(myCommand);
+
+            //Validar si no se encuentra ningun cliente con esta Identificacion [Si ninguna tabla o fila es retornada]
+            if (clientePorIdentificacion.Tables.Count > 0)
+            {
+                dtable = clientePorIdentificacion.Tables[0];
+            }
+            else {
+                return null;
+            }
+            
 
             if (dtable.Rows.Count > 0)
             {
