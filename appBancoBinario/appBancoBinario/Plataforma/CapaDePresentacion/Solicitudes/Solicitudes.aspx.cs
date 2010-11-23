@@ -15,8 +15,8 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
         protected void Page_Load(object sender, EventArgs e)
         {
             PlataformaDAO plataforma = new PlataformaDAO();
-            gvSolicitudes.DataSource = plataforma.dObtenerSolicitudes();
-            gvSolicitudes.DataBind();
+            //gvSolicitudes.DataSource = plataforma.dObtenerSolicitudes();
+            //gvSolicitudes.DataBind();
         }
 
         protected void btnIr_Click(object sender, EventArgs e)
