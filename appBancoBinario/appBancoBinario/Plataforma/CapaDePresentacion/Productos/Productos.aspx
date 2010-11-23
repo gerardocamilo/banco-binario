@@ -371,11 +371,13 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Productos_files/u
 "><img style="width:789px; height:341px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="Productos_files/u59.png" border="0" alt=""></span>
 
-<div style="padding-top:20px">
+<div style="padding-top:20px; position:absolute">
     <asp:GridView ID="gvProductos" runat="server" AutoGenerateColumns="False" 
         CellPadding="3" ForeColor="#333333" GridLines="None" 
-        AllowPaging = "True" Width="777px" 
-        onselectedindexchanged="gvProductos_SelectedIndexChanged"> 
+        AllowPaging = "True" Width="748px" 
+        onselectedindexchanged="gvProductos_SelectedIndexChanged" 
+        onpageindexchanging="gvProductos_PageIndexChanging" 
+        ShowHeaderWhenEmpty="True" style="margin-left: 13px"> 
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="CODIGO_PRODUCTO" HeaderText="Número" />
@@ -388,7 +390,7 @@ src="Productos_files/u59.png" border="0" alt=""></span>
             HorizontalAlign="Left" />
         <PagerSettings FirstPageText="&lt;&lt;" LastPageText="&gt;&gt;" 
             NextPageText="&gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
-        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Left" />
         <RowStyle BackColor="#EFF3FB" />
         <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
         <SortedAscendingCellStyle BackColor="#F5F7FB" />
@@ -402,7 +404,6 @@ src="Productos_files/u59.png" border="0" alt=""></span>
 <div id=u60 style="position:absolute; left:2px; top:158px; width:776px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u60_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u59 src="../Resources/transparent.gif" style="position:absolute; left:140px; top:318px; width:780px; height:332px"   >
 
 <div id=ou61 style="position:absolute; left:160px; top:310px; width:71px; height:21px;; overflow:visible; ">
 
@@ -425,21 +426,16 @@ src="Productos_files/u61.png" border="0" alt=""></span>
 <div id=u66 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u66_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u67 style="position:absolute; left:290px; top:126px; width:110px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u67_rtf><span style=" color:#0000FF; font-size:15px;"><u>PIN de Tarjetas</u></span></div></div>
+<div id=u67_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u68 style="position:absolute; left:409px; top:126px; width:60px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u68_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Reportes</u></span></div></div>
+<div id=u68_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u69 style="position:absolute; left:193px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u69_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
-<div id=u70 style="position:absolute; left:397px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u70_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=u71 style="position:absolute; left:491px; top:126px; width:209px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u71_rtf><span style=" color:#0000FF; font-size:15px;"><u>Calculadora de Préstamo</u></span></div></div>
-<div id=u72 style="position:absolute; left:479px; top:127px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u72_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
+<div id=u71_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u73 style="position:absolute; left:206px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u73_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Productos</u></span></div></div>
-<div id=u74 style="position:absolute; left:282px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u74_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div><SCRIPT src="../Resources/axurerp_pagescript.js"></SCRIPT>
+        <SCRIPT src="../Resources/axurerp_pagescript.js"></SCRIPT>
 <SCRIPT src="Productos_files/axurerp_pagespecificscript.js"></SCRIPT>
     </div>
     </form>

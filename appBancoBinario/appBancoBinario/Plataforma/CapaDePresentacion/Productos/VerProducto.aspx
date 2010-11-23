@@ -466,21 +466,17 @@ src="Ver_Producto_-_Préstamo_files/u60.png" border="0" alt=""></span>
 <div id=u86 style="position:absolute; left:116px; top:126px; width:74px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u86_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u87 style="position:absolute; left:290px; top:126px; width:110px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u87_rtf><span style=" color:#0000FF; font-size:15px;"><u>PIN de Tarjetas</u></span></div></div>
+<div id=u87_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u88 style="position:absolute; left:409px; top:126px; width:60px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u88_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Reportes</u></span></div></div>
+<div id=u88_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u89 style="position:absolute; left:193px; top:126px; width:7px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u89_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
-<div id=u90 style="position:absolute; left:397px; top:126px; width:7px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u90_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=u91 style="position:absolute; left:491px; top:126px; width:209px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u91_rtf><span style=" color:#0000FF; font-size:15px;"><u>Calculadora de Préstamo</u></span></div></div>
-<div id=u92 style="position:absolute; left:479px; top:127px; width:7px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u92_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
+<div id=u91_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u93 style="position:absolute; left:206px; top:126px; width:74px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u93_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Productos</u></span></div></div>
-<div id=u94 style="position:absolute; left:282px; top:126px; width:7px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u94_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div><SCRIPT src="../Resources/axurerp_pagescript.js"></SCRIPT>
+<div id=u93_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;">
+    <u>roductos</u></span></div></div>
+        <SCRIPT src="../Resources/axurerp_pagescript.js"></SCRIPT>
 <SCRIPT src="Ver_Producto_-_Préstamo_files/axurerp_pagespecificscript.js"></SCRIPT>
     </div>
     </form>

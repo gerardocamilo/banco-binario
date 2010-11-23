@@ -12,11 +12,12 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
 {
     public partial class Solicitudes : System.Web.UI.Page
     {
+        Plataforma.CapaDeNegocio.Plataforma plataforma = null;
         protected void Page_Load(object sender, EventArgs e)
         {
-            PlataformaDAO plataforma = new PlataformaDAO();
-            //gvSolicitudes.DataSource = plataforma.dObtenerSolicitudes();
-            //gvSolicitudes.DataBind();
+            plataforma = new Plataforma.CapaDeNegocio.Plataforma();
+            gvSolicitudes.DataSource = plataforma.dObtenerSolicitudes();
+            gvSolicitudes.DataBind();
         }
 
         protected void btnIr_Click(object sender, EventArgs e)
@@ -61,15 +62,33 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
         {
             if (!txtNumeroSolicitud.Text.Equals(""))
             {
-                PlataformaDAO plataforma = new PlataformaDAO();
-                plataforma.pObtenerSolicitudPorNumero(txtNumeroSolicitud.Text);
-                Response.Redirect("VerSolicitud.aspx?solicitud=" + txtNumeroSolicitud.Text);
+                Solicitud solicitud = plataforma.pObtenerSolicitudPorNumero(txtNumeroSolicitud.Text);
+                if(solicitud!=null){
+                    Session["solicitud"] = solicitud;
+                    Response.Redirect("VerSolicitud.aspx");
+                }
+                
             }
         }
 
-        protected void gvSolicitudes_SelectedIndexChanged(object sender, EventArgs e)
+        
+        protected void gvSolicitudes_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvSolicitudes.PageIndex = e.NewPageIndex;
+            gvSolicitudes.DataBind();
+        }
+
+        protected void gvSolicitudes_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
         {
             Response.Redirect("VerSolicitud.aspx?solicitud=" + gvSolicitudes.SelectedRow.Cells[0].Text);
+        }
+
+        protected void gvSolicitudes_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (gvSolicitudes.SelectedRow != null)
+            {
+                Response.Redirect("VerSolicitud.aspx?solicitud=" + gvSolicitudes.SelectedRow.Cells[0].Text);
+            }
         }
     }
 }

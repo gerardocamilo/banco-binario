@@ -8,15 +8,11 @@ using System.Diagnostics;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Text;
-namespace appBancoBinario.Clientes.CapaDeNegocio
+namespace Banco_Binario
 {
     public class SqlHelper
     {
 
-
-        //Private DBConnectionString As String = "Data Source=lenin-lt\sqlexpress;Initial Catalog=asamblea;user id=sa;password=pkm;persist security info=True; packet size=4096"
-        //Private DBConnectionString As String = "Data Source=lenin-lt\sqlexpress;Initial Catalog=CCESQL;Integrated Security=SSPI;Persist Security Info=False;packet size=4096"
-        //Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AG-2007;Data Source=lenin-lt\sqlexpress
 
         private string DBConnectionString = "";
 
@@ -36,7 +32,7 @@ namespace appBancoBinario.Clientes.CapaDeNegocio
         protected SqlHelper(string DataBaseName, string DataBaseServer, string DataBaseUser, string DataBasePassword)
         {
             //        DBConnectionString = "Data Source=" & DataBaseServer & ";Initial Catalog=" & DataBaseName & ";user id=" & DataBaseUser & ";password=" & DataBasePassword & ";persist security info=True; packet size=4096"
-            DBConnectionString = "Data Source=CLAUDIO-PC\\SRVWSQLVS;Initial Catalog=bb;Integrated Security=SSPI;";
+            DBConnectionString = "Data Source=ANIMECENTER\\SQLEXPRESS;Initial Catalog=BB;Integrated Security=True";
 
         }
 
@@ -53,7 +49,7 @@ namespace appBancoBinario.Clientes.CapaDeNegocio
         //End Sub
         protected SqlHelper()
         {
-            DBConnectionString = "Data Source=CLAUDIO-PC\\SRVWSQLVS;Initial Catalog=bb;Integrated Security=SSPI;";
+            DBConnectionString = "Data Source=ANIMECENTER\\SQLEXPRESS;Initial Catalog=bb;Integrated Security=True";
         }
 
 

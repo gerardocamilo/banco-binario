@@ -27,7 +27,7 @@ src="Solicitudes_files/u0.png" border="0" alt=""></span>
 <div id=u1 style="position:absolute; left:2px; top:237px; width:830px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u1_rtf>&nbsp;</div></div>
 </div>
-<IMG id=u0 src="../Resources/transparent.gif" style="position:absolute; left:110px; top:180px; width:834px; height:490px"   >
+
 
 <div id=ou2 style="position:absolute; left:109px; top:123px; width:837px; height:54px;; overflow:visible; ">
 
@@ -353,7 +353,7 @@ src="Solicitudes_files/u54.png" border="0" alt=""></span>
 </div>
 <IMG id=u54 src="../Resources/transparent.gif" style="position:absolute; left:150px; top:210px; width:99px; height:22px"   >
 <asp:Button ID="btnIr" runat="server" Text="Ir" onclick="btnIr_Click" 
-    style="position:absolute; left:475px; top:239px; width:20px; height:20px" 
+    style="position:absolute; left:475px; top:239px; width:25px; height:23px" 
     Height="24px" Width="24px"/>
 
 <div id=u58 style="position:absolute; left:150px; top:244px; width:164px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
@@ -380,11 +380,14 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
 
 <div id=u61 style="position:absolute; left:2px; top:158px; width:776px; height:16px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u61_rtf >&nbsp;</div></div>
-    <div style="padding-top:20px"><asp:GridView ID="gvSolicitudes" runat="server" AutoGenerateColumns="False" 
+    <div style="padding-top:20px">
+        <asp:GridView ID="gvSolicitudes" runat="server" AutoGenerateColumns="False" 
         CellPadding="0" ForeColor="#333333" GridLines="None" 
         AllowPaging = "True" Width="752px" 
-        onselectedindexchanged="gvSolicitudes_SelectedIndexChanged" 
-            ShowHeaderWhenEmpty="True" style="margin-left: 10px"> 
+            ShowHeaderWhenEmpty="True" style="margin-left: 10px" AllowSorting="True" 
+            PageSize="2" onpageindexchanging="gvSolicitudes_PageIndexChanging" 
+            onrowcommand="gvSolicitudes_RowCommand" 
+            onselectedindexchanging="gvSolicitudes_SelectedIndexChanging"> 
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="NUMERO_SOLICITUD" HeaderText="Número" />
@@ -394,12 +397,14 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
                 DataField="NUMERO_SOLICITUD_ASOCIADO" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
+            <EmptyDataRowStyle BackColor="#EFF3FB" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
         <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" 
             HorizontalAlign="Left" />
-        <PagerSettings FirstPageText="&lt;&lt;" LastPageText="&gt;&gt;" 
-            NextPageText="&gt;" PreviousPageText="&lt;" />
-        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <PagerSettings FirstPageText="&lt;&lt; " LastPageText=" &gt;&gt;" 
+            NextPageText=" &gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
+        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Left" 
+                Width="100px" />
         <RowStyle BackColor="#EFF3FB" />
         <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
         <SortedAscendingCellStyle BackColor="#F5F7FB" />
@@ -408,7 +413,7 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView></div>
 </div>
-<IMG id=u60 src="../Resources/transparent.gif" style="position:absolute; left:140px; top:318px; width:780px; height:332px"   >
+
 
 <div id=ou62 style="position:absolute; left:160px; top:305px; width:71px; height:24px;; overflow:visible; ">
 
@@ -466,26 +471,21 @@ src="Solicitudes_files/u80.png" border="0" alt=""></span>
 </div>
 &nbsp;<div id=u84 style="position:absolute; left:540px; top:244px; width:164px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u84_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Número de solicitud</span></div></div>
-&nbsp;<asp:TextBox id="txtNumeroSolicitud" style="position:absolute; left:667px; top:241px; width:180px; height:25px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   runat="server"></asp:TextBox>
+&nbsp;<asp:TextBox id="txtNumeroSolicitud" 
+            style="position:absolute; left:667px; top:241px; width:180px; height:21px; text-align: left; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   
+            runat="server"></asp:TextBox>
 
 <div id=u88 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u88_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Solicitudes</u></span></div></div>
 <div id=u89 style="position:absolute; left:290px; top:126px; width:110px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u89_rtf><span style=" color:#0000FF; font-size:15px;"><u>PIN de Tarjetas</u></span></div></div>
-<div id=u90 style="position:absolute; left:409px; top:126px; width:60px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u90_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Reportes</u></span></div></div>
+<div id=u89_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id=u91 style="position:absolute; left:193px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u91_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
-<div id=u92 style="position:absolute; left:397px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u92_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
 <div id=u93 style="position:absolute; left:491px; top:126px; width:209px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u93_rtf><span style=" color:#0000FF; font-size:15px;"><u>Calculadora de Préstamo</u></span></div></div>
-<div id=u94 style="position:absolute; left:479px; top:127px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id="u94_rtf"><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div>
+<div id=u93_rtf><span style=" color:#0000FF; font-size:15px;"><u></u></span></div></div>
 <div id="u95" style="position:absolute; left:206px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u95_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:15px;"><u>Productos</u></span></div></div>
-<div id=u96 style="position:absolute; left:282px; top:126px; width:7px; height:18px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u96_rtf><span style=" font-family:'Arial'; color:#0000CC; font-size:16px;">|</span></div></div><script type="text/javascript" src="../Resources/axurerp_pagescript.js"></script>
+        <script type="text/javascript" src="../Resources/axurerp_pagescript.js"></script>
 <script type="text/javascript" src="Solicitudes_files/axurerp_pagespecificscript.js"></script></div>
     </form>
     <div id = "leftside"><div id=Div1 style="position:absolute; left:959px; top:95px; width:183px; height:124px; text-align: center; font-family:Arial; text-align:left; word-wrap:break-word;" >

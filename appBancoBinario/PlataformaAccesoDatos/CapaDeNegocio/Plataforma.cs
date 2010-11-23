@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
 using appBancoBinario.Plataforma.CapaDeNegocio;
 using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
@@ -12,6 +11,7 @@ using appBancoBinario.Clientes.CapaDeNegocio;
 
 //Package that contains Debug class.
 using System.Diagnostics;
+using Plataforma.CapaDeDatos;
 
 namespace appBancoBinario.Plataforma.CapaDeNegocio
 {

@@ -394,19 +394,6 @@ var u24 = document.getElementById('u24');
 gv_vAlignTable['u24'] = 'top';
 var u72 = document.getElementById('u72');
 
-u72.style.cursor = 'pointer';
-if (bIE) u72.attachEvent("onclick", Clicku72);
-else u72.addEventListener("click", Clicku72, true);
-function Clicku72(e)
-{
-
-if (true) {
-
-	self.location.href="VerProducto.aspx" + GetQuerystring();
-
-}
-
-}
 
 var u102 = document.getElementById('u102');
 

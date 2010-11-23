@@ -99,8 +99,8 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
             ClientesDetails cliente = solicitud.Cliente;
             appBancoBinario.Plataforma.CapaDeNegocio.Plataforma p = new appBancoBinario.Plataforma.CapaDeNegocio.Plataforma();
             
-            if(cliente.Prospecto == "True"){
-                solicitud.Cliente.Prospecto = "False";
+            if(cliente.Prospecto.Equals("True")){
+                solicitud.Cliente.Prospecto.Equals("False");
             }
 
             if (solicitud.SolicitudAsociada != null) {
