@@ -65,7 +65,11 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
                 else if (tipoProducto.Equals(TipoProducto.CUENTA_CORRIENTE.ToString()))
                 {
                     producto = "Cuenta Corriente";
-                }            
+                }
+                else if (tipoProducto.Equals(TipoProducto.CUENTA_TARJETA.ToString()))
+                {
+                    producto = "Cuenta Tarjeta";
+                }
             }
             else if(solicitud is SolicitudTarjeta){
                 solicitudTarjeta = (SolicitudTarjeta)solicitud;

@@ -384,13 +384,13 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
         <asp:GridView ID="gvSolicitudes" runat="server" AutoGenerateColumns="False" 
         CellPadding="0" ForeColor="#333333" GridLines="None" 
         AllowPaging = "True" Width="752px" 
-            ShowHeaderWhenEmpty="True" style="margin-left: 10px" AllowSorting="True" 
-            PageSize="2" onpageindexchanging="gvSolicitudes_PageIndexChanging" 
+            ShowHeaderWhenEmpty="True" style="margin-left: 10px" AllowSorting="True" onpageindexchanging="gvSolicitudes_PageIndexChanging" 
             onrowcommand="gvSolicitudes_RowCommand" 
             onselectedindexchanging="gvSolicitudes_SelectedIndexChanging"> 
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="NUMERO_SOLICITUD" HeaderText="Número" />
+            <asp:HyperLinkField DataTextField="NUMERO_SOLICITUD" HeaderText="Número" 
+                NavigateUrl="~/Plataforma/CapaDePresentacion/Solicitudes/VerSolicitud.aspx" />
             <asp:BoundField HeaderText="Tipo de Solicitud" DataField="TIPO_PRODUCTO" />
             <asp:BoundField HeaderText="Estado Solicitud" DataField="ESTADO" />
             <asp:BoundField HeaderText="Producto asociado" 
@@ -402,7 +402,7 @@ src="Solicitudes_files/u60.png" border="0" alt=""></span>
         <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" 
             HorizontalAlign="Left" />
         <PagerSettings FirstPageText="&lt;&lt; " LastPageText=" &gt;&gt;" 
-            NextPageText=" &gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
+            NextPageText=" &gt;" PreviousPageText="&lt;" />
         <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Left" 
                 Width="100px" />
         <RowStyle BackColor="#EFF3FB" />

@@ -55,7 +55,10 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="ErrorPage.aspx" />
     <Content Include="Plataforma\CapaDePresentacion\ErrorPage.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Productos\ErrorPage.aspx" />
+    <Content Include="Plataforma\CapaDePresentacion\Solicitudes\ErrorPage.aspx" />
     <Content Include="Resources\ann.html" />
     <Content Include="Resources\axurerppage.css" />
     <Content Include="Resources\axurerpprototype.css" />
@@ -628,11 +631,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Plataforma\CapaDeNegocio\Productos\TipoProducto.cs" />
-    <Compile Include="Plataforma\CapaDePresentacion\ErrorPage.aspx.cs">
+    <Compile Include="ErrorPage.aspx.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Plataforma\CapaDePresentacion\ErrorPage.aspx.designer.cs">
+    <Compile Include="ErrorPage.aspx.designer.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -768,7 +771,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50846</DevelopmentServerPort>
+          <DevelopmentServerPort>52290</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

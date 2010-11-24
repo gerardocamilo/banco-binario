@@ -571,8 +571,6 @@ src="SolicitudDatosProducto_files/u100.png" border="0" alt=""></span>
 <div id=u102_rtf><span style=" font-family:'Arial'; color:#000000; font-size:13px;">Tasa</span></div></div>
 <asp:TextBox style="position:absolute; left:265px; top:295px; width:45px; height:25px; text-align: left ; font-family:'Arial'; font-size: 13px; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  runat="server" ID="txtTasa"></asp:TextBox>
 
-<div id=u104 style="position:absolute; left:340px; top:339px; width:160px; height:16px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u104_rtf><span style=" font-family:'Arial'; color:#0033FF; font-size:13px;"><u>Ver Tabla de Amortización</u></span></div></div>
 <div id=u105 style="position:absolute; left:260px; top:154px; width:150px; height:14px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u105_rtf><span style=" font-family:'Arial'; color:#666666; font-size:11px;">Solicitud Préstamo Personal</span></div></div>
 <div id=u106 style="position:absolute; left:116px; top:126px; width:74px; height:17px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
