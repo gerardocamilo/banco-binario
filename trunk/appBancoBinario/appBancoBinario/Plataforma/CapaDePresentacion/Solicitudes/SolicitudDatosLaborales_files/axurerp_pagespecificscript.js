@@ -52,7 +52,7 @@ function Clicku86(e)
 
 if (true) {
 
-	self.location.href="Inicio.aspx" + GetQuerystring();
+	self.location.href="../../../Inicio.aspx" + GetQuerystring();
 
 }
 
@@ -72,7 +72,7 @@ function Clicku29(e)
 
 if (true) {
 
-	self.location.href="#" + GetQuerystring();
+    self.location.href = "../Solicitudes/Solicitudes.aspx" + GetQuerystring();
 
 }
 
@@ -340,7 +340,7 @@ function Clicku28(e)
 
 if (true) {
 
-	self.location.href="Plataforma.aspx" + GetQuerystring();
+	self.location.href="../Plataforma.aspx" + GetQuerystring();
 
 }
 
@@ -378,21 +378,21 @@ var u41 = document.getElementById('u41');
 gv_vAlignTable['u41'] = 'center';
 var u69 = document.getElementById('u69');
 
-var u32 = document.getElementById('u32');
+//var u32 = document.getElementById('u32');
 
-u32.style.cursor = 'pointer';
-if (bIE) u32.attachEvent("onclick", Clicku32);
-else u32.addEventListener("click", Clicku32, true);
-function Clicku32(e)
-{
+//u32.style.cursor = 'pointer';
+//if (bIE) u32.attachEvent("onclick", Clicku32);
+//else u32.addEventListener("click", Clicku32, true);
+//function Clicku32(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="Plataforma.aspx" + GetQuerystring();
+//	self.location.href="Plataforma.aspx" + GetQuerystring();
 
-}
+//}
 
-}
+//}
 
 var u16 = document.getElementById('u16');
 gv_vAlignTable['u16'] = 'center';

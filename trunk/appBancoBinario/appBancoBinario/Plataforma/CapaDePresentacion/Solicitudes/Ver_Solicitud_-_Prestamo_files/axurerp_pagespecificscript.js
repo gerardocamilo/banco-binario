@@ -72,7 +72,7 @@ function Clicku29(e)
 
 if (true) {
 
-	self.location.href="#" + GetQuerystring();
+    self.location.href = "Solicitudes.aspx" + GetQuerystring();
 
 }
 

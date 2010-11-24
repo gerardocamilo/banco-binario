@@ -330,13 +330,13 @@ src="Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files/u66.png" borde
 <div id=u67 style="position:absolute; left:2px; top:2px; width:147px; height:18px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u67_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#FFFFFF; font-size:15px;"><b>Inicio</b></span></div></div></div>
 </div>
-<INPUT type="image" id=u66 src="../Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:151px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u66', 'u67', rJsonu67, true);" onmouseout="ApplyImageAndTextStyles('o', 'u66', 'u67', '', true);"  >
-
+<div id=u66 src="../Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:151px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u66', 'u67', rJsonu67, true);" onmouseout="ApplyImageAndTextStyles('o', 'u66', 'u67', '', true);"  >
+</div>
 <script type="text/javascript">
     var rJsonu69 = {};
 </script>
 
-<div id=ru68 style="position:absolute; left:151px; top:0px; width:177px; height:23px;; overflow:visible; visibility:hidden">
+<div id=ru68 style="position:absolute; left:151px; top:0px; width:177px; height:23px; overflow:visible; visibility:hidden">
 
 <span style="position:absolute; left:-3px; top:-3px; width:185px; height:31px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Solicitud_de_Tarjeta_de_Crédito_-_Datos_de_la_Tarjeta_files/ru68.png',sizingMethod='scale');

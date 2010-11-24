@@ -129,7 +129,7 @@ src="SolicitudDatosProducto_files/u26.png" border="0" alt=""></span>
 <IMG id=u26 src="../Resources/transparent.gif" style="position:absolute; left:110px; top:86px; width:834px; height:33px"   >
 
 <div id=u28 style="position:absolute; left:120px; top:154px; width:70px; height:14px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u28_rtf><span style=" color:#0000FF; font-size:11px;"><u>Plataforma</u></span></div></div>
+<div id=u28_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:11px;"><u>Plataforma</u></span></div></div>
 <div id=u29 style="position:absolute; left:190px; top:154px; width:60px; height:14px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u29_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:11px;"><u>Solicitudes</u></span></div></div>
 <div id=u30 style="position:absolute; left:248px; top:155px; width:13px; height:14px; text-align: left ; font-family:Arial; text-align:left; word-wrap:break-word;" >
@@ -455,7 +455,10 @@ src="SolicitudDatosProducto_files/u92.png" border="0" alt=""></span>
 <div id=u93 style="position:absolute; left:2px; top:2px; width:147px; height:18px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u93_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#FFFFFF; font-size:15px;"><b>Inicio</b></span></div></div></div>
 </div>
-<INPUT type="image" id=u92 src="../Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:151px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u92', 'u93', rJsonu93, true);" onmouseout="ApplyImageAndTextStyles('o', 'u92', 'u93', '', true);"  >
+<INPUT type="image" id=u92 src="../Resources/transparent.gif" 
+        style="position:absolute; left:0px; top:0px; width:151px; height:22px; right: 675px;" 
+        onmouseover="ApplyImageAndTextStyles('r', 'u92', 'u93', rJsonu93, true);" 
+        onmouseout="ApplyImageAndTextStyles('o', 'u92', 'u93', '', true);"  >
 
 <script type="text/javascript">
     var rJsonu95 = {};

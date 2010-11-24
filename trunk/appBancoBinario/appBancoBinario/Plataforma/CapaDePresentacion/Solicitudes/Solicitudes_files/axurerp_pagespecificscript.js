@@ -232,7 +232,7 @@ function Clicku88(e)
 
 if (true) {
 
-	self.location.href="Solicitudes.aspx" + GetQuerystring();
+    self.location.href = "#" + GetQuerystring();
 
 }
 

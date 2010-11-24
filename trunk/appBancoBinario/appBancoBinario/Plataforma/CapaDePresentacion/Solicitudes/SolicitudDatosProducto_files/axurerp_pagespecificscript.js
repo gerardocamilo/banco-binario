@@ -60,7 +60,7 @@ function Clicku29(e)
 
 if (true) {
 
-	self.location.href="#" + GetQuerystring();
+	self.location.href="../Solicitudes/Solicitudes.aspx" + GetQuerystring();
 
 }
 
@@ -156,43 +156,43 @@ var u61 = document.getElementById('u61');
 
 var u103 = document.getElementById('u103');
 
-var u107 = document.getElementById('u107');
+//var u107 = document.getElementById('u107');
 
-u107.style.cursor = 'pointer';
-if (bIE) u107.attachEvent("onclick", Clicku107);
-else u107.addEventListener("click", Clicku107, true);
-function Clicku107(e)
-{
+//u107.style.cursor = 'pointer';
+//if (bIE) u107.attachEvent("onclick", Clicku107);
+//else u107.addEventListener("click", Clicku107, true);
+//function Clicku107(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="PIN_de_Tarjetas.aspx" + GetQuerystring();
+//	self.location.href="PIN_de_Tarjetas.aspx" + GetQuerystring();
 
-}
+//}
 
-}
-gv_vAlignTable['u107'] = 'top';
+//}
+//gv_vAlignTable['u107'] = 'top';
 var u84 = document.getElementById('u84');
 
 var u52 = document.getElementById('u52');
 gv_vAlignTable['u52'] = 'center';
 var u90 = document.getElementById('u90');
 
-var u36 = document.getElementById('u36');
+//var u36 = document.getElementById('u36');
 
-u36.style.cursor = 'pointer';
-if (bIE) u36.attachEvent("onclick", Clicku36);
-else u36.addEventListener("click", Clicku36, true);
-function Clicku36(e)
-{
+//u36.style.cursor = 'pointer';
+//if (bIE) u36.attachEvent("onclick", Clicku36);
+//else u36.addEventListener("click", Clicku36, true);
+//function Clicku36(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="Solicitudes/Solicitudes.aspx" + GetQuerystring();
+//	self.location.href="Solicitudes/Solicitudes.aspx" + GetQuerystring();
 
-}
+//}
 
-}
+//}
 
 var u89 = document.getElementById('u89');
 gv_vAlignTable['u89'] = 'center';
@@ -282,21 +282,21 @@ var u1 = document.getElementById('u1');
 gv_vAlignTable['u1'] = 'center';
 var u34 = document.getElementById('u34');
 
-var u40 = document.getElementById('u40');
+//var u40 = document.getElementById('u40');
 
-u40.style.cursor = 'pointer';
-if (bIE) u40.attachEvent("onclick", Clicku40);
-else u40.addEventListener("click", Clicku40, true);
-function Clicku40(e)
-{
+//u40.style.cursor = 'pointer';
+//if (bIE) u40.attachEvent("onclick", Clicku40);
+//else u40.addEventListener("click", Clicku40, true);
+//function Clicku40(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="SolicitudConfirmacion.aspx" + GetQuerystring();
+//	self.location.href="SolicitudConfirmacion.aspx" + GetQuerystring();
 
-}
+//}
 
-}
+//}
 
 var u68 = document.getElementById('u68');
 gv_vAlignTable['u68'] = 'top';
@@ -372,7 +372,7 @@ function Clicku28(e)
 
 if (true) {
 
-	self.location.href="Plataforma.aspx" + GetQuerystring();
+    self.location.href = "../Plataforma.aspx" + GetQuerystring();
 
 }
 
