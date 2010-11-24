@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.ComponentModel;
+using appBancoBinario.CapaDeDatos;
 
 
 namespace appBancoBinario.Clientes.CapaDeNegocio
