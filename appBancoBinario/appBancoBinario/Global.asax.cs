@@ -24,7 +24,7 @@ namespace appBancoBinario
 
         void Application_Error(object sender, EventArgs e)
         {
-            Response.Redirect("Plataforma/CapaDePresentacion/ErrorPage.aspx");
+            Response.Redirect("ErrorPage.aspx");
 
         }
 

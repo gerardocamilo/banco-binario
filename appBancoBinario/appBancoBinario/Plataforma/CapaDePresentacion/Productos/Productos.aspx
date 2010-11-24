@@ -389,7 +389,7 @@ src="Productos_files/u59.png" border="0" alt=""></span>
         <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" 
             HorizontalAlign="Left" />
         <PagerSettings FirstPageText="&lt;&lt;" LastPageText="&gt;&gt;" 
-            NextPageText="&gt;" PreviousPageText="&lt;" Mode="NextPreviousFirstLast" />
+            NextPageText="&gt;" PreviousPageText="&lt;" />
         <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Left" />
         <RowStyle BackColor="#EFF3FB" />
         <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
