@@ -92,7 +92,7 @@ function Clicku76(e)
 
 if (true) {
 
-	self.location.href="Plataforma.aspx" + GetQuerystring();
+	self.location.href="../Plataforma.aspx" + GetQuerystring();
 
 }
 
@@ -132,21 +132,21 @@ if (true) {
 
 var u39 = document.getElementById('u39');
 gv_vAlignTable['u39'] = 'center';
-var u87 = document.getElementById('u87');
+//var u87 = document.getElementById('u87');
 
-u87.style.cursor = 'pointer';
-if (bIE) u87.attachEvent("onclick", Clicku87);
-else u87.addEventListener("click", Clicku87, true);
-function Clicku87(e)
-{
+//u87.style.cursor = 'pointer';
+//if (bIE) u87.attachEvent("onclick", Clicku87);
+//else u87.addEventListener("click", Clicku87, true);
+//function Clicku87(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="PIN_de_Tarjetas.html" + GetQuerystring();
+//	self.location.href="PIN_de_Tarjetas.html" + GetQuerystring();
 
-}
+//}
 
-}
+//}
 gv_vAlignTable['u87'] = 'top';
 var u55 = document.getElementById('u55');
 
@@ -174,21 +174,21 @@ var u52 = document.getElementById('u52');
 gv_vAlignTable['u52'] = 'center';
 var u90 = document.getElementById('u90');
 gv_vAlignTable['u90'] = 'top';
-var u36 = document.getElementById('u36');
+//var u36 = document.getElementById('u36');
 
-u36.style.cursor = 'pointer';
-if (bIE) u36.attachEvent("onclick", Clicku36);
-else u36.addEventListener("click", Clicku36, true);
-function Clicku36(e)
-{
+//u36.style.cursor = 'pointer';
+//if (bIE) u36.attachEvent("onclick", Clicku36);
+//else u36.addEventListener("click", Clicku36, true);
+//function Clicku36(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="Solicitud_de_Tarjeta_de_Crédito_-_Datos_Laborales.html" + GetQuerystring();
+//	self.location.href="Solicitud_de_Tarjeta_de_Crédito_-_Datos_Laborales.html" + GetQuerystring();
 
-}
+//}
 
-}
+//}
 
 var u89 = document.getElementById('u89');
 gv_vAlignTable['u89'] = 'top';
@@ -212,27 +212,27 @@ function Clicku77(e)
 
 if (true) {
 
-	self.location.href="#" + GetQuerystring();
+	self.location.href="../Solicitudes/Solicitudes.aspx" + GetQuerystring();
 
 }
 
 }
 gv_vAlignTable['u77'] = 'top';
-var u30 = document.getElementById('u30');
+//var u30 = document.getElementById('u30');
 
-u30.style.cursor = 'pointer';
-if (bIE) u30.attachEvent("onclick", Clicku30);
-else u30.addEventListener("click", Clicku30, true);
-function Clicku30(e)
-{
+//u30.style.cursor = 'pointer';
+//if (bIE) u30.attachEvent("onclick", Clicku30);
+//else u30.addEventListener("click", Clicku30, true);
+//function Clicku30(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="Plataforma.aspx" + GetQuerystring();
+//	self.location.href="Plataforma.aspx" + GetQuerystring();
 
-}
+//}
 
-}
+//}
 
 var u58 = document.getElementById('u58');
 
@@ -302,21 +302,21 @@ var u1 = document.getElementById('u1');
 gv_vAlignTable['u1'] = 'center';
 var u34 = document.getElementById('u34');
 
-var u40 = document.getElementById('u40');
+//var u40 = document.getElementById('u40');
 
-u40.style.cursor = 'pointer';
-if (bIE) u40.attachEvent("onclick", Clicku40);
-else u40.addEventListener("click", Clicku40, true);
-function Clicku40(e)
-{
+//u40.style.cursor = 'pointer';
+//if (bIE) u40.attachEvent("onclick", Clicku40);
+//else u40.addEventListener("click", Clicku40, true);
+//function Clicku40(e)
+//{
 
-if (true) {
+//if (true) {
 
-	self.location.href="Solicitud_de_Tarjeta_de_Crédito_-_Confirmación.html" + GetQuerystring();
+//	self.location.href="Solicitud_de_Tarjeta_de_Crédito_-_Confirmación.html" + GetQuerystring();
 
-}
+//}
 
-}
+//}
 
 var u68 = document.getElementById('u68');
 
@@ -422,7 +422,7 @@ function Clicku66(e)
 
 if (true) {
 
-	self.location.href="Inicio.aspx" + GetQuerystring();
+	self.location.href="../../../Inicio.aspx" + GetQuerystring();
 
 }
 

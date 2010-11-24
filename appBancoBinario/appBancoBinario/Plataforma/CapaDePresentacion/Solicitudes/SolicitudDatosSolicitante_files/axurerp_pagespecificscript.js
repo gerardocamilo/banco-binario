@@ -74,7 +74,7 @@ function Clicku29(e)
 
 if (true) {
 
-	self.location.href="#" + GetQuerystring();
+    self.location.href = "../Solicitudes/Solicitudes.aspx" + GetQuerystring();
 
 }
 
@@ -90,7 +90,7 @@ function Clicku115(e)
 
 if (true) {
 
-	self.location.href="Productos/Productos.aspx" + GetQuerystring();
+	self.location.href="Productos.aspx" + GetQuerystring();
 
 }
 
@@ -255,7 +255,7 @@ function Clicku100(e)
 
 if (true) {
 
-	self.location.href="Conf.___Param.aspx" + GetQuerystring();
+	self.location.href="../../../Inicio.aspx" + GetQuerystring();
 
 }
 
@@ -340,7 +340,7 @@ function Clicku108(e)
 
 if (true) {
 
-	self.location.href="Solicitudes/Solicitudes.aspx" + GetQuerystring();
+	self.location.href="../Solicitudes/Solicitudes.aspx" + GetQuerystring();
 
 }
 
@@ -378,7 +378,7 @@ function Clicku28(e)
 
 if (true) {
 
-	self.location.href="Plataforma.aspx" + GetQuerystring();
+	self.location.href="../Plataforma.aspx" + GetQuerystring();
 
 }
 

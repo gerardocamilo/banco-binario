@@ -371,7 +371,8 @@ src="SolicitudConfirmacion_files/u66.png" border="0" alt=""></span>
 <div id=u67 style="position:absolute; left:2px; top:2px; width:147px; height:18px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u67_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#FFFFFF; font-size:15px;"><b>Inicio</b></span></div></div></div>
 </div>
-<INPUT type="image" id=u66 src="../Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:151px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u66', 'u67', rJsonu67, true);" onmouseout="ApplyImageAndTextStyles('o', 'u66', 'u67', '', true);"  >
+<div id=u66 src="../Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:151px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u66', 'u67', rJsonu67, true);" onmouseout="ApplyImageAndTextStyles('o', 'u66', 'u67', '', true);"  >
+</div>
 
 <script type="text/javascript">
     var rJsonu69 = {};

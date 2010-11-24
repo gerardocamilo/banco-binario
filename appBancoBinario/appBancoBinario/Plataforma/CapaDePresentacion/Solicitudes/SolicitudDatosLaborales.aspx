@@ -427,7 +427,8 @@ src="SolicitudDatosLaborales_files/u86.png" border="0" alt=""></span>
 <div id=u87 style="position:absolute; left:2px; top:2px; width:147px; height:18px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u87_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#FFFFFF; font-size:15px;"><b>Inicio</b></span></div></div></div>
 </div>
-<INPUT type="image" id=u86 src="../Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:151px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u86', 'u87', rJsonu87, true);" onmouseout="ApplyImageAndTextStyles('o', 'u86', 'u87', '', true);"  >
+<div id=u86 src="../Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:151px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u86', 'u87', rJsonu87, true);" onmouseout="ApplyImageAndTextStyles('o', 'u86', 'u87', '', true);"  >
+</div>
 
 <script type="text/javascript">
     var rJsonu89 = {};

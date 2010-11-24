@@ -478,10 +478,11 @@ src="SolicitudDatosSolicitante_files/u98.png" border="0" alt=""></span>
 <div id=u99 style="position:absolute; left:2px; top:2px; width:147px; height:18px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
 <div id=u99_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#FFFFFF; font-size:15px;"><b>Inicio</b></span></div></div></div>
 </div>
-<input type="image" id="u98" src="../Resources/transparent.gif" 
+<div    id="u98" src="../Resources/transparent.gif" 
         style="position:absolute; left:0px; top:0px; width:151px; height:22px; right: 675px;" 
         onmouseover="ApplyImageAndTextStyles('r', 'u98', 'u99', rJsonu99, true);" 
-        onmouseout="ApplyImageAndTextStyles('o', 'u98', 'u99', '', true);"  />
+        onmouseout="ApplyImageAndTextStyles('o', 'u98', 'u99', '', true);"  >
+        </div>
 
 <script type="text/javascript">
     var rJsonu101 = {};
@@ -506,10 +507,16 @@ src="SolicitudDatosSolicitante_files/u100.png" border="0" alt=""></span>
 <div id=u100container style="position:absolute; left:151px; top:0px; width:177px; height:23px; overflow:visible;">
 
 <div id=u101 style="position:absolute; left:2px; top:2px; width:172px; height:18px; text-align: center ; font-family:Arial; text-align:left; word-wrap:break-word;" >
-<div id=u101_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#FFFFFF; font-size:15px;"><b>Conf. &amp; Param</b></span></div></div></div>
-</div>
-<input type="image" id=u100 src="../Resources/transparent.gif" style="position:absolute; left:151px; top:0px; width:176px; height:22px" onmouseover="ApplyImageAndTextStyles('r', 'u100', 'u101', rJsonu101, true);" onmouseout="ApplyImageAndTextStyles('o', 'u100', 'u101', '', true);"  >
+</di>
+<div id=u101_rtf>
 
+<div style="text-align:center"><span style=" font-family:'Arial'; color:#FFFFFF; font-size:15px;"><b>Conf. &amp; Param</b></span></div></div></div>
+</div>
+<div    id=u100 src="../Resources/transparent.gif" 
+        style="position:absolute; top:0px; width:176px; height:22px" 
+        onmouseover="ApplyImageAndTextStyles('r', 'u100', 'u101', rJsonu101, true);" 
+        onmouseout="ApplyImageAndTextStyles('o', 'u100', 'u101', '', true);"  >
+        </div>
 <script type="text/javascript">
     var rJsonu103 = {};
 </script>
