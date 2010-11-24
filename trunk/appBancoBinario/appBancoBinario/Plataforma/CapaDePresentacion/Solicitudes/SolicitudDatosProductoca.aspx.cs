@@ -30,7 +30,9 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Solicitudes
         {
             Solicitud solicitud = (Solicitud)Session["solicitud"];
             if(solicitud!=null){
-                solicitud.NumeroSolicitud = "solCuenta03";
+                Configuracion_y_Parametros.configuracionParametro cp = new Configuracion_y_Parametros.configuracionParametro();
+                string numeroSolicitud = cp.generarSolicitudes(Configuracion_y_Parametros.TiposSolicitudes.SCA);
+                solicitud.NumeroSolicitud = numeroSolicitud;
                 Cuenta cuenta = new Cuenta();
                 cuenta.TipoProducto = TipoProducto.CUENTA_AHORRO.ToString();
                 solicitud.ProductoAsociado = cuenta;

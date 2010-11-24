@@ -55,6 +55,98 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_Cliente.aspx" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\axurerp_pagespecificscript.js" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\ru82.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\ru84.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\ru86.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\ru88.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\ru90.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u0.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u12.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u15.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u19.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u2.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u25.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u26.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u31.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u33.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u35.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u4.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u6.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u67.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u69.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u73.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u80.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u82.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u84.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u86.png" />
+    <Content Include="Clientes\CapaDePresentacion\Agregar_files\u90.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\axurerp_pagespecificscript.js" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\ru50.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\ru52.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\ru54.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\ru56.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\ru58.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u0.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u12.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u15.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u19.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u2.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u25.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u26.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u31.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u33.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u35.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u37.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u4.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u41.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u48.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u50.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u52.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u54.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u58.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u6.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u72.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u74.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u78.gif" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u80.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_files\u82.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\axurerp_pagespecificscript.js" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\ru100.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\ru102.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\ru104.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\ru106.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\ru98.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u0.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u100.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u102.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u106.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u117.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u119.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u12.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u15.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u19.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u2.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u25.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u26.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u33.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u35.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u37.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u39.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u4.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u6.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u69.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u71.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u75.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u80.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u82.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u84.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u86.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u90.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u96.png" />
+    <Content Include="Clientes\CapaDePresentacion\SolicitudDatosSolicitante_files\u98.png" />
+    <Content Include="Clientes\CapaDePresentacion\Consultar_Cliente.aspx" />
     <Content Include="ErrorPage.aspx" />
     <Content Include="Plataforma\CapaDePresentacion\ErrorPage.aspx" />
     <Content Include="Plataforma\CapaDePresentacion\Productos\ErrorPage.aspx" />
@@ -602,17 +694,29 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Clientes\CapaDeNegocio\Sqlhelper.cs" />
+    <Compile Include="CapaDeDatos\SqlHelper.cs" />
+    <Compile Include="Clientes\CapaDePresentacion\Agregar_Cliente.aspx.cs">
+      <DependentUpon>Agregar_Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\CapaDePresentacion\Agregar_Cliente.aspx.designer.cs">
+      <DependentUpon>Agregar_Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\CapaDePresentacion\Consultar_Cliente.aspx.cs">
+      <DependentUpon>Consultar_Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\CapaDePresentacion\Consultar_Cliente.aspx.designer.cs">
+      <DependentUpon>Consultar_Cliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ConfParam\CapaDeNegocio\codigoTransaccion.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\configuracionParametro.cs" />
-    <Compile Include="ConfParam\CapaDeNegocio\Sqlhelper.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\tasaInteres.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\tipoProducto.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\TiposSolicitudes.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\TiposTarjetas.cs" />
     <Compile Include="ConfParam\CapaDeNegocio\tipoTasa.cs" />
     <Compile Include="Plataforma\CapaDeDatos\PlataformaDAO.cs" />
-    <Compile Include="Plataforma\CapaDeDatos\SqlHelper.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Plataforma.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\TipoTarjeta.cs" />
     <Compile Include="Plataforma\CapaDeNegocio\Productos\EstadoTarjeta.cs" />
@@ -749,7 +853,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Caja\CapaDeNegocio\" />
     <Folder Include="Caja\CapaDePresentacion\" />
-    <Folder Include="Clientes\CapaDePresentacion\" />
+    <Folder Include="Clientes\CapaDePresentacion\Clientes_files\" />
     <Folder Include="ConfParam\CapaDePresentacion\" />
     <Folder Include="test\" />
   </ItemGroup>

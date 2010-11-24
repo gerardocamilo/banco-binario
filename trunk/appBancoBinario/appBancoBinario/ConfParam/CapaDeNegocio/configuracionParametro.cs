@@ -9,11 +9,16 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.ComponentModel;
 using System.Text;
+using appBancoBinario.CapaDeDatos;
 
 namespace Configuracion_y_Parametros
 {
     public class configuracionParametro : SqlHelper 
     {
+        public configuracionParametro()
+            : base("BANCO_BINARIO", "DARLINPC-PC", "SA", "")
+        {
+        }
 
         /// <summary>
         /// Metodo generador de los numeros de tarjetas de creditos, basado en el Modulo 10.

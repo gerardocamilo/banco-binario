@@ -10,6 +10,7 @@ using System.Data.SqlClient;
 using System.ComponentModel;
 //using conexion.conexion;
 using System.Text;
+using appBancoBinario.CapaDeDatos;
 
 namespace Configuracion_y_Parametros
 {

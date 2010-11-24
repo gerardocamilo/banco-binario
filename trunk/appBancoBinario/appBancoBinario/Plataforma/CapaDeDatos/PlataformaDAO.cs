@@ -11,6 +11,7 @@ using appBancoBinario.Plataforma.CapaDeNegocio.Solicitudes;
 using appBancoBinario.Clientes.CapaDeNegocio;
 
 using System.Diagnostics;
+using appBancoBinario.CapaDeDatos;
 
 namespace appBancoBinario.Plataforma.CapaDeDatos
 {
@@ -415,38 +416,40 @@ namespace appBancoBinario.Plataforma.CapaDeDatos
                     solicitudPrestamo.Estado = fila["ESTADO"].ToString();
                     solicitud = solicitudPrestamo;
                 }
+                
                 //obtener tipo producto del primer row y en base al tipo de producto asignar a una referencia del Producto 
                 //la instancia hija de producto que corresponda asi el modulo externo puede castear esa instancia y obtener los valores deseados.
+                //Codigo para traer el cliente asociado a dicha solicitud.
+                //1)Consultar relacion cliente_solicitud
+                //2)Consultar API Clientes para traer los atributos del cliente y setearlos en la solicitud
+                String identificacionCliente = pObtenerIdentificacionClientePorNumeroSolicitud(solicitud.NumeroSolicitud);
+                appBancoBinario.Clientes.CapaDeNegocio.Clientes clienteAPI = new appBancoBinario.Clientes.CapaDeNegocio.Clientes();
+                ClientesDetails clienteDetalle = clienteAPI.BuscarClientePorIdentificacion_(identificacionCliente);
+                if (clienteDetalle != null)
+                {
+                    solicitud.Cliente = clienteDetalle;
+                }
+                else
+                {
+                    ClientesDetails emptyClient = new ClientesDetails();
+                    emptyClient.Apellido = "";
+                    emptyClient.Celular = "";
+                    emptyClient.Correo = "";
+                    emptyClient.Direccion = "";
+                    emptyClient.Estado_Civil = "";
+                    emptyClient.Estatus = "";
+                    emptyClient.Fecha_Modificacion = "";
+                    emptyClient.identificacion = "0000000000";
+                    emptyClient.Nombre = "";
+                    emptyClient.Numero_Dependientes = "0";
+                    emptyClient.Telefono = "";
+                    emptyClient.Tipo_Vivienda = "";
+
+                    solicitud.Cliente = emptyClient;
+                }
             }
 
-            //Codigo para traer el cliente asociado a dicha solicitud.
-            //1)Consultar relacion cliente_solicitud
-            //2)Consultar API Clientes para traer los atributos del cliente y setearlos en la solicitud
-            String identificacionCliente = pObtenerIdentificacionClientePorNumeroSolicitud(solicitud.NumeroSolicitud);
-            appBancoBinario.Clientes.CapaDeNegocio.Clientes clienteAPI = new appBancoBinario.Clientes.CapaDeNegocio.Clientes();
-            ClientesDetails clienteDetalle = clienteAPI.BuscarClientePorIdentificacion_(identificacionCliente);
-            if (clienteDetalle != null)
-            {
-                solicitud.Cliente = clienteDetalle;
-            }
-            else
-            {
-                ClientesDetails emptyClient = new ClientesDetails();
-                emptyClient.Apellido=""; 
-                emptyClient.Celular="";
-                emptyClient.Correo="";
-                emptyClient.Direccion="";
-                emptyClient.Estado_Civil="";
-                emptyClient.Estatus="";
-                emptyClient.Fecha_Modificacion = "";
-                emptyClient.identificacion="0000000000";
-                emptyClient.Nombre = "";
-                emptyClient.Numero_Dependientes = "0";
-                emptyClient.Telefono = "";
-                emptyClient.Tipo_Vivienda="";
-
-                solicitud.Cliente = emptyClient;
-            }
+            
             return solicitud;
         }
 

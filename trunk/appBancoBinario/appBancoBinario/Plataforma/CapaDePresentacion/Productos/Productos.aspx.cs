@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using appBancoBinario.Plataforma.CapaDeDatos;
+using appBancoBinario.Plataforma.CapaDeNegocio.Productos;
 
 namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
 {
@@ -23,11 +24,10 @@ namespace appBancoBinario.Plataforma.CapaDePresentacion.Productos
             
             Session["noProducto"] = txtNoProducto.Text;
 
-            
-
-            plataforma.pObtenerProductoPorCodigo(txtNoProducto.Text);
-
-            Response.Redirect("VerProducto.aspx");
+            Producto producto = plataforma.pObtenerProductoPorCodigo(txtNoProducto.Text);
+            if (producto != null) {
+                Response.Redirect("VerProducto.aspx");
+            }            
         }
 
         protected void gvProductos_SelectedIndexChanged(object sender, EventArgs e)
